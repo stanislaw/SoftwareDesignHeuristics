@@ -12,6 +12,7 @@ Currently this is just a draft, very far from complete, with some random notes a
 
 - Duplication is better than poor abstraction (Sandi Metz).
 - If feature is hard to implement it might indicate that it is something wrong with feature (or product).
+- If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something you have power over it. Good class - this is what True Name is in OOP. See also [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
 - Sometimes to make further progress you need to un-implement (break!) particular pattern/architecture/solution and put it back into [Prima Materia](Prima materia - Wikipedia, the free encyclopedia) state and only then thansform it into a something new.
 
 ### Control
