@@ -10,11 +10,15 @@ Currently this is just a draft, very far from complete, with some random notes a
 
 ## General
 
-- Habitable software is better than perfect software, both for its users and its developers (Richard Gabriel - Patterns of Software).
+- Habitability Heuristics. Habitable software is better than perfect software, both for its users and its developers (Richard Gabriel - Patterns of Software).
 - Duplication is better than poor abstraction (Sandi Metz).
 - If feature is hard to implement it might indicate that it is something wrong with feature (or product).
 - If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something you have power over it. Good class - this is what True Name is in OOP. See also [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
 - Sometimes to make further progress you need to un-implement (break!) particular pattern/architecture/solution and put it back into [Prima Materia](Prima materia - Wikipedia, the free encyclopedia) state and only then thansform it into a something new.
+
+### Complexity
+
+- Periphery Heuristics. If your reasoning is complicated by cognitive overload that you have after a problem you are trying to solve and there is no obvious way to make a first step towards solution, take a step back and start working with Periphery. Good example is legacy code: poor periphery like bad variable names, wrong responsibilities in classes, even those who are distant to your problem, bad folder structure, etc might look completely irrelevant to the core of your problem but still it contributes to the cognitive overload - try to clean up periphery and you will see that the core of your problem is now more clear and approachable than it was before. Another word for Periphery is Background, see also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
 
 ### Control
 
@@ -37,3 +41,5 @@ Currently this is just a draft, very far from complete, with some random notes a
 - “If you can’t measure it then it can’t be called engineering” (taken from “Object-Oriented Software Engineering: A Use Case Driven Approach” by Ivar Jacobson). We of course also read “measure” as “test” which is another way of measurement.
 - Ideally we should be able to test everything: if something is hard to test, then we are just not there with quality of our code or corresponding tool set and infrastructure for testing but we will manage to find or improve them and get there.
 If you don’t know or not sure how to test something properly, try the ugliest version first: stub everything in an ugly way, stub network in an ugly way, assert what you want to assert and only then iterate on refactoring of both test and SUT (system-under-test).
+
+
