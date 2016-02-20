@@ -16,7 +16,7 @@ Currently this is just a draft, very far from complete, with some random notes a
 - If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something you have power over it. Good class - this is what True Name is in OOP. See also [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
 - Sometimes to make further progress you need to un-implement (break!) particular pattern/architecture/solution and put it back into [Prima Materia](Prima materia - Wikipedia, the free encyclopedia) state and only then thansform it into a something new.
 - Always leave code in a better state than it had been before you got it, make a chance for future you or someone else to make it even better (dedicated to folks who enjoy fixing things "in just a few minutes").
-- Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
+- Ignorance Heuristics. Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
 
 ### Complexity
 
