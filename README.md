@@ -17,6 +17,7 @@ Currently this is just a draft, very far from complete, with some random notes a
 - Sometimes to make further progress you need to un-implement (break!) particular pattern/architecture/solution and put it back into [Prima Materia](Prima materia - Wikipedia, the free encyclopedia) state and only then thansform it into a something new.
 - Always leave code in a better state than it had been before you got it, make a chance for future you or someone else to make it even better (dedicated to folks who enjoy fixing things "in just a few minutes").
 - Ignorance Heuristics. Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
+- Crash Early Heuristics. If you know how to not program defensively in a particular situation go ahead! Otherwise make your code to Crash Early to catch bugs as early as possible: use sensible assertions and stress edge-cases with tests. See [Some notes C in 2016: Code offensively](http://blog.erratasec.com/2016/01/some-notes-c-in-2016.html#.VtGEKBg7T5c) and [Spotify engineering culture (part 2): "We aim to mistakes faster than anyone else"](https://labs.spotify.com/2014/09/20/spotify-engineering-culture-part-2/).
 
 ### Complexity
 
