@@ -11,7 +11,12 @@ Currently this is just a draft, very far from complete, with some random notes a
 ## General
 
 - Habitability Heuristics. Habitable software is better than perfect software, both for its users and its developers (Richard Gabriel - Patterns of Software).
-- Duplication is better than poor abstraction (Sandi Metz).
+- Poor Abstraction Heuristics.
+
+> Duplication is better than poor abstraction (Sandi Metz, Rails Club 2014, Moscow).
+
+> "...ill-fitting structure is worse than none..." (Eric Evans - Domain-Driven Design, p.446)
+
 - If feature is hard to implement it might indicate that it is something wrong with feature (or product).
 - If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something you have power over it. Good class - this is what True Name is in OOP. See also [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
 - Sometimes to make further progress you need to un-implement (break!) particular pattern/architecture/solution and put it back into [Prima Materia](Prima materia - Wikipedia, the free encyclopedia) state and only then thansform it into a something new.
