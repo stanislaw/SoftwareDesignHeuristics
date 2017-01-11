@@ -4,7 +4,7 @@ These are the heuristics that I and some of my colleagues find useful in our sof
 
 Some heuristics are of our own, sometimes we also learn from good books: heuristics here that are cited always have reference to original.
 
-All of those heuristics work for us only if taken altogether. Taken away from the rest, some of them can even contradict each other: if you take only few of them and exaggerate them, they will lose their value or even break things on your behalf. So do not be very serious about them :) 
+All of these heuristics work only if taken altogether. Taken away from the rest, some of them can even contradict each other: if you take only few of them and exaggerate them, they will lose their value or even break things on your behalf. Some heuristics may overlap with each other. So do not be very serious about them :) 
 
 Currently this is just a draft, very far from complete, with some random notes arbitrarily organized, do not expect it to be solid. If still this folklore genre works for you, feel free to share heuristics you might have in mind.
 
@@ -51,8 +51,9 @@ Currently this is just a draft, very far from complete, with some random notes a
 ## Testing
 
 - If you do not write tests you will never learn how to write them, it is better to write bad tests then not to write any.
-- Ability to do TDD is not about black and white: “can or can not”, it is about having 1001 things in your toolbox: techniques, patterns, tricks and hacks - when you have enough of them you can test almost everything.
+- Ability to do TDD is not about black and white: “can or can not”, it is about having 1001 things in your toolbox: techniques, patterns, tricks and hacks - when you have enough of them you can test almost everything in a reasonable amount of time.
 - “Legacy code is a code without tests” (“Working effectively with Legacy Code” by Michael Feathers).
+- On top of being useful for Quality, Testing is an important prerequisite for Simulations which are essential for complexity management: if I can test, read simulate, every aspect of my program, this means that I can still manage its complexity and vice versa - if my app has blind-spots: areas that are hard or impossible to test, I don't have any control over those areas and have to resort to testing of my app in the wild, outsourcing the quality of my app to the real users.
 - “If you can’t measure it then it can’t be called engineering” (taken from “Object-Oriented Software Engineering: A Use Case Driven Approach” by Ivar Jacobson). We of course also read “measure” as “test” which is another way of measurement.
 - Ideally we should be able to test everything: if something is hard to test, then we are just not there with quality of our code or corresponding tool set and infrastructure for testing but we will manage to find or improve them and get there.
 If you don’t know or not sure how to test something properly, try the ugliest version first: stub everything in an ugly way, stub network in an ugly way, assert what you want to assert and only then iterate on refactoring of both test and SUT (system-under-test).
