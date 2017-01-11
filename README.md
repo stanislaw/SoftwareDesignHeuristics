@@ -42,6 +42,7 @@ Currently this is just a draft, very far from complete, with some random notes a
 
 - Separate stable from unstable
 - Separate synchronous from asynchronous
+- Separate symmetrical from asymmetrical
 - Separate construction from operation (one example: Factory vs Command).
 - Separate data from behavior and behavior from data unless you do have good OOP class/object with good data/behavior balance.
 - Separate application-level code from system-level code
