@@ -4,7 +4,7 @@ These are the heuristics that I and some of my colleagues find useful in our sof
 
 Some heuristics are of our own, sometimes we also learn from good books: heuristics here that are cited always have reference to original.
 
-All of these heuristics work only if taken altogether. Taken away from the rest, some of them can even contradict each other: if you take only few of them and exaggerate them, they will lose their value or even break things on your behalf. Some heuristics may overlap with each other. So do not be very serious about them :) 
+All of these heuristics work only if taken altogether. Taken away from the rest, some of them can even contradict each other: if you take only few of them and exaggerate them, they will lose their value or even break things on your behalf. Some heuristics may overlap with each other. So do not be very serious about them :)
 
 Currently this is just a draft, very far from complete, with some random notes arbitrarily organized, do not expect it to be solid. If still this folklore genre works for you, feel free to share heuristics you might have in mind.
 
@@ -27,6 +27,12 @@ Currently this is just a draft, very far from complete, with some random notes a
 - Ignorance Heuristics. Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
 
 - Crash Early Heuristics. If you know how to not program defensively in a particular situation go ahead! Otherwise make your code to Crash Early to catch bugs as early as possible: use sensible assertions and stress edge-cases with tests. See [Some notes C in 2016: Code offensively](http://blog.erratasec.com/2016/01/some-notes-c-in-2016.html#.VtGEKBg7T5c) and [Spotify engineering culture (part 2): "We aim to mistakes faster than anyone else"](https://labs.spotify.com/2014/09/20/spotify-engineering-culture-part-2/).
+
+- Fast Feedback Heuristics. Getting feedback fast is essential for an engineer.
+The two great ways of getting feedback fast are test-driven development
+and debugging techniques. When you come to a new project, first of all learn
+how to run existing and write new tests and also learn how can you debug
+things the fastest way (can be a real debugger, or just "console.log()").
 
 ### Complexity
 
