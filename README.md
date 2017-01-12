@@ -42,6 +42,15 @@ and debugging techniques. When you come to a new project, first of all learn
 how to run existing and write new tests and also learn how can you debug
 things the fastest way (can be a real debugger, or just "console.log()").
 
+- Two Almost Identical Entities. Over the years I have seen at least three big
+units of a hardly manageable legacy code where each of them was built on two
+almost identical entities from which one was a subclass of the other.
+It seems that historically in all three cases it started with one entity that
+accumulated its features along the way, then came the other which was so
+similar to the first that programmer avoided extraction of similar modules both
+entities had and went with subclassing to get the result quickly.
+To these days I still didn't see or create an elegant solution to this problem.
+
 ### Complexity
 
 - Black Box with Green Play Button Heuristics. Ideal interface for a system of arbitrary complexity is a black box with a green play button on it - you take the box, press green button and it just works. The second ideal interface is when you also have red button to stop a system.
