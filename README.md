@@ -26,6 +26,14 @@ Currently this is just a draft, very far from complete, with some random notes a
 
 - Ignorance Heuristics. Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
 
+- Ignorance II Heuristics. One interesting feature of Ignorance is that it
+imposes a limit on ability of a software to scale. Written with ignorance
+in mind software sooner or later becomes a stone and nightmare so that
+eventually programmers on a team start to avoid going to "the dark forest".
+Natural consequence is that such software has an upper bound of complexity so
+someone who has to re-engineer such code will find that that complexity is
+ultimately manageable.
+
 - Crash Early Heuristics. If you know how to not program defensively in a particular situation go ahead! Otherwise make your code to Crash Early to catch bugs as early as possible: use sensible assertions and stress edge-cases with tests. See [Some notes C in 2016: Code offensively](http://blog.erratasec.com/2016/01/some-notes-c-in-2016.html#.VtGEKBg7T5c) and [Spotify engineering culture (part 2): "We aim to mistakes faster than anyone else"](https://labs.spotify.com/2014/09/20/spotify-engineering-culture-part-2/).
 
 - Fast Feedback Heuristics. Getting feedback fast is essential for an engineer.
