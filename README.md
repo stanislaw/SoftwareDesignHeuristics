@@ -42,6 +42,20 @@ and debugging techniques. When you come to a new project, first of all learn
 how to run existing and write new tests and also learn how can you debug
 things the fastest way (can be a real debugger, or just "console.log()").
 
+- Unnecessary Flexibility (from
+[Writing Solid Code](http://writingsolidcode.com/))
+
+> Flexibility breeds bugs. Another strategy you can use to prevent bugs is to
+strip unnecessary flexibility from your designs... The trouble with flexible
+designs is that the more flexible they are, the harder it is to detect bugs.
+
+> ...Flexible features are troublesome because they can lead to unexpected
+"legal" situations that you didn't think to test for even realize were legal...
+
+> ...When you implement features in your own projects, make them easy to use;
+don't make them unnecessary flexible. There is a difference.
+Don't allow unnecessary flexibility.
+
 - Two Almost Identical Entities. Over the years I have seen at least three big
 units of a hardly manageable legacy code where each of them was built on two
 almost identical entities from which one was a subclass of the other.
