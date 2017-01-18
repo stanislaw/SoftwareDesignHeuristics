@@ -56,6 +56,14 @@ designs is that the more flexible they are, the harder it is to detect bugs.
 don't make them unnecessary flexible. There is a difference.
 Don't allow unnecessary flexibility.
 
+- **Stable Components Heuristics.** Stable Components is a resort of a 
+Maintenance Programmer. One way for a developer to survive in a large legacy 
+project is to create stable components or extract them out of existing mess 
+of code. Stable component most likely means a testable component: it can be a 
+parsing module or API layer or string manipulation helpers. Having such islands
+of stability helps a lot to overcome the difficulties of a maintenance 
+programming. See also Periphery and Prima Materia Heuristics.
+
 - Two Almost Identical Entities. Over the years I have seen at least three big
 units of a hardly manageable legacy code where each of them was built on two
 almost identical entities from which one was a subclass of the other.
