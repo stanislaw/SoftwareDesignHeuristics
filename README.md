@@ -108,5 +108,6 @@ If you don’t know or not sure how to test something properly, try the ugliest 
 - [Kent Beck - Mastering Programming](https://www.facebook.com/notes/kent-beck/mastering-programming/1184427814923414/)
 - [Heuristics of Software Testability](http://www.satisfice.com/tools/testable.pdf)
 - [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)
+- [Lessons Learned in Software Development](https://henrikwarne.com/2015/04/16/lessons-learned-in-software-development/)
 
 
