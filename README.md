@@ -10,7 +10,17 @@ Currently this is just a draft, very far from complete, with some random notes a
 
 ## General
 
-- Habitability Heuristics. Habitable software is better than perfect software, both for its users and its developers (Richard Gabriel - Patterns of Software).
+- **Start Simple.** Start with something simple, then extend it further. Most often a complex problem is a composition of simpler problems. If you are facing a problem and you are afraid of the complexity it exerts, try to make a smallest possible step towards the solution and see what you can do from there. Simple can also mean quick and dirty but that's ok as that's only a start. Once you have something simple working you have a ground to move on further. Most likely this means you have an **archetype** of a future thing: real and complex system. 
+
+See also Kent Beck's [Test-Driven Development book](https://en.wikipedia.org/wiki/Test-Driven_Development_by_Example) where this approach of doing simple things is explained at great depth.
+
+- **Archetype.** Archetype is an umbrella concept for other concepts like: `prototype`, `proof of concept`, `minimal viable product`. Archetype means something simple and coherent. If you know the archetype of something you understand the essense of it. A complex system can be traced back to a one or a number of underlying archetypes.
+
+Interesting side note: as far as I see it, the tendency is that engineers as they grow their software bigger, do not care much 
+about the underlying archetypes. Imagine how easy it would be to learn about the software if it would contain itself in its earliest forms of being (source code, documentation, drafts etc). Great example: Rust programming language had to be started from [somewhere](https://github.com/graydon/rust-prehistory).
+
+- **Habitability**. Habitable software is better than perfect software, both for its users and its developers (Richard Gabriel - Patterns of Software).
+
 - Poor Abstraction Heuristics.
 
 > Duplication is better than poor abstraction (Sandi Metz, Rails Club 2014, Moscow).
