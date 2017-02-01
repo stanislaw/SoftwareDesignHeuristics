@@ -21,7 +21,7 @@ about the underlying archetypes. Imagine how easy it would be to learn about the
 
 - **Habitability**. Habitable software is better than perfect software, both for its users and its developers (Richard Gabriel - Patterns of Software).
 
-- Poor Abstraction Heuristics.
+- **Poor Abstraction.**
 
 > Duplication is better than poor abstraction (Sandi Metz, Rails Club 2014, Moscow).
 
@@ -29,14 +29,15 @@ about the underlying archetypes. Imagine how easy it would be to learn about the
 
 - If feature is hard to implement it might indicate that it is something wrong with feature (or product).
 
-- If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something you have power over it. Good class - this is what True Name is in OOP. See also [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
-- Prima Materia Heuristics. Sometimes to make further progress you need to un-implement (break!) particular pattern/architecture/solution and put it back into [Prima Materia](Prima materia - Wikipedia, the free encyclopedia) state and only then thansform it into a something new. Metaphors similar to Prima Materia are "primordial soup" and "indifferentiated soup of ideas" (Eric Evans - DDD).
+- **True Name.** If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something you have power over it. Good class - this is what True Name is in OOP. See also [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
+
+- **Prima Materia.** Sometimes to make further progress you need to un-implement (break!) particular pattern/architecture/solution and put it back into [Prima Materia](Prima materia - Wikipedia, the free encyclopedia) state and only then thansform it into a something new. Metaphors similar to Prima Materia are "primordial soup" and "indifferentiated soup of ideas" (Eric Evans - DDD).
 
 - Always leave code in a better state than it had been before you got it, save a time for future you or someone else to make it even better (dedicated to folks who enjoy fixing things "in just a few minutes").
 
-- Ignorance Heuristics. Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
+- **Ignorance.** Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
 
-- Ignorance II Heuristics. One interesting feature of Ignorance is that it
+- **Ignorance II.** One interesting feature of Ignorance is that it
 imposes a limit on ability of a software to scale. Written with ignorance
 in mind software sooner or later becomes a stone and nightmare so that
 eventually programmers on a team start to avoid going to "the dark forest".
@@ -44,16 +45,17 @@ Natural consequence is that such software has an upper bound of complexity so
 someone who has to re-engineer such code will find that that complexity is
 ultimately manageable.
 
-- Crash Early Heuristics. If you know how to not program defensively in a particular situation go ahead! Otherwise make your code to Crash Early to catch bugs as early as possible: use sensible assertions and stress edge-cases with tests. See [Some notes C in 2016: Code offensively](http://blog.erratasec.com/2016/01/some-notes-c-in-2016.html#.VtGEKBg7T5c) and [Spotify engineering culture (part 2): "We aim to mistakes faster than anyone else"](https://labs.spotify.com/2014/09/20/spotify-engineering-culture-part-2/).
+- **Crash Early**. If you know how to not program defensively in a particular situation go ahead! Otherwise make your code to Crash Early to catch bugs as early as possible: use sensible assertions and stress edge-cases with tests. See [Some notes C in 2016: Code offensively](http://blog.erratasec.com/2016/01/some-notes-c-in-2016.html#.VtGEKBg7T5c) and [Spotify engineering culture (part 2): "We aim to mistakes faster than anyone else"](https://labs.spotify.com/2014/09/20/spotify-engineering-culture-part-2/).
 
-- Fast Feedback Heuristics. Getting feedback fast is essential for an engineer.
+- **Fast Feedback.** Getting feedback fast is essential for an engineer.
 The two great ways of getting feedback fast are test-driven development
 and debugging techniques. When you come to a new project, first of all learn
 how to run existing and write new tests and also learn how can you debug
 things the fastest way (can be a real debugger, or just "console.log()").
 
-- Unnecessary Flexibility (from
-[Writing Solid Code](http://writingsolidcode.com/))
+- **Unnecessary Flexibility.** 
+
+(from [Writing Solid Code](http://writingsolidcode.com/))
 
 > Flexibility breeds bugs. Another strategy you can use to prevent bugs is to
 strip unnecessary flexibility from your designs... The trouble with flexible
@@ -66,7 +68,7 @@ designs is that the more flexible they are, the harder it is to detect bugs.
 don't make them unnecessary flexible. There is a difference.
 Don't allow unnecessary flexibility.
 
-- **Stable Components Heuristics.** Stable Components is a resort of a 
+- **Stable Components.** Stable Components is a resort of a 
 Maintenance Programmer. One way for a developer to survive in a large legacy 
 project is to create stable components or extract them out of existing mess 
 of code. Stable component most likely means a testable component: it can be a 
@@ -74,7 +76,7 @@ parsing module or API layer or string manipulation helpers. Having such islands
 of stability helps a lot to overcome the difficulties of a maintenance 
 programming. See also Periphery and Prima Materia Heuristics.
 
-- Two Almost Identical Entities. Over the years I have seen at least three big
+- **Two Almost Identical Entities.** Over the years I have seen at least three big
 units of a hardly manageable legacy code where each of them was built on two
 almost identical entities from which one was a subclass of the other.
 It seems that historically in all three cases it started with one entity that
@@ -85,8 +87,9 @@ To these days I still didn't see or create an elegant solution to this problem.
 
 ### Complexity
 
-- Black Box with Green Play Button Heuristics. Ideal interface for a system of arbitrary complexity is a black box with a green play button on it - you take the box, press green button and it just works. The second ideal interface is when you also have red button to stop a system.
-- Periphery Heuristics. If your reasoning is complicated by cognitive overload that you have after a problem you are trying to solve and there is no obvious way to make a first step towards solution, take a step back and start working with Periphery. Good example is legacy code: poor periphery like bad variable names, wrong responsibilities in classes, even those who are distant to your problem, bad folder structure, etc might look completely irrelevant to the core of your problem but still it contributes to the cognitive overload - try to clean up periphery and you will see that the core of your problem is now more clear and approachable than it was before. Another word for Periphery is Background, see also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
+- **Black Box with Green Play Button.** Ideal interface for a system of arbitrary complexity is a black box with a green play button on it - you take the box, press green button and it just works. The second ideal interface is when you also have red button to stop a system.
+
+- **Periphery.** If your reasoning is complicated by cognitive overload that you have after a problem you are trying to solve and there is no obvious way to make a first step towards solution, take a step back and start working with Periphery. Good example is legacy code: poor periphery like bad variable names, wrong responsibilities in classes, even those who are distant to your problem, bad folder structure, etc might look completely irrelevant to the core of your problem but still it contributes to the cognitive overload - try to clean up periphery and you will see that the core of your problem is now more clear and approachable than it was before. Another word for Periphery is Background, see also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
 
 ### Control
 
