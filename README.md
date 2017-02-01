@@ -35,6 +35,15 @@ about the underlying archetypes. Imagine how easy it would be to learn about the
 
 - Always leave code in a better state than it had been before you got it, save a time for future you or someone else to make it even better (dedicated to folks who enjoy fixing things "in just a few minutes").
 
+- **Boring Code.**
+
+(from [Writing Solid Code](http://writingsolidcode.com/))
+
+> If your code feels tricky, that's your gut telling you that something isn't right. Listen to your gut. If you find yourself
+thinking of a piece of code as a near trick, you're really saying to yourself that an algorithm produces correct results even though it is not apparent that it should. The bugs won't be apparent to you either.
+
+> Be truly clever; write boring code. You'll have fewer bugs, and the maintenance programmers will love you for it. 
+
 - **Ignorance.** Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
 
 - **Ignorance II.** One interesting feature of Ignorance is that it
