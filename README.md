@@ -10,11 +10,11 @@ Currently this is just a draft, very far from complete, with some random notes a
 
 ## General
 
-- **Start Simple.** Start with something simple, then extend it further. Most often a complex problem is a composition of simpler problems. If you are facing a problem and you are afraid of the complexity it exerts, try to make a smallest possible step towards the solution and see what you can do from there. Simple can also mean quick and dirty but that's ok as that's only a start. Once you have something simple working you have a ground to move on further. Most likely this means you have an **archetype** of a future thing: real and complex system. 
+- **Start Simple.** Start with something simple, then extend it further. Most often a complex problem is a composition of simpler problems. If you are facing a problem and you are afraid of the complexity it exerts, try to make a smallest possible step towards the solution and see what you can do from there. Simple can also mean quick and dirty but that's ok as that's only a start. Once you have something simple working you have a ground to move on further. Most likely this means you have an **archetype** of a future thing, real and complex system. 
 
 See also Kent Beck's [Test-Driven Development book](https://en.wikipedia.org/wiki/Test-Driven_Development_by_Example) where this approach of doing simple things is explained at great depth.
 
-- **Humans are not designed for Big Numbers.** If you have to work with something that involves a big number of entities, like do something on 10000 files or work with megabytes of data, start with reducing this quantity to a minimum possible number of entities so that it still makes sense to prototype your work: make it work with 1 file instead of 10000 or with 20 bytes instead of 20 gigabytes.
+- **Humans are not designed for Big Numbers.** If you have to work with something that involves a big number of entities, like do something on 10000 files or work with megabytes of data, start with reducing this quantity to a minimum possible number of entities so that still makes sense for a prototype of your final work: make it work with 1 file instead of 10000 or with 20 bytes instead of 20 gigabytes.
 
 - **Archetype.** Archetype is an umbrella concept for other concepts like: `prototype`, `proof of concept`, `minimal viable product`. Archetype means something simple and coherent. If you know the archetype of something you understand the essense of it. A complex system can be traced back to a one or a number of underlying archetypes.
 
