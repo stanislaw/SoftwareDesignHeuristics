@@ -14,6 +14,8 @@ Currently this is just a draft, very far from complete, with some random notes a
 
 See also Kent Beck's [Test-Driven Development book](https://en.wikipedia.org/wiki/Test-Driven_Development_by_Example) where this approach of doing simple things is explained at great depth.
 
+- **Humans are not designed for Big Numbers.** If you have to work with something that involves a big number of entities, like do something on 10000 files or work with megabytes of data, start with reducing this quantity to a minimum possible number of entities so that it still makes sense to prototype your work: make it work with 1 file instead of 10000 or with 20 bytes instead of 20 gigabytes.
+
 - **Archetype.** Archetype is an umbrella concept for other concepts like: `prototype`, `proof of concept`, `minimal viable product`. Archetype means something simple and coherent. If you know the archetype of something you understand the essense of it. A complex system can be traced back to a one or a number of underlying archetypes.
 
 Interesting side note: as far as I see it, the tendency is that engineers as they grow their software bigger, do not care much 
