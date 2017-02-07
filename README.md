@@ -21,7 +21,19 @@ See also Kent Beck's [Test-Driven Development book](https://en.wikipedia.org/wik
 Interesting side note: as far as I see it, the tendency is that engineers as they grow their software bigger, do not care much 
 about the underlying archetypes. Imagine how easy it would be to learn about the software if it would contain itself in its earliest forms of being (source code, documentation, drafts etc). Great example: Rust programming language had to be started from [somewhere](https://github.com/graydon/rust-prehistory).
 
-- **Habitability**. Habitable software is better than perfect software, both for its users and its developers (Richard Gabriel - Patterns of Software).
+- **Habitability**. Habitable software is better than perfect software, 
+both for its users and its developers 
+[Richard Gabriel - Patterns of Software, Habitability and Piecemeal Growth](https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf).
+
+> Habitability is the characteristic of source code that enables programmers, 
+coders, bug-fixers, and people coming to the code later in its life to understand its 
+construction and intentions and to change it comfortably and confidently. Either 
+there is more to habitability than clarity or the two characteristics are different...
+
+> ...Habitability makes a place livable, like home. And this is what we want in 
+software — that developers feel at home, can place their hands on any item without 
+having to think deeply about where it is. It’s something like clarity, but clarity is 
+too hard to come by.
 
 - **Poor Abstraction.**
 
