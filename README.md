@@ -1,4 +1,4 @@
-# Heuristics 1001
+# Heuristics
 
 These are the heuristics that I and some of my colleagues find useful in our software engineering practice. We call “heuristics” everything that helps us to write better code given we keep them in mind.
 
