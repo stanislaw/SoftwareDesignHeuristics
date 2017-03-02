@@ -41,7 +41,7 @@ too hard to come by.
 
 > "...ill-fitting structure is worse than none..." (Eric Evans - Domain-Driven Design, p.446)
 
-- If feature is hard to implement it might indicate that it is something wrong with feature (or product).
+- **Hard Feature** If feature is hard to implement it might indicate that it is something wrong with feature (or product).
 
 - **True Name.** If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something you have power over it. Good class - this is what True Name is in OOP. See also [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
 
@@ -101,12 +101,19 @@ programming. See also Periphery and Prima Materia Heuristics.
 
 - **Two Almost Identical Entities.** Over the years I have seen at least three big
 units of a hardly manageable legacy code where each of them was built on two
-almost identical entities from which one was a subclass of the other.
+almost identical entities. There are two ways of such things to co-exist:
+
+- One is a subclass of the other.
+- Two almost identical classes are maintained.
+
 It seems that historically in all three cases it started with one entity that
 accumulated its features along the way, then came the other which was so
-similar to the first that programmer avoided extraction of similar modules both
-entities had and went with subclassing to get the result quickly.
-To these days I still didn't see or create an elegant solution to this problem.
+similar to the first that programmer avoided extraction of similar modules that both
+entities had and went with subclassing to get the result quickly or with 2 parallel
+hierarchies.
+
+To these days I still didn't see or create an elegant solution to this problem. See
+also "Hard Feature".
 
 ### Complexity
 
