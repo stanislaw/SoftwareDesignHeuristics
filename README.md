@@ -103,8 +103,8 @@ programming. See also Periphery and Prima Materia Heuristics.
 units of a hardly manageable legacy code where each of them was built on two
 almost identical entities. There are two ways of such things to co-exist:
 
-- One is a subclass of the other.
-- Two almost identical classes are maintained.
+1. One is a subclass of the other.
+2. Two almost identical hierarchies are maintained.
 
 It seems that historically in all three cases it started with one entity that
 accumulated its features along the way, then came the other which was so
