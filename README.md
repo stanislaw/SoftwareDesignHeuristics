@@ -129,12 +129,13 @@ also "Hard Feature".
 ### Separation / partitioning
 
 - Separate stable from unstable
+- Separate permanent from temporary
 - Separate synchronous from asynchronous
 - Separate symmetrical from asymmetrical
 - Separate construction from operation (one example: Factory vs Command).
 - Separate data from behavior and behavior from data unless you do have good OOP class/object with good data/behavior balance.
 - Separate application-level code from system-level code
-- Separate methods that read and methods that write
+- Separate methods that read from methods that write
 
 ## Testing
 
