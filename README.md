@@ -131,6 +131,7 @@ also "Hard Feature".
 - Separate stable from unstable
 - Separate permanent from temporary
 - Separate synchronous from asynchronous
+- Separate similar from different
 - Separate symmetrical from asymmetrical
 - Separate construction from operation (one example: Factory vs Command)
 - Separate content from presentation (applies to UI-heavy code, great example: HTML/CSS)
