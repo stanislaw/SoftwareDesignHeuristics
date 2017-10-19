@@ -117,6 +117,8 @@ also "Hard Feature".
 
 - **Poisonous Systems.** Badly designed systems tend to poison systems they interact with.
 
+- **Good Will vs Pain.** Lots of what we programmers learn with years comes from a pain not from a good will.
+
 ### Complexity
 
 - **Black Box with Green Play Button.** Ideal interface for a system of arbitrary complexity is a black box with a green play button on it - you take the box, press green button and it just works. The second ideal interface is when you also have red button to stop a system.
