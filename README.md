@@ -1,5 +1,19 @@
 # Software Design Heuristics
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [General](#general)
+- [Design](#design)
+  - [Complexity](#complexity)
+  - [Control](#control)
+  - [Separation / partitioning](#separation--partitioning)
+- [Testing](#testing)
+- [Similar resources](#similar-resources)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 These are the heuristics that I and some of my colleagues find useful in our software engineering practice. We call “heuristics” everything that helps us to write better code given we keep them in mind.
 
 Some heuristics are of our own, sometimes we also learn from good books: heuristics here that are cited always have reference to original.
@@ -138,6 +152,8 @@ let expectedRemainingLoops =
     )
   )
 ```
+
+## Design
 
 ### Complexity
 
