@@ -119,6 +119,26 @@ also "Hard Feature".
 
 - **Good Will vs Pain.** Lots of what we programmers learn with years comes from a pain not from a good will.
 
+- **Code Style as a Blocker.** Sometimes code style can be a blocker. Poorly
+formatted code can make understanding of it extremely difficult. Do everything
+to reduce your cognitive load. Real-world example:
+
+```swift
+let expectedRemainingLoops = Int(ceil( (expectedRemainingElements - Double(currentRemainingElementsForLoop)) / Double(PPENumberOfTasksInCurrentLoop) ))
+```
+
+reads much better if
+
+```swift
+let expectedRemainingLoops =
+  Int(
+    ceil(
+      (expectedRemainingElements - Double(currentRemainingElementsForLoop)) /
+      Double(PPENumberOfTasksInCurrentLoop)
+    )
+  )
+```
+
 ### Complexity
 
 - **Black Box with Green Play Button.** Ideal interface for a system of arbitrary complexity is a black box with a green play button on it - you take the box, press green button and it just works. The second ideal interface is when you also have red button to stop a system.
