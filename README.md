@@ -17,6 +17,7 @@ Currently this is just a draft, very far from complete, with some random notes a
   - [Complexity](#complexity)
   - [Control](#control)
   - [Separation / partitioning](#separation--partitioning)
+- [Maintenance Programming](#maintenance-programming)
 - [Testing](#testing)
 - [Similar resources](#similar-resources)
 
