@@ -115,6 +115,8 @@ hierarchies.
 To these days I still didn't see or create an elegant solution to this problem. See
 also "Hard Feature".
 
+- **Poisonous Systems.** Badly designed systems tend to poison systems they interact with.
+
 ### Complexity
 
 - **Black Box with Green Play Button.** Ideal interface for a system of arbitrary complexity is a black box with a green play button on it - you take the box, press green button and it just works. The second ideal interface is when you also have red button to stop a system.
