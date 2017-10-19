@@ -24,6 +24,12 @@ Currently this is just a draft, very far from complete, with some random notes a
 
 ## General
 
+- **Fast Feedback.** Getting feedback fast is essential for an engineer.
+The two great ways of getting feedback fast are test-driven development
+and debugging techniques. When you come to a new project, first of all learn
+how to run existing and write new tests and also learn how can you debug
+things the fastest way (can be a real debugger, or just "console.log()").
+
 - **Start Simple.** Start with something simple, then extend it further. Most often a complex problem is a composition of simpler problems. If you are facing a problem and you are afraid of the complexity it exerts, try to make a smallest possible step towards the solution and see what you can do from there. Simple can also mean quick and dirty but that's ok as that's only a start. Once you have something simple working you have a ground to move on further. Most likely this means you have an **archetype** of a future thing, real and complex system.
 
 See also Kent Beck's [Test-Driven Development book](https://en.wikipedia.org/wiki/Test-Driven_Development_by_Example) where this approach of doing simple things is explained at great depth.
@@ -61,34 +67,7 @@ too hard to come by.
 
 - **Prima Materia.** Sometimes to make further progress you need to un-implement (break!) particular pattern/architecture/solution and put it back into [Prima Materia](https://en.wikipedia.org/wiki/Prima_materia) state and only then thansform it into a something new. Metaphors similar to Prima Materia are "primordial soup" and "indifferentiated soup of ideas" (Eric Evans - DDD).
 
-- Always leave code in a better state than it had been before you got it, save a time for future you or someone else to make it even better (dedicated to folks who enjoy fixing things "in just a few minutes").
-
-- **Boring Code.**
-
-(from [Writing Solid Code](http://writingsolidcode.com/))
-
-> If your code feels tricky, that's your gut telling you that something isn't right. Listen to your gut. If you find yourself
-thinking of a piece of code as a near trick, you're really saying to yourself that an algorithm produces correct results even though it is not apparent that it should. The bugs won't be apparent to you either.
-
-> Be truly clever; write boring code. You'll have fewer bugs, and the maintenance programmers will love you for it.
-
-- **Ignorance.** Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
-
-- **Ignorance II.** One interesting feature of Ignorance is that it
-imposes a limit on ability of a software to scale. Written with ignorance
-in mind software sooner or later becomes a stone and nightmare so that
-eventually programmers on a team start to avoid going to "the dark forest".
-Natural consequence is that such software has an upper bound of complexity so
-someone who has to re-engineer such code will find that that complexity is
-ultimately manageable.
-
 - **Crash Early**. If you know how to not program defensively in a particular situation go ahead! Otherwise make your code to Crash Early to catch bugs as early as possible: use sensible assertions and stress edge-cases with tests. See [Some notes C in 2016: Code offensively](http://blog.erratasec.com/2016/01/some-notes-c-in-2016.html#.VtGEKBg7T5c) and [Spotify engineering culture (part 2): "We aim to mistakes faster than anyone else"](https://labs.spotify.com/2014/09/20/spotify-engineering-culture-part-2/).
-
-- **Fast Feedback.** Getting feedback fast is essential for an engineer.
-The two great ways of getting feedback fast are test-driven development
-and debugging techniques. When you come to a new project, first of all learn
-how to run existing and write new tests and also learn how can you debug
-things the fastest way (can be a real debugger, or just "console.log()").
 
 - **Unnecessary Flexibility.**
 
@@ -105,14 +84,6 @@ designs is that the more flexible they are, the harder it is to detect bugs.
 don't make them unnecessary flexible. There is a difference.
 Don't allow unnecessary flexibility.
 
-- **Stable Components.** Stable Components is a resort of a
-Maintenance Programmer. One way for a developer to survive in a large legacy
-project is to create stable components or extract them out of existing mess
-of code. Stable component most likely means a testable component: it can be a
-parsing module or API layer or string manipulation helpers. Having such islands
-of stability helps a lot to overcome the difficulties of a maintenance
-programming. See also Periphery and Prima Materia Heuristics.
-
 - **Two Almost Identical Entities.** Over the years I have seen at least three big
 units of a hardly manageable legacy code where each of them was built on two
 almost identical entities. There are two ways of such things to co-exist:
@@ -126,8 +97,8 @@ similar to the first that programmer avoided extraction of similar modules that 
 entities had and went with subclassing to get the result quickly or with 2 parallel
 hierarchies.
 
-To these days I still didn't see or create an elegant solution to this problem. See
-also "Hard Feature".
+To these days I still didn't see or create an elegant solution to this problem.
+See also "Hard Feature".
 
 - **Poisonous Systems.** Badly designed systems tend to poison systems they interact with.
 
@@ -178,6 +149,37 @@ let expectedRemainingLoops =
 - Separate data from behavior and behavior from data unless you do have good OOP class/object with good data/behavior balance.
 - Separate application-level code from system-level code
 - Separate methods that read from methods that write
+
+## Maintenance Programming
+
+- **Stable Components.** Stable Components is a resort of a
+Maintenance Programmer. One way for a developer to survive in a large legacy
+project is to create stable components or extract them out of existing mess
+of code. Stable component most likely means a testable component: it can be a
+parsing module or API layer or string manipulation helpers. Having such islands
+of stability helps a lot to overcome the difficulties of a maintenance
+programming. See also Periphery and Prima Materia Heuristics.
+
+- **Boring Code.**
+
+(from [Writing Solid Code](http://writingsolidcode.com/))
+
+> If your code feels tricky, that's your gut telling you that something isn't right. Listen to your gut. If you find yourself
+thinking of a piece of code as a near trick, you're really saying to yourself that an algorithm produces correct results even though it is not apparent that it should. The bugs won't be apparent to you either.
+
+> Be truly clever; write boring code. You'll have fewer bugs, and the maintenance programmers will love you for it.
+
+- **Ignorance.** Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
+
+- Always leave code in a better state than it had been before you got it, save a time for future you or someone else to make it even better (dedicated to folks who enjoy fixing things "in just a few minutes").
+
+- **Ignorance II.** One interesting feature of Ignorance is that it
+imposes a limit on ability of a software to scale. Written with ignorance
+in mind software sooner or later becomes a stone and nightmare so that
+eventually programmers on a team start to avoid going to "the dark forest".
+Natural consequence is that such software has an upper bound of complexity so
+someone who has to re-engineer such code will find that that complexity is
+ultimately manageable.
 
 ## Testing
 
