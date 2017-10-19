@@ -10,7 +10,7 @@ Currently this is just a draft, very far from complete, with some random notes a
 
 ## General
 
-- **Start Simple.** Start with something simple, then extend it further. Most often a complex problem is a composition of simpler problems. If you are facing a problem and you are afraid of the complexity it exerts, try to make a smallest possible step towards the solution and see what you can do from there. Simple can also mean quick and dirty but that's ok as that's only a start. Once you have something simple working you have a ground to move on further. Most likely this means you have an **archetype** of a future thing, real and complex system. 
+- **Start Simple.** Start with something simple, then extend it further. Most often a complex problem is a composition of simpler problems. If you are facing a problem and you are afraid of the complexity it exerts, try to make a smallest possible step towards the solution and see what you can do from there. Simple can also mean quick and dirty but that's ok as that's only a start. Once you have something simple working you have a ground to move on further. Most likely this means you have an **archetype** of a future thing, real and complex system.
 
 See also Kent Beck's [Test-Driven Development book](https://en.wikipedia.org/wiki/Test-Driven_Development_by_Example) where this approach of doing simple things is explained at great depth.
 
@@ -18,21 +18,21 @@ See also Kent Beck's [Test-Driven Development book](https://en.wikipedia.org/wik
 
 - **Archetype.** Archetype is an umbrella concept for other concepts like: `prototype`, `proof of concept`, `minimal viable product`. Archetype means something simple and coherent. If you know the archetype of something you understand the essense of it. A complex system can be traced back to a one or a number of underlying archetypes.
 
-Interesting side note: as far as I see it, the tendency is that engineers as they grow their software bigger, do not care much 
+Interesting side note: as far as I see it, the tendency is that engineers as they grow their software bigger, do not care much
 about the underlying archetypes. Imagine how easy it would be to learn about the software if it would contain itself in its earliest forms of being (source code, documentation, drafts etc). Great example: Rust programming language had to be started from [somewhere](https://github.com/graydon/rust-prehistory).
 
-- **Habitability**. Habitable software is better than perfect software, 
-both for its users and its developers 
+- **Habitability**. Habitable software is better than perfect software,
+both for its users and its developers
 [Richard Gabriel - Patterns of Software, Habitability and Piecemeal Growth](https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf).
 
-> Habitability is the characteristic of source code that enables programmers, 
-coders, bug-fixers, and people coming to the code later in its life to understand its 
-construction and intentions and to change it comfortably and confidently. Either 
+> Habitability is the characteristic of source code that enables programmers,
+coders, bug-fixers, and people coming to the code later in its life to understand its
+construction and intentions and to change it comfortably and confidently. Either
 there is more to habitability than clarity or the two characteristics are different...
 
-> ...Habitability makes a place livable, like home. And this is what we want in 
-software — that developers feel at home, can place their hands on any item without 
-having to think deeply about where it is. It’s something like clarity, but clarity is 
+> ...Habitability makes a place livable, like home. And this is what we want in
+software — that developers feel at home, can place their hands on any item without
+having to think deeply about where it is. It’s something like clarity, but clarity is
 too hard to come by.
 
 - **Poor Abstraction.**
@@ -56,7 +56,7 @@ too hard to come by.
 > If your code feels tricky, that's your gut telling you that something isn't right. Listen to your gut. If you find yourself
 thinking of a piece of code as a near trick, you're really saying to yourself that an algorithm produces correct results even though it is not apparent that it should. The bugs won't be apparent to you either.
 
-> Be truly clever; write boring code. You'll have fewer bugs, and the maintenance programmers will love you for it. 
+> Be truly clever; write boring code. You'll have fewer bugs, and the maintenance programmers will love you for it.
 
 - **Ignorance.** Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
 
@@ -76,7 +76,7 @@ and debugging techniques. When you come to a new project, first of all learn
 how to run existing and write new tests and also learn how can you debug
 things the fastest way (can be a real debugger, or just "console.log()").
 
-- **Unnecessary Flexibility.** 
+- **Unnecessary Flexibility.**
 
 (from [Writing Solid Code](http://writingsolidcode.com/))
 
@@ -91,12 +91,12 @@ designs is that the more flexible they are, the harder it is to detect bugs.
 don't make them unnecessary flexible. There is a difference.
 Don't allow unnecessary flexibility.
 
-- **Stable Components.** Stable Components is a resort of a 
-Maintenance Programmer. One way for a developer to survive in a large legacy 
-project is to create stable components or extract them out of existing mess 
-of code. Stable component most likely means a testable component: it can be a 
+- **Stable Components.** Stable Components is a resort of a
+Maintenance Programmer. One way for a developer to survive in a large legacy
+project is to create stable components or extract them out of existing mess
+of code. Stable component most likely means a testable component: it can be a
 parsing module or API layer or string manipulation helpers. Having such islands
-of stability helps a lot to overcome the difficulties of a maintenance 
+of stability helps a lot to overcome the difficulties of a maintenance
 programming. See also Periphery and Prima Materia Heuristics.
 
 - **Two Almost Identical Entities.** Over the years I have seen at least three big
