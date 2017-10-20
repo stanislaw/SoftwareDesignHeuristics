@@ -126,6 +126,8 @@ let expectedRemainingLoops =
 ```
 
 * Every assert becomes a proper error handling eventually.
+* **Masking (Shadowing).** Masking/shadowing of all kinds is dangerous and
+should be avoided. Good examples: masking in MC/DC, shadowing of variable declarations.
 
 ## Design
 
