@@ -128,7 +128,8 @@ let expectedRemainingLoops =
 
 - Every assert becomes a proper error handling eventually.
 - **Masking (Shadowing).** Masking/shadowing of all kinds is dangerous and
-should be avoided. Good examples: masking in MC/DC, shadowing of variable declarations.
+should be avoided or treated with a great care. Good examples: masking in MC/DC,
+shadowing of variable declarations.
 
 - **Code Is Not Your Partner.** Sometimes we don't have to be nice about other people's code:
 
@@ -147,6 +148,19 @@ Re-route + Remove old".
   - Restrict the scope of data to the smallest possible.
   (The Power of 10: Rules for Developing Safety-Critical Code by NASA)
   - TODO
+
+- **0-1-2-Many I**. Most of the people start saying "so many", "infinite" when
+there is actually 3 or 4, rarely more, things on the table. Variation is 1a, 1b,
+2a, 2b which is still within limit of 3 or 4. This looks like ancient
+calculator: when 0, 1, 2 and then 'many'. Algebra looks fairly simple:
+0 + 1 = 1, 1 + 1 = 2, 2 + 1 = many, 2 + 2 = many, etc.
+  - Consequence: people are quite susceptible to small numbers. Say something
+  like "this consists of 3 steps" and people will get it. Don't say "seven".
+  - See also **Humans are not designed for Big Numbers**.
+
+- **0-1-2-Many II**. Don't start to abstract or DRY from just two things. Wait
+until you have at least 3 of them. See also **Duplication is better than poor
+abstraction**.
 
 ## Design
 
