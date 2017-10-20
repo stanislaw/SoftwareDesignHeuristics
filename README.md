@@ -140,8 +140,13 @@ should be avoided. Good examples: masking in MC/DC, shadowing of variable declar
 
 In this case it is fine to delete or agressively modify some code to compile it, test it, learn about it.
 
-**Refactoring I.** Replace != "Remove + Write". Replace = "Write new + Re-route
-+ Remove old".
+- **Refactoring I.** Replace != "Remove + Write". Replace = "Write new +
+Re-route + Remove old".
+
+- **Everything is Scope, Scope is Everything.**
+  - Restrict the scope of data to the smallest possible.
+  (The Power of 10: Rules for Developing Safety-Critical Code by NASA)
+  - TODO
 
 ## Design
 
