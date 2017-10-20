@@ -168,6 +168,12 @@ In this case it is fine to delete or agressively modify some code to compile it,
 - Separate application-level code from system-level code
 - Separate methods that read from methods that write
 
+### Grouping
+
+- Group together things that change at the same time. If possible create
+container data structures so that a change involves changes **one**. If possible
+group all of the changes that happen at the same time together.
+
 ## Maintenance Programming
 
 - **Stable Components.** Stable Components is a resort of a
