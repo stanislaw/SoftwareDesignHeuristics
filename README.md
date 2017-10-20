@@ -17,6 +17,7 @@ Currently this is just a draft, very far from complete, with some random notes a
   - [Complexity](#complexity)
   - [Control](#control)
   - [Separation / partitioning](#separation--partitioning)
+  - [Grouping](#grouping)
 - [Maintenance Programming](#maintenance-programming)
 - [Testing](#testing)
 - [Similar resources](#similar-resources)
@@ -143,6 +144,10 @@ In this case it is fine to delete or agressively modify some code to compile it,
 + Remove old".
 
 ## Design
+
+**One Pattern per Class.** A class violates Single Responsibility Principle if
+it contains implementation of more than one design pattern. Of course there are
+exceptions.
 
 ### Complexity
 
