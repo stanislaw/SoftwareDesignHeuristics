@@ -170,6 +170,9 @@ thinking of a piece of code as a near trick, you're really saying to yourself th
 
 > Be truly clever; write boring code. You'll have fewer bugs, and the maintenance programmers will love you for it.
 
+- **Boring Code 2.** Complex software is not to be developer and used by average
+programmers.
+
 - **Ignorance.** Bad code comes from ignorance, not from evil will, inspite of the fact that both bad code and evil will share ignorance as their root. Sometimes it helps a lot to wear imaginary ignorance hat to understand an intention behind a code you're reading.
 
 - Always leave code in a better state than it had been before you got it, save a time for future you or someone else to make it even better (dedicated to folks who enjoy fixing things "in just a few minutes").
