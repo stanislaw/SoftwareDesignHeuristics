@@ -13,8 +13,8 @@ Currently this is just a draft, very far from complete, with some random notes a
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [General](#general)
+- [Complexity and Cognitive Load](#complexity-and-cognitive-load)
 - [Design](#design)
-  - [Complexity](#complexity)
   - [Control](#control)
   - [Separation / partitioning](#separation--partitioning)
   - [Grouping](#grouping)
@@ -35,13 +35,6 @@ things the fastest way (can be a real debugger, or just "console.log()").
 - **Start Simple.** Start with something simple, then extend it further. Most often a complex problem is a composition of simpler problems. If you are facing a problem and you are afraid of the complexity it exerts, try to make a smallest possible step towards the solution and see what you can do from there. Simple can also mean quick and dirty but that's ok as that's only a start. Once you have something simple working you have a ground to move on further. Most likely this means you have an **archetype** of a future thing, real and complex system.
 
 See also Kent Beck's [Test-Driven Development book](https://en.wikipedia.org/wiki/Test-Driven_Development_by_Example) where this approach of doing simple things is explained at great depth.
-
-- **Humans are not designed for Big Numbers.** If you have to work with something that involves a big number of entities, like do something on 10000 files or work with megabytes of data, start with reducing this quantity to a minimum possible number of entities so that still makes sense for a prototype of your final work: make it work with 1 file instead of 10000 or with 20 bytes instead of 20 gigabytes.
-
-- **Archetype.** Archetype is an umbrella concept for other concepts like: `prototype`, `proof of concept`, `minimal viable product`. Archetype means something simple and coherent. If you know the archetype of something you understand the essense of it. A complex system can be traced back to a one or a number of underlying archetypes.
-
-Interesting side note: as far as I see it, the tendency is that engineers as they grow their software bigger, do not care much
-about the underlying archetypes. Imagine how easy it would be to learn about the software if it would contain itself in its earliest forms of being (source code, documentation, drafts etc). Great example: Rust programming language had to be started from [somewhere](https://github.com/graydon/rust-prehistory).
 
 - **Habitability**. Habitable software is better than perfect software,
 both for its users and its developers
@@ -149,6 +142,17 @@ Re-route + Remove old".
   (The Power of 10: Rules for Developing Safety-Critical Code by NASA)
   - TODO
 
+- **Everything Explicit and No Magic.** No comments. Whenever a thought explicit
+vs magic comes to your mind, go for explicit.
+
+## Complexity and Cognitive Load
+
+https://en.wikipedia.org/wiki/Cognitive_load (and Cognitive Overload)
+
+- **Black Box with a Green Play Button.** Ideal interface for a system of arbitrary complexity is a black box with a green play button on it - you take the box, press green button and it just works. The second ideal interface is when you also have a red button to stop the system.
+
+- **Humans are not designed for Big Numbers.** If you have to work with something that involves a big number of entities, like do something on 10000 files or work with megabytes of data, start with reducing this quantity to a minimum possible number of entities so that still makes sense for a prototype of your final work: make it work with 1 file instead of 10000 or with 20 bytes instead of 20 gigabytes.
+
 - **0-1-2-Many I.** Most of the people start saying "so many", "infinite" when
 there is actually 3 or 4, rarely more, things on the table. Variation is 1a, 1b,
 2a, 2b which is still within limit of 3 or 4. This looks like ancient
@@ -162,8 +166,7 @@ calculator: when 0, 1, 2 and then 'many'. Algebra looks fairly simple:
 until you have at least 3 of them. See also **Duplication is better than poor
 abstraction**.
 
-- **Everything Explicit and No Magic.** No comments. Whenever a thought explicit
-vs magic comes to your mind, go for explicit.
+- **Periphery.** If your reasoning is complicated by cognitive overload that you have after a problem you are trying to solve and there is no obvious way to make a first step towards solution, take a step back and start working with Periphery. Good example is legacy code: poor periphery like bad variable names, wrong responsibilities in classes, even those who are distant to your problem, bad folder structure, etc might look completely irrelevant to the core of your problem but still it contributes to the cognitive overload - try to clean up periphery and you will see that the core of your problem is now more clear and approachable than it was before. Another word for Periphery is Background, see also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
 
 ## Design
 
@@ -171,11 +174,10 @@ vs magic comes to your mind, go for explicit.
 it contains implementation of more than one design pattern. Of course there are
 exceptions.
 
-### Complexity
+- **Archetype.** Archetype is an umbrella concept for other concepts like: `prototype`, `proof of concept`, `minimal viable product`. Archetype means something simple and coherent. If you know the archetype of something you understand the essense of it. A complex system can be traced back to a one or a number of underlying archetypes.
 
-- **Black Box with Green Play Button.** Ideal interface for a system of arbitrary complexity is a black box with a green play button on it - you take the box, press green button and it just works. The second ideal interface is when you also have red button to stop a system.
-
-- **Periphery.** If your reasoning is complicated by cognitive overload that you have after a problem you are trying to solve and there is no obvious way to make a first step towards solution, take a step back and start working with Periphery. Good example is legacy code: poor periphery like bad variable names, wrong responsibilities in classes, even those who are distant to your problem, bad folder structure, etc might look completely irrelevant to the core of your problem but still it contributes to the cognitive overload - try to clean up periphery and you will see that the core of your problem is now more clear and approachable than it was before. Another word for Periphery is Background, see also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
+Interesting side note: as far as I see it, the tendency is that engineers as they grow their software bigger, do not care much
+about the underlying archetypes. Imagine how easy it would be to learn about the software if it would contain itself in its earliest forms of being (source code, documentation, drafts etc). Great example: Rust programming language had to be started from [somewhere](https://github.com/graydon/rust-prehistory).
 
 ### Control
 
