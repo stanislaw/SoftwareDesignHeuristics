@@ -36,8 +36,8 @@ things the fastest way (can be a real debugger, or just "console.log()").
 
 See also Kent Beck's [Test-Driven Development book](https://en.wikipedia.org/wiki/Test-Driven_Development_by_Example) where this approach of doing simple things is explained at great depth.
 
-- **Habitability**. Habitable software is better than perfect software,
-both for its users and its developers
+- **Habitability**. Habitable software is better than perfect software.
+
 [Richard Gabriel - Patterns of Software, Habitability and Piecemeal Growth](https://www.dreamsongs.com/Files/PatternsOfSoftware.pdf).
 
 > Habitability is the characteristic of source code that enables programmers,
@@ -50,50 +50,9 @@ software — that developers feel at home, can place their hands on any item wit
 having to think deeply about where it is. It’s something like clarity, but clarity is
 too hard to come by.
 
-- **Poor Abstraction.**
-
-> Duplication is better than poor abstraction (Sandi Metz, Rails Club 2014, Moscow).
-
-> "...ill-fitting structure is worse than none..." (Eric Evans - Domain-Driven Design, p.446)
-
-- **Hard Feature** If feature is hard to implement it might indicate that it is something wrong with feature (or product).
-
-- **True Name.** If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something you have power over it. Good class - this is what True Name is in OOP. See also [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
-
 - **Prima Materia.** Sometimes to make further progress you need to un-implement (break!) particular pattern/architecture/solution and put it back into [Prima Materia](https://en.wikipedia.org/wiki/Prima_materia) state and only then thansform it into a something new. Metaphors similar to Prima Materia are "primordial soup" and "indifferentiated soup of ideas" (Eric Evans - DDD).
 
 - **Crash Early**. If you know how to not program defensively in a particular situation go ahead! Otherwise make your code to Crash Early to catch bugs as early as possible: use sensible assertions and stress edge-cases with tests. See [Some notes C in 2016: Code offensively](http://blog.erratasec.com/2016/01/some-notes-c-in-2016.html#.VtGEKBg7T5c) and [Spotify engineering culture (part 2): "We aim to mistakes faster than anyone else"](https://labs.spotify.com/2014/09/20/spotify-engineering-culture-part-2/).
-
-- **Unnecessary Flexibility.**
-
-(from [Writing Solid Code](http://writingsolidcode.com/))
-
-> Flexibility breeds bugs. Another strategy you can use to prevent bugs is to
-strip unnecessary flexibility from your designs... The trouble with flexible
-designs is that the more flexible they are, the harder it is to detect bugs.
-
-> ...Flexible features are troublesome because they can lead to unexpected
-"legal" situations that you didn't think to test for even realize were legal...
-
-> ...When you implement features in your own projects, make them easy to use;
-don't make them unnecessary flexible. There is a difference.
-Don't allow unnecessary flexibility.
-
-- **Two Almost Identical Entities.** Over the years I have seen at least three big
-units of a hardly manageable legacy code where each of them was built on two
-almost identical entities. There are two ways of such things to co-exist:
-
-1. One is a subclass of the other.
-2. Two almost identical hierarchies are maintained.
-
-It seems that historically in all three cases it started with one entity that
-accumulated its features along the way, then came the other which was so
-similar to the first that programmer avoided extraction of similar modules that both
-entities had and went with subclassing to get the result quickly or with 2 parallel
-hierarchies.
-
-To these days I still didn't see or create an elegant solution to this problem.
-See also "Hard Feature".
 
 - **Poisonous Systems.** Badly designed systems tend to poison systems they interact with.
 
@@ -140,7 +99,6 @@ Re-route + Remove old".
 - **Everything is Scope, Scope is Everything.**
   - Restrict the scope of data to the smallest possible.
   (The Power of 10: Rules for Developing Safety-Critical Code by NASA)
-  - TODO
 
 - **Everything Explicit and No Magic.** No comments. Whenever a thought explicit
 vs magic comes to your mind, go for explicit.
@@ -170,6 +128,16 @@ abstraction**.
 
 ## Design
 
+- **Poor Abstraction.**
+
+> Duplication is better than poor abstraction (Sandi Metz, Rails Club 2014, Moscow).
+
+> "...ill-fitting structure is worse than none..." (Eric Evans - Domain-Driven Design, p.446)
+
+- **Hard Feature** If feature is hard to implement it might indicate that it is something wrong with feature (or product).
+
+- **True Name.** If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something you have power over it. Good class - this is what True Name is in OOP. See also [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
+
 **One Pattern per Class.** A class violates Single Responsibility Principle if
 it contains implementation of more than one design pattern. Of course there are
 exceptions.
@@ -184,6 +152,37 @@ about the underlying archetypes. Imagine how easy it would be to learn about the
 Strong, "tight", encapsulation is good but don't forget about the users: operations people. Good example is debugging facilities - if you are closing everything then you leave the ops people, who might be you, without any tools to
 understand or tweak your system. Richard Cook explains this very well:
 See [Velocity 2012: Richard Cook, "How Complex Systems Fail"](https://www.youtube.com/watch?v=2S0k12uZR14).
+
+- **Unnecessary Flexibility.**
+
+(from [Writing Solid Code](http://writingsolidcode.com/))
+
+> Flexibility breeds bugs. Another strategy you can use to prevent bugs is to
+strip unnecessary flexibility from your designs... The trouble with flexible
+designs is that the more flexible they are, the harder it is to detect bugs.
+
+> ...Flexible features are troublesome because they can lead to unexpected
+"legal" situations that you didn't think to test for even realize were legal...
+
+> ...When you implement features in your own projects, make them easy to use;
+don't make them unnecessary flexible. There is a difference.
+Don't allow unnecessary flexibility.
+
+- **Two Almost Identical Entities.** Over the years I have seen at least three big
+units of a hardly manageable legacy code where each of them was built on two
+almost identical entities. There are two ways of such things to co-exist:
+
+1. One is a subclass of the other.
+2. Two almost identical hierarchies are maintained.
+
+It seems that historically in all three cases it started with one entity that
+accumulated its features along the way, then came the other which was so
+similar to the first that programmer avoided extraction of similar modules that both
+entities had and went with subclassing to get the result quickly or with 2 parallel
+hierarchies.
+
+To these days I still didn't see or create an elegant solution to this problem.
+See also "Hard Feature".
 
 ### Control
 
