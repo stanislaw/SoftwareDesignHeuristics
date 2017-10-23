@@ -179,6 +179,12 @@ exceptions.
 Interesting side note: as far as I see it, the tendency is that engineers as they grow their software bigger, do not care much
 about the underlying archetypes. Imagine how easy it would be to learn about the software if it would contain itself in its earliest forms of being (source code, documentation, drafts etc). Great example: Rust programming language had to be started from [somewhere](https://github.com/graydon/rust-prehistory).
 
+**Trade-off of Encapsulation.**
+
+Strong, "tight", encapsulation is good but don't forget about the users: operations people. Good example is debugging facilities - if you are closing everything then you leave the ops people, who might be you, without any tools to
+understand or tweak your system. Richard Cook explains this very well:
+See [Velocity 2012: Richard Cook, "How Complex Systems Fail"](https://www.youtube.com/watch?v=2S0k12uZR14).
+
 ### Control
 
 - One of the key concerns is Control: where control should or should not be, what should have control (be active) and what should not have (passive).
