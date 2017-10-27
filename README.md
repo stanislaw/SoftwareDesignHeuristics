@@ -4,9 +4,11 @@ These are the heuristics that I and some of my colleagues find useful in our sof
 
 Some heuristics are of our own, sometimes we also learn from good books: heuristics here that are cited always have reference to original.
 
-All of these heuristics work only if taken altogether. Taken away from the rest, some of them can even contradict each other: if you take only few of them and exaggerate them, they will lose their value or even break things on your behalf. Some heuristics may overlap with each other. So do not be very serious about them :)
+All of these heuristics work only if taken altogether. Taken away from the rest, some of them can even contradict each other: if you take only a few of them and exaggerate them, they will lose their value or even break things on your behalf. Some heuristics may overlap with each other. So do not be very serious about
+them.
 
-Currently this is just a draft, very far from complete, with some random notes arbitrarily organized, do not expect it to be solid. If still this folklore genre works for you, feel free to share heuristics you might have in mind.
+Currently this is just a draft, very far from complete, with some random notes arbitrarily organized, do not expect it to be solid. If this folklore genre
+works for you, feel free to share heuristics you might have in mind.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -190,10 +192,13 @@ See also "Hard Feature".
 
 - One of the key concerns is Control: where control should or should not be,
 what should have control (be active) and what should not have (passive).
+
 - The lower-level modules should not have control over higher-level modules.
 It is not only about not having higher-level module imported in lower-level
 modules and making everything to work through protocols/interfaces but more
-about what is the flow of control: "what controls what".
+about what is the flow of control: "what controls what". Two shortcuts:
+**humans should dominate machines**, **business logic should dominate systems**.
+
 - **Overlapping control.** Overlapping things is a challenge for a human
 mind and therefore is bad for the whole software lifecycle: design,
 development, testing and maintenance. This might be two or more classes that do
