@@ -174,6 +174,8 @@ almost identical entities. There are two ways of such things to co-exist:
 
 1. One is a subclass of the other.
 2. Two almost identical hierarchies are maintained.
+3. Two groups of helper functions without a clear separatation of
+responsibilities between them.
 
 It seems that historically in all three cases it started with one entity that
 accumulated its features along the way, then came the other which was so
@@ -186,8 +188,20 @@ See also "Hard Feature".
 
 ### Control
 
-- One of the key concerns is Control: where control should or should not be, what should have control (be active) and what should not have (passive).
-- The lower-level modules should not have control over higher-level modules. It is not only about not having higher-level module imported in lower-level modules and making everything to work through protocols/interfaces but more about what is the flow of control: "what controls what".
+- One of the key concerns is Control: where control should or should not be,
+what should have control (be active) and what should not have (passive).
+- The lower-level modules should not have control over higher-level modules.
+It is not only about not having higher-level module imported in lower-level
+modules and making everything to work through protocols/interfaces but more
+about what is the flow of control: "what controls what".
+- **Overlapping control.** Overlapping things is a challenge for a human
+mind and therefore is bad for the whole software lifecycle: design,
+development, testing and maintenance. This might be two or more classes that do
+the same thing. This might be two or more people whose responsibilities overlap
+Nancy Levenson says Overlapping Control is one of the greatest sources of safety
+problems: two controllers whose areas of responsibilities overlap (see
+"Engineering a Safer World"). See also "Two almost identical entities" and
+"Shadowing/Masking".
 
 ### Separation / partitioning
 
