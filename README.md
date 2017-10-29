@@ -105,6 +105,11 @@ Re-route + Remove old".
 - **Everything Explicit and No Magic.** No comments. Whenever a thought explicit
 vs magic comes to your mind, go for explicit.
 
+- Don't give your classes plural names. One example is a test class which is
+based on a xUnit framework. Don't call it plural, call it singular:
+your class gives you an instance that exercises **many** tests but the class and instance is one. `UserTest`, not `UserTests`! See also "There is no such thing as
+Many".
+
 ## Complexity and Cognitive Load
 
 https://en.wikipedia.org/wiki/Cognitive_load (and Cognitive Overload)
@@ -112,6 +117,20 @@ https://en.wikipedia.org/wiki/Cognitive_load (and Cognitive Overload)
 - **Black Box with a Green Play Button.** Ideal interface for a system of arbitrary complexity is a black box with a green play button on it - you take the box, press green button and it just works. The second ideal interface is when you also have a red button to stop the system.
 
 - **Humans are not designed for Big Numbers.** If you have to work with something that involves a big number of entities, like do something on 10000 files or work with megabytes of data, start with reducing this quantity to a minimum possible number of entities so that still makes sense for a prototype of your final work: make it work with 1 file instead of 10000 or with 20 bytes instead of 20 gigabytes.
+
+- **There is no such thing as Many.** Many does exist but it is difficult to cognize with a human mind. Many needs an Umbrella, that turns it into One in the
+way we think about it. Many can be homogenous like Array of objects of the same
+type or heterogeneous, for example a bunch of instructions in the code or
+multiple functions in a test class or a set of User Profile fields of various types: name (string), age (int), settings (object). Collections are easier because they hide Many from us behind a well-defined interface:
+`containsObject`, `getAtIndex`, `enumerateWithIndex`,
+which saves us from dealing with Many directly. Heterogeneous Many is harder:
+you have to cognize and organize it yourself: group instructions into meaningful functions, group fields into meaningful containers like structs or database
+tables. One programming construct that fails to constrain Many is tuple:
+you start doing things like `let person = ("John", 32)` and
+`let (name, age) = person` or things like `person.1` but then you quickly find
+yourself in a mess when the number grows to a real Many (quick lesson: don't use
+tuples, use structs!). If you have Many, find a way to think and work with it
+like One.
 
 - **0-1-2-Many I.** Most of the people start saying "so many", "infinite" when
 there is actually 3 or 4, rarely more, things on the table. Variation is 1a, 1b,
