@@ -240,6 +240,17 @@ problems: two controllers whose areas of responsibilities overlap (see
 - Separate application-level code from system-level code
 - Separate methods that read from methods that write
 
+- Separate One from Many, separate Many from Many.
+
+In this example for inspiration: the inner block has a multiline routine which could actually be another function that works on one. At the same time this inner block on many. Unless we create that another function we have a conflict between many of the enumeration and many of the instructions inside a block.
+
+```cpp
+EnumerateInstructions(*function, [&](Instruction &instr, int bbIndex, int iIndex)
+{
+  ... lots of lines working on `instr` ...
+});
+```
+
 ### Grouping
 
 - Group together things that change at the same time. If possible create
