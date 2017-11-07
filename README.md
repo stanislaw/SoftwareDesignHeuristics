@@ -110,6 +110,16 @@ based on a xUnit framework. Don't call it plural, call it singular:
 your class gives you an instance that exercises **many** tests but the class and instance is one. `UserTest`, not `UserTests`! See also "There is no such thing as
 Many".
 
+- **Fast Programming and Slow Programming.**
+
+This can be read as prototype vs maintenance programming. Fast Programming is
+essential for a quick progress and is very much encouraged by the business.
+However it rarely does have time to learn from mistakes due to the effect of
+tunnel "straight ahead" way of thinking. Slow Programming has a virtue of
+reflection and deeper analysis but is probably too slow to get the business
+going from scratch. Business only starts to respect Slow programming when it
+hits the wall of complexity and therefore the need in a proper design.
+
 ## Complexity and Cognitive Load
 
 https://en.wikipedia.org/wiki/Cognitive_load (and Cognitive Overload)
