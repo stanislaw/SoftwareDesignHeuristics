@@ -246,10 +246,10 @@ problems: two controllers whose areas of responsibilities overlap (see
 - Separate symmetrical from asymmetrical
 - Separate construction from operation (one example: Factory vs Command)
 - Separate content from presentation (applies to UI-heavy code, great example: HTML/CSS)
+- Separate easy from complex: isolate easy, isolate complex, repeat many times (todo: separation vs isolation)
 - Separate data from behavior and behavior from data unless you do have good OOP class/object with good data/behavior balance.
 - Separate application-level code from system-level code
 - Separate methods that read from methods that write
-
 - Separate One from Many, separate Many from Many.
 
 In this example for inspiration: the inner block has a multiline routine which could actually be another function that works on one. At the same time this inner block on many. Unless we create that another function we have a conflict between many of the enumeration and many of the instructions inside a block.
