@@ -82,8 +82,13 @@ let expectedRemainingLoops =
 
 - Every assert becomes a proper error handling eventually.
 - **Masking (Shadowing).** Masking/shadowing of all kinds is dangerous and
-should be avoided or treated with a great care. Good examples: masking in MC/DC,
-shadowing of variable declarations.
+should be avoided or treated with a great care. Examples: 
+  - errors introduced to the systems when overlapping requirements are implemented 
+  over time
+  - masking in MC/DC
+  - shadowing of variable declarations
+  - typographically ambiguous symbols with overlapping visibility like `l` and 
+  `1`, `O` and `0` (see MISRA guidelines)  
 
 - **Code Is Not Your Partner.** Sometimes we don't have to be nice about other people's code:
 
