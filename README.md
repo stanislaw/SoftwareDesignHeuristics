@@ -90,6 +90,8 @@ should be avoided or treated with a great care. Examples:
   - typographically ambiguous symbols with overlapping visibility like `l` and 
   `1`, `O` and `0` (see MISRA guidelines)  
 
+See also Overlapping Control.
+
 - **Code Is Not Your Partner.** Sometimes we don't have to be nice about other people's code:
 
   - can be different platforms
