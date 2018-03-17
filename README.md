@@ -21,7 +21,9 @@ works for you, feel free to share heuristics you might have in mind.
   - [Separation / partitioning](#separation--partitioning)
   - [Grouping](#grouping)
 - [Maintenance Programming](#maintenance-programming)
+- [Systems](#systems)
 - [Testing](#testing)
+- [Books](#books)
 - [Similar resources](#similar-resources)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -82,13 +84,13 @@ let expectedRemainingLoops =
 
 - Every assert becomes a proper error handling eventually.
 - **Masking (Shadowing).** Masking/shadowing of all kinds is dangerous and
-should be avoided or treated with a great care. Examples: 
-  - errors introduced to the systems when overlapping requirements are implemented 
+should be avoided or treated with a great care. Examples:
+  - errors introduced to the systems when overlapping requirements are implemented
   over time
   - masking in MC/DC
   - shadowing of variable declarations
-  - typographically ambiguous symbols with overlapping visibility like `l` and 
-  `1`, `O` and `0` (see MISRA guidelines)  
+  - typographically ambiguous symbols with overlapping visibility like `l` and
+  `1`, `O` and `0` (see MISRA guidelines)
 
 See also Overlapping Control.
 
@@ -309,6 +311,22 @@ Natural consequence is that such software has an upper bound of complexity so
 someone who has to re-engineer such code will find that that complexity is
 ultimately manageable.
 
+## Systems
+
+- "Good enough for each part is often best for the whole system." ("The Art of
+Systems Thinking")
+
+- "Rather than trying to find extraordinary people to do a job, design the job so
+that ordinary people can do it well." ("The
+Art of Systems Thinking")
+
+> ...No one comes to work to do a bad job, but the structure of the system may
+make good work impossible. If management falls into the blame trap, they may
+fire the offending individual and hire someone else - who may do no better.
+Rather than trying to find extraordinarypeople to do a job, design the job so
+that ordinary people can do it well. It is the structure of the system that
+creates the results. For better results, change the structure of the system.
+
 ## Testing
 
 - If you do not write tests you will never learn how to write them, it is better to write bad tests then not to write any.
@@ -319,11 +337,13 @@ ultimately manageable.
 - Ideally we should be able to test everything: if something is hard to test, then we are just not there with quality of our code or corresponding tool set and infrastructure for testing but we will manage to find or improve them and get there.
 If you don’t know or not sure how to test something properly, try the ugliest version first: stub everything in an ugly way, stub network in an ugly way, assert what you want to assert and only then iterate on refactoring of both test and SUT (system-under-test).
 
+## Books
+
+- [The Art of Systems Thinking](https://www.google.de/search?q=the+art+of+systems+thinking+book&oq=the+art+of+systems+thinking+book)
+
 ## Similar resources
 
 - [Kent Beck - Mastering Programming](https://www.facebook.com/notes/kent-beck/mastering-programming/1184427814923414/)
 - [Heuristics of Software Testability](http://www.satisfice.com/tools/testable.pdf)
 - [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)
 - [Lessons Learned in Software Development](https://henrikwarne.com/2015/04/16/lessons-learned-in-software-development/)
-
-
