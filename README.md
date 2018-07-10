@@ -51,6 +51,9 @@ works for you, feel free to share heuristics you might have in mind.
   - [Overlapping control](#overlapping-control)
   - [Separation / partitioning](#separation--partitioning)
   - [Grouping](#grouping)
+- [Reliability](#reliability)
+  - [Errors are not ok](#errors-are-not-ok)
+  - [Errors must be understood and described](#errors-must-be-understood-and-described)
 - [Maintenance Programming](#maintenance-programming)
   - [Stable Components](#stable-components)
   - [Boring Code](#boring-code)
@@ -414,6 +417,27 @@ EnumerateInstructions(*function, [&](Instruction &instr, int bbIndex, int iIndex
 Group together things that change at the same time. If possible create container
 data structures so that a change involves a change of **one**. If possible,
 group all of the changes that happen at the same time together.
+
+## Reliability
+
+### Errors are not ok
+
+Never ignore errors. Presence of errors indicates that you don't understand your
+system well enough and therefore don't have a full control over it.
+
+An error can be major or minor but it anyway contributes negatively to the 
+design and operation of your system and also to your understanding of it (see 
+[Periphery](#periphery)).
+
+Errors typically ignored by developers include:
+
+- Configuration errors
+- Build system errors
+- Errors produced by the test suites (flaky tests)
+
+### Errors must be understood and described
+
+Google for `Malfunction 54` for a good example.
 
 ## Maintenance Programming
 
