@@ -54,6 +54,7 @@ works for you, feel free to share heuristics you might have in mind.
 - [Reliability](#reliability)
   - [Errors are not ok](#errors-are-not-ok)
   - [Errors must be understood and described](#errors-must-be-understood-and-described)
+  - [Critical errors vs non-critical errors](#critical-errors-vs-non-critical-errors)
 - [Maintenance Programming](#maintenance-programming)
   - [Stable Components](#stable-components)
   - [Boring Code](#boring-code)
@@ -425,8 +426,8 @@ group all of the changes that happen at the same time together.
 Never ignore errors. Presence of errors indicates that you don't understand your
 system well enough and therefore don't have a full control over it.
 
-An error can be major or minor but it anyway contributes negatively to the 
-design and operation of your system and also to your understanding of it (see 
+An error can be major or minor but it anyway contributes negatively to the
+design and operation of your system and also to your understanding of it (see
 [Periphery](#periphery)).
 
 Errors typically ignored by developers include:
@@ -438,6 +439,11 @@ Errors typically ignored by developers include:
 ### Errors must be understood and described
 
 Google for `Malfunction 54` for a good example.
+
+### Critical errors vs non-critical errors
+
+Make a clear distinction between critical and non-critical errors on all levels:
+source code, software design, error reporting, documentation.
 
 ## Maintenance Programming
 
