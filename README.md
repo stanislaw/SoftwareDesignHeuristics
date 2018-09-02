@@ -55,6 +55,7 @@ works for you, feel free to share heuristics you might have in mind.
   - [Errors are not ok](#errors-are-not-ok)
   - [Errors must be understood and described](#errors-must-be-understood-and-described)
   - [Critical errors vs non-critical errors](#critical-errors-vs-non-critical-errors)
+  - [Assertions are shortcuts for a proper error handling](#assertions-are-shortcuts-for-a-proper-error-handling)
 - [Maintenance Programming](#maintenance-programming)
   - [Stable Components](#stable-components)
   - [Boring Code](#boring-code)
@@ -209,7 +210,6 @@ hits the wall of complexity and therefore the need in a proper design.
 
 ### Other
 
-- Every assert becomes a proper error handling eventually.
 - Don't give your classes plural names. One example is a test class which is
 based on a xUnit framework. Don't call it plural, call it singular:
 your class gives you an instance that exercises **many** tests but the class and
@@ -444,6 +444,10 @@ Google for `Malfunction 54` for a good example.
 
 Make a clear distinction between critical and non-critical errors on all levels:
 source code, software design, error reporting, documentation.
+
+### Assertions are shortcuts for a proper error handling
+
+Every assert becomes a proper error handling eventually.
 
 ## Maintenance Programming
 
