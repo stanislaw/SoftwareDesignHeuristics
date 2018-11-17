@@ -55,6 +55,7 @@ works for you, feel free to share heuristics you might have in mind.
   - [Errors are not ok](#errors-are-not-ok)
   - [Errors must be understood and described](#errors-must-be-understood-and-described)
   - [Critical errors vs non-critical errors](#critical-errors-vs-non-critical-errors)
+  - [Assertions are better than no error handling](#assertions-are-better-than-no-error-handling)
   - [Assertions are shortcuts for a proper error handling](#assertions-are-shortcuts-for-a-proper-error-handling)
 - [Maintenance Programming](#maintenance-programming)
   - [Stable Components](#stable-components)
@@ -444,6 +445,11 @@ Google for `Malfunction 54` for a good example.
 
 Make a clear distinction between critical and non-critical errors on all levels:
 source code, software design, error reporting, documentation.
+
+### Assertions are better than no error handling
+
+When there is no error handling, presence of asserts gives at least some basic
+guarantee that software does not do what it is not supposed to.
 
 ### Assertions are shortcuts for a proper error handling
 
