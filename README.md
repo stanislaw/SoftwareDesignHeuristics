@@ -434,6 +434,7 @@ design and operation of your system and also to your understanding of it (see
 Errors typically ignored by developers include:
 
 - Configuration errors
+- Compiler warnings
 - Build system errors
 - Errors produced by the test suites (flaky tests)
 
