@@ -383,7 +383,7 @@ about what is the flow of control: "what controls what". Two shortcuts:
 Overlapping things is a challenge for a human mind and therefore is bad for the
 whole software lifecycle: design, development, testing and maintenance. This
 might be two or more classes that do the same thing. This might be two or more
-people whose responsibilities overlap. Nancy Levenson says Overlapping Control
+people whose responsibilities overlap. Nancy Leveson says Overlapping Control
 is one of the greatest sources of safety problems: two controllers whose areas
 of responsibilities overlap (see "Engineering a Safer World"). See also "Two
 almost identical entities" and "Shadowing/Masking".
