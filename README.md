@@ -65,6 +65,11 @@ works for you, feel free to share heuristics you might have in mind.
   - [Ignorance II](#ignorance-ii)
   - [Other](#other-1)
 - [Systems](#systems)
+- [Safety](#safety)
+  - [Safety does not exist without blood, loss or failure](#safety-does-not-exist-without-blood-loss-or-failure)
+  - [Safety is boring](#safety-is-boring)
+  - [Safety is very hard to achieve but is very easy to lose](#safety-is-very-hard-to-achieve-but-is-very-easy-to-lose)
+  - [Safety for engineering is the same as medicine for people](#safety-for-engineering-is-the-same-as-medicine-for-people)
 - [Testing](#testing)
 - [Books](#books)
 - [Similar resources](#similar-resources)
@@ -520,6 +525,54 @@ fire the offending individual and hire someone else - who may do no better.
 Rather than trying to find extraordinarypeople to do a job, design the job so
 that ordinary people can do it well. It is the structure of the system that
 creates the results. For better results, change the structure of the system.
+
+## Safety
+
+### Safety does not exist without blood, loss or failure
+
+Safety is not there from the very beginning. A gloomy poet could say
+that safety blooms on blood. Safety does also not exist on its own: you first
+need to build something that kills people or causes a loss, then some people
+will bother to learn from this and take actions. Only then safety gets
+recognized and truly appreciated.
+
+Consequence: safety is especially sound for those folks who have some
+experience of dealing with blood, loss or failure.
+
+### Safety is boring
+
+When implemented well enough, safety becomes boring. Everything is working, no
+one complains. At that moment, it is easier than ever to forget about why the
+safety is there in the first place. Example: how often do we bother to look at
+the safety manuals? Does it mean that the safety is there?
+
+### Safety is very hard to achieve but is very easy to lose
+
+Safety is the extremely fragile and sensitive property of the systems. It so
+much effort that is put into achieving it and still it is so easy to let the
+whole system get down. Some of the very popular reasons for the failure are:
+
+- degradation of existing components
+- changes to the system that do not take the current system's behavior into
+account
+- new unexpected factors coming outside of the system boundary
+
+Consequence: safety requires continuous and intelligent effort.
+
+### Safety for engineering is the same as medicine for people
+
+Medicine is not the most important thing in this world and no one wants to
+spend all time on it. But it is also true that we humans will not
+go far away without medicine even with all other achievements of our
+civilization at hand.
+
+Like it is with human beings, organizations want to build things that
+work - they are less concerned with things such as Safety or Quality as long as
+everything is fine at first and the customers are satisfied. Then it might
+happen to them that the "health" of the product, team and development process
+also matter. The implementations may depend on the prior knowledge and
+experience - not so long ago the best treatment for many of the human body
+diseases was the amputation.
 
 ## Testing
 
