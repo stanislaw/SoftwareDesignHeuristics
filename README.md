@@ -224,6 +224,9 @@ as Many".
 
 ## Complexity and Cognitive Load
 
+> "Complexity can be defined as intellectual unmanageability"
+(Nancy Leveson, Engineering a Safer World, p.4)
+
 https://en.wikipedia.org/wiki/Cognitive_load (and Cognitive Overload)
 
 ### Black Box with a Green Play Button
