@@ -47,8 +47,11 @@ works for you, feel free to share heuristics you might have in mind.
   - [Unnecessary Flexibility](#unnecessary-flexibility)
   - [Two Almost Identical Entities](#two-almost-identical-entities)
   - [Control](#control)
-  - [Humans should dominate machines](#humans-should-dominate-machines)
-  - [Overlapping control](#overlapping-control)
+    - [Humans should dominate machines](#humans-should-dominate-machines)
+    - [Overlapping control](#overlapping-control)
+    - [Broken control loops](#broken-control-loops)
+  - [Feedback](#feedback)
+    - [Broken feedback loops](#broken-feedback-loops)
   - [Separation / partitioning](#separation--partitioning)
   - [Grouping](#grouping)
 - [Reliability](#reliability)
@@ -209,9 +212,9 @@ Whenever a thought explicit vs magic comes to your mind, go for explicit.
 This can be read as prototype vs maintenance programming. Fast Programming is
 essential for a quick progress and is very much encouraged by the business.
 However it rarely does have time to learn from mistakes due to the effect of
-tunnel "straight ahead" way of thinking. Slow Programming has a virtue of
+the tunnel, "straight ahead", way of thinking. Slow Programming has a virtue of
 reflection and deeper analysis but is probably too slow to get the business
-going from scratch. Business only starts to respect Slow programming when it
+going from scratch. Business starts to appreciate Slow Programming only when it
 hits the wall of complexity and therefore the need in a proper design.
 
 ### Other
@@ -327,7 +330,7 @@ Interesting side note: as far as I see it, the tendency is that engineers as
 they grow their software bigger, do not care much about the underlying
 archetypes. Imagine how easy it would be to learn about the software if it would
 contain itself in its earliest forms of being (source code, documentation,
-drafts etc). Great example: Rust programming language had to be started from
+drafts etc). Great example: Rust programming language had to start from
 [somewhere](https://github.com/graydon/rust-prehistory).
 
 ### Trade-off of Encapsulation
@@ -378,15 +381,16 @@ See also "Hard Feature".
 One of the key concerns is Control: where control should or should not be,
 what should have control (be active) and what should not have (passive).
 
-### Humans should dominate machines
+#### Humans should dominate machines
 
 The lower-level modules should not have control over higher-level modules.
 It is not only about not having higher-level module imported in lower-level
 modules and making everything to work through protocols/interfaces but more
 about what is the flow of control: "what controls what". Two shortcuts:
-**humans should dominate machines**, **business logic should dominate systems**.
+**humans should dominate machines**, **business logic should dominate the
+system's implementation details**.
 
-### Overlapping control
+#### Overlapping control
 
 Overlapping things is a challenge for a human mind and therefore is bad for the
 whole software lifecycle: design, development, testing and maintenance. This
@@ -395,6 +399,25 @@ people whose responsibilities overlap. Nancy Leveson says Overlapping Control
 is one of the greatest sources of safety problems: two controllers whose areas
 of responsibilities overlap (see "Engineering a Safer World"). See also "Two
 almost identical entities" and "Shadowing/Masking".
+
+#### Broken control loops
+
+The top-level controllers should always have a control over the bottom-level
+elements. If the controllers include both humans and automation, the humans
+should always be able to intervene and take over the control provided by the
+automation.
+
+This heuristic can be turned into explicit design constraint.
+
+### Feedback
+
+#### Broken feedback loops
+
+Missing, insufficient or incorrect feedback is a great source of troubles for
+any system.
+
+"All feedback loops must be closed" - this heuristic can be turned into
+explicit design constraint.
 
 ### Separation / partitioning
 
