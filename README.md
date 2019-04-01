@@ -49,6 +49,9 @@ works for you, feel free to share heuristics you might have in mind.
   - [Control](#control)
     - [Humans should dominate machines](#humans-should-dominate-machines)
     - [Overlapping control](#overlapping-control)
+    - [Broken control loops](#broken-control-loops)
+  - [Feedback](#feedback)
+    - [Broken feedback loops](#broken-feedback-loops)
   - [Separation / partitioning](#separation--partitioning)
   - [Grouping](#grouping)
 - [Reliability](#reliability)
@@ -211,7 +214,7 @@ essential for a quick progress and is very much encouraged by the business.
 However it rarely does have time to learn from mistakes due to the effect of
 the tunnel, "straight ahead", way of thinking. Slow Programming has a virtue of
 reflection and deeper analysis but is probably too slow to get the business
-going from scratch. Business starts to appreciate Slow programming only when it
+going from scratch. Business starts to appreciate Slow Programming only when it
 hits the wall of complexity and therefore the need in a proper design.
 
 ### Other
@@ -405,6 +408,16 @@ should always be able to intervene and take over the control provided by the
 automation.
 
 This heuristic can be turned into explicit design constraint.
+
+### Feedback
+
+#### Broken feedback loops
+
+Missing, insufficient or incorrect feedback is a great source of troubles for
+any system.
+
+"All feedback loops must be closed" - this heuristic can be turned into
+explicit design constraint.
 
 ### Separation / partitioning
 
