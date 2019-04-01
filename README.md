@@ -209,9 +209,9 @@ Whenever a thought explicit vs magic comes to your mind, go for explicit.
 This can be read as prototype vs maintenance programming. Fast Programming is
 essential for a quick progress and is very much encouraged by the business.
 However it rarely does have time to learn from mistakes due to the effect of
-tunnel "straight ahead" way of thinking. Slow Programming has a virtue of
+the tunnel, "straight ahead", way of thinking. Slow Programming has a virtue of
 reflection and deeper analysis but is probably too slow to get the business
-going from scratch. Business only starts to respect Slow programming when it
+going from scratch. Business starts to appreciate Slow programming only when it
 hits the wall of complexity and therefore the need in a proper design.
 
 ### Other
@@ -327,7 +327,7 @@ Interesting side note: as far as I see it, the tendency is that engineers as
 they grow their software bigger, do not care much about the underlying
 archetypes. Imagine how easy it would be to learn about the software if it would
 contain itself in its earliest forms of being (source code, documentation,
-drafts etc). Great example: Rust programming language had to be started from
+drafts etc). Great example: Rust programming language had to start from
 [somewhere](https://github.com/graydon/rust-prehistory).
 
 ### Trade-off of Encapsulation
@@ -384,7 +384,8 @@ The lower-level modules should not have control over higher-level modules.
 It is not only about not having higher-level module imported in lower-level
 modules and making everything to work through protocols/interfaces but more
 about what is the flow of control: "what controls what". Two shortcuts:
-**humans should dominate machines**, **business logic should dominate systems**.
+**humans should dominate machines**, **business logic should dominate the
+system's implementation details**.
 
 ### Overlapping control
 
