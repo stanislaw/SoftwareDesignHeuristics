@@ -47,8 +47,8 @@ works for you, feel free to share heuristics you might have in mind.
   - [Unnecessary Flexibility](#unnecessary-flexibility)
   - [Two Almost Identical Entities](#two-almost-identical-entities)
   - [Control](#control)
-  - [Humans should dominate machines](#humans-should-dominate-machines)
-  - [Overlapping control](#overlapping-control)
+    - [Humans should dominate machines](#humans-should-dominate-machines)
+    - [Overlapping control](#overlapping-control)
   - [Separation / partitioning](#separation--partitioning)
   - [Grouping](#grouping)
 - [Reliability](#reliability)
@@ -378,7 +378,7 @@ See also "Hard Feature".
 One of the key concerns is Control: where control should or should not be,
 what should have control (be active) and what should not have (passive).
 
-### Humans should dominate machines
+#### Humans should dominate machines
 
 The lower-level modules should not have control over higher-level modules.
 It is not only about not having higher-level module imported in lower-level
@@ -387,7 +387,7 @@ about what is the flow of control: "what controls what". Two shortcuts:
 **humans should dominate machines**, **business logic should dominate the
 system's implementation details**.
 
-### Overlapping control
+#### Overlapping control
 
 Overlapping things is a challenge for a human mind and therefore is bad for the
 whole software lifecycle: design, development, testing and maintenance. This
@@ -396,6 +396,15 @@ people whose responsibilities overlap. Nancy Leveson says Overlapping Control
 is one of the greatest sources of safety problems: two controllers whose areas
 of responsibilities overlap (see "Engineering a Safer World"). See also "Two
 almost identical entities" and "Shadowing/Masking".
+
+#### Broken control loops
+
+The top-level controllers should always have a control over the bottom-level
+elements. If the controllers include both humans and automation, the humans
+should always be able to intervene and take over the control provided by the
+automation.
+
+This heuristic can be turned into explicit design constraint.
 
 ### Separation / partitioning
 
