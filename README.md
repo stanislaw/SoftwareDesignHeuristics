@@ -310,7 +310,13 @@ with the feature (or product).
 ### True Name
 
 If you know [True Name](https://en.wikipedia.org/wiki/True_name) of something
-you have power over it. Good class - this is what True Name is in OOP. See also
+you have power over it. Good class name - this is what True Name is in OOP.
+
+> "A well-chosen word can save an enormous amount of thought",
+(said by Mach according to S.R.Cajal, Santiago Ramón y Cajal,
+"Advice for a young investigator")
+
+See also
 [Mass and Gravity](http://www.carlopescio.com/2008/12/notes-on-software-design-chapter-2-mass.html).
 
 ### One Pattern per Class
@@ -332,6 +338,10 @@ archetypes. Imagine how easy it would be to learn about the software if it would
 contain itself in its earliest forms of being (source code, documentation,
 drafts etc). Great example: Rust programming language had to start from
 [somewhere](https://github.com/graydon/rust-prehistory).
+
+> "View the problem in its simplest forms ... An excellent method for determining
+the meaning of something is to find out how it comes to be what it is."
+(Santiago Ramón y Cajal, "Advice for a young investigator")
 
 ### Trade-off of Encapsulation
 
