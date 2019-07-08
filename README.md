@@ -179,6 +179,8 @@ over time
 - shadowing of variable declarations
 - typographically ambiguous symbols with overlapping visibility like `l` and
 `1`, `O` and `0` (see MISRA guidelines)
+- code reviews: real bugs can hide behind less important but more noticeable 
+issues like typos or coding style details
 
 See also Overlapping Control.
 
