@@ -210,6 +210,14 @@ for Developing Safety-Critical Code by NASA)
 
 Whenever a thought explicit vs magic comes to your mind, go for explicit.
 
+### Magic is an automation that is not adequate.
+
+In the beginning there is no magic, but simply a desire to automate things to 
+reduce repetition. Magic appears as a result of increasing complexity that makes 
+current solution to be inadequate for further progress. Magic can also emerge
+rather quickly as a result of automating wrong things from the beginning.
+The holy grail is automation that is always adequate.
+
 ### Fast Programming and Slow Programming
 
 This can be read as prototype vs maintenance programming. Fast Programming is
