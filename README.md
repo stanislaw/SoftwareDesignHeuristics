@@ -28,7 +28,7 @@ works for you, feel free to share heuristics you might have in mind.
   - [Refactoring I](#refactoring-i)
   - [Everything is Scope, Scope is Everything](#everything-is-scope-scope-is-everything)
   - [Everything Explicit. No Magic.](#everything-explicit-no-magic)
-  - [Magic is automation that is not adequate.](#magic-is-automation-that-is-not-adequate)
+  - ["Magic" is automation that is not adequate](#magic-is-automation-that-is-not-adequate)
   - [Fast Programming and Slow Programming](#fast-programming-and-slow-programming)
   - [Other](#other)
 - [Complexity and Cognitive Load](#complexity-and-cognitive-load)
@@ -211,9 +211,9 @@ for Developing Safety-Critical Code by NASA)
 
 Whenever a thought explicit vs magic comes to your mind, go for explicit.
 
-### Magic is automation that is not adequate.
+### "Magic" is automation that is not adequate
 
-In the beginning there is no magic, but simply a desire to automate things to
+In the beginning, there is no magic, but simply a desire to automate things to
 reduce repetition. Magic appears as a result of increasing complexity that makes
 current solution to be inadequate for further progress. Magic can also emerge
 rather quickly as a result of automating wrong things from the beginning.
