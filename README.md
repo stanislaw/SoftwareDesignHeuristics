@@ -306,6 +306,12 @@ periphery and you will see that the core of your problem is now more clear and
 approachable than it was before. Another word for Periphery is Background, see
 also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
 
+### Solving Right Problems
+
+"Engineers are usually great at solving problems but they are not always great at
+identifying the right problems to be solved" 
+(Dr. John Thomas, ESWC 2019).
+
 ## Design
 
 ### Poor Abstraction
