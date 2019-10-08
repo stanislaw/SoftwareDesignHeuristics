@@ -501,6 +501,12 @@ Errors typically ignored by developers include:
 
 Google for `Malfunction 54` for a good example.
 
+### Underlying errors shall not be hidden
+
+If a higher-level error wraps some other underlying error, the information 
+about the underdying error shall not be lost. Instead, it should be fully available 
+to the higher-level error for error handling, logging, tracing, etc.
+
 ### Critical errors vs non-critical errors
 
 Make a clear distinction between critical and non-critical errors on all levels:
