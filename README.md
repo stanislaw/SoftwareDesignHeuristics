@@ -38,6 +38,7 @@ works for you, feel free to share heuristics you might have in mind.
   - [0-1-2-Many I](#0-1-2-many-i)
   - [0-1-2-Many II](#0-1-2-many-ii)
   - [Periphery](#periphery)
+  - [Solving Right Problems](#solving-right-problems)
 - [Design](#design)
   - [Poor Abstraction](#poor-abstraction)
   - [Hard Feature](#hard-feature)
@@ -58,6 +59,7 @@ works for you, feel free to share heuristics you might have in mind.
 - [Reliability](#reliability)
   - [Errors are not ok](#errors-are-not-ok)
   - [Errors must be understood and described](#errors-must-be-understood-and-described)
+  - [Underlying errors shall not be hidden](#underlying-errors-shall-not-be-hidden)
   - [Critical errors vs non-critical errors](#critical-errors-vs-non-critical-errors)
   - [Assertions are better than no error handling](#assertions-are-better-than-no-error-handling)
   - [Assertions are shortcuts for a proper error handling](#assertions-are-shortcuts-for-a-proper-error-handling)
@@ -308,8 +310,8 @@ also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
 
 ### Solving Right Problems
 
-"Engineers are usually great at solving problems but they are not always great at
-identifying the right problems to be solved" 
+"Engineers are great at solving problems but they are not always great at
+identifying the right problems to be solved"
 (Dr. John Thomas, ESWC 2019).
 
 ## Design
@@ -503,8 +505,8 @@ Google for `Malfunction 54` for a good example.
 
 ### Underlying errors shall not be hidden
 
-If a higher-level error wraps some other underlying error, the information 
-about the underdying error shall not be lost. Instead, it should be fully available 
+If a higher-level error wraps some other underlying error, the information
+about the underdying error shall not be lost. Instead, it should be fully available
 to the higher-level error for error handling, logging, tracing, etc.
 
 ### Critical errors vs non-critical errors
