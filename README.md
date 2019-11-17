@@ -24,7 +24,8 @@ works for you, feel free to share heuristics you might have in mind.
   - [Good Will vs Pain](#good-will-vs-pain)
   - [Code Style as a Blocker](#code-style-as-a-blocker)
   - [Masking (Shadowing)](#masking-shadowing)
-  - [Code Is Not Your Partner](#code-is-not-your-partner)
+  - [Code that Works](#code-that-works)
+  - [Code is Not Your Partner](#code-is-not-your-partner)
   - [Refactoring I](#refactoring-i)
   - [Everything is Scope, Scope is Everything](#everything-is-scope-scope-is-everything)
   - [Everything Explicit. No Magic.](#everything-explicit-no-magic)
@@ -188,7 +189,12 @@ issues like typos or coding style details
 
 See also Overlapping Control.
 
-### Code Is Not Your Partner
+### Code that Works
+
+Working code with a good enough architecture is better than buggy code with
+a perfect architecture.
+
+### Code is Not Your Partner
 
 Sometimes we don't have to be nice about other people's code:
 
