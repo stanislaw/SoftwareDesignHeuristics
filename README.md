@@ -466,7 +466,24 @@ OOP class/object with good data/behavior balance.
 - Separate methods that read from methods that write
 - Separate One from Many, separate Many from Many.
 
-In this example for inspiration: the inner block has a multiline routine which could actually be another function that works on one. At the same time this inner block on many. Unless we create that another function we have a conflict between many of the enumeration and many of the instructions inside a block.
+Example 1: "Monolithic test case files"
+
+In the following example the `_feature1_` or `_feature2_` parts and numbers in
+the test method names assist a lot in logical grouping of the tested
+functionality.
+
+```c
+# Many group #1
+test_feature1_1() {}
+test_feature1_2() {}
+test_feature1_3() {}
+# Many group #2
+test_feature2_1() {}
+test_feature2_2() {}
+test_feature2_3() {}
+```
+
+Example 2: the inner block has a multiline routine which could actually be another function that works on one. At the same time this inner block on many. Unless we create that another function we have a conflict between many of the enumeration and many of the instructions inside a block.
 
 ```cpp
 EnumerateInstructions(*function, [&](Instruction &instr, int bbIndex, int iIndex)
