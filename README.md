@@ -142,7 +142,13 @@ and
 
 ### Poisonous Systems
 
-Badly designed systems tend to poison systems they interact with.
+Badly designed systems tend to poison systems they interact with. 
+
+### Bad Design in House 
+
+Do not overdesign your own software if you have a big producer of bad or 
+too opinionated designs nearby. A big producer can be a vendor or a team
+with authority who decided to rely on a given design a while ago.
 
 ### Good Will vs Pain
 
