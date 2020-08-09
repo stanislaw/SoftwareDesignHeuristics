@@ -72,6 +72,8 @@ works for you, feel free to share heuristics you might have in mind.
   - [Ignorance II](#ignorance-ii)
   - [Other](#other-1)
 - [Systems](#systems)
+- [People and Organizations](#people-and-organizations)
+  - [Everyone is busy](#everyone-is-busy)
 - [Safety](#safety)
   - [Safety does not exist without blood, loss or failure](#safety-does-not-exist-without-blood-loss-or-failure)
   - [Safety is boring](#safety-is-boring)
@@ -616,6 +618,36 @@ fire the offending individual and hire someone else - who may do no better.
 Rather than trying to find extraordinarypeople to do a job, design the job so
 that ordinary people can do it well. It is the structure of the system that
 creates the results. For better results, change the structure of the system.
+
+## People and Organizations
+
+### Everyone is busy
+
+Everyone is busy, including you. Development of software
+products often happens in rushed environments where everyone is busy
+achieving given goals without having time to do things properly or at least
+fully realize all options of what is being built.
+
+How about QA? A company might have a QA department or even Safety & Reliability
+people in addition. They are most likely also busy: they focus on the most
+important things, so much that they probably don't have enough time to interact
+with development teams, understand what is really required or provide 100%
+coverage and complete assessment of project scope.
+
+Is this a problem that everyone is busy? Given the ubiquity, it doesn't seem so.
+Some people even seem to like being busy all the time. It looks like
+organizations don't care much about "busyness" at all, what really matters is
+how that busy person/department is able to produce on given schedules or if
+something not covered by the busy people can create serious problems
+to the business. One sad observation about this is that it usually takes
+significant time until the uncovered is revealed and fixed top-down. During this
+incubation period, enough money should be lost, number of unhappy customers
+accumulate, and all other kinds losses, depending on the type of a project.
+
+Or busy people themselves get tired... and create new methods and tools.
+Sometimes a new tool can eliminate a lot of effort required to achieve a given
+goal or it simply allows a busy person to focus on "what is most important"
+instead of covering everything.
 
 ## Safety
 
