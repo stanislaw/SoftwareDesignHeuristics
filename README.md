@@ -1,18 +1,25 @@
 # Software Design Heuristics
 
-These are the heuristics that I and some of my colleagues find useful in our software engineering practice. We call “heuristics” everything that helps us to write better code given we keep them in mind.
+These are the heuristics that I and some of my colleagues find useful in our
+software engineering practice. We call “heuristics” everything that helps us to
+write better code given we keep them in mind.
 
-Some heuristics are of our own, sometimes we also learn from good books: heuristics here that are cited always have reference to original.
+Some heuristics are of our own, sometimes we also learn from good books:
+heuristics here that are cited always have reference to their source.
 
-All of these heuristics work only if taken altogether. Taken away from the rest, some of them can even contradict each other: if you take only a few of them and exaggerate them, they will lose their value or even break things on your behalf. Some heuristics may overlap with each other. So do not be very serious about
+All of these heuristics work only if taken altogether. Taken away from the rest,
+some of them can even contradict each other: if you take only a few of them and
+exaggerate them, they will lose their value or even break things on your behalf.
+Some heuristics may overlap with each other. So do not be very serious about
 them.
 
-Currently this is just a draft, very far from complete, with some random notes arbitrarily organized, do not expect it to be solid. If this folklore genre
+Currently this is just a draft, very far from complete, with some random notes
+arbitrarily organized, do not expect it to be solid. If this folklore genre
 works for you, feel free to share heuristics you might have in mind.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
 
 - [General](#general)
   - [Fast Feedback](#fast-feedback)
@@ -21,6 +28,7 @@ works for you, feel free to share heuristics you might have in mind.
   - [Prima Materia](#prima-materia)
   - [Crash Early](#crash-early)
   - [Poisonous Systems](#poisonous-systems)
+  - [Bad Design in House](#bad-design-in-house)
   - [Good Will vs Pain](#good-will-vs-pain)
   - [Code Style as a Blocker](#code-style-as-a-blocker)
   - [Masking (Shadowing)](#masking-shadowing)
