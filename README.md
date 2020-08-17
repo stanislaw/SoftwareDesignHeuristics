@@ -152,11 +152,11 @@ and
 
 ### Poisonous Systems
 
-Badly designed systems tend to poison systems they interact with. 
+Badly designed systems tend to poison systems they interact with.
 
-### Bad Design in House 
+### Bad Design in House
 
-Do not overdesign your own software if you have a big producer of bad or 
+Do not overdesign your own software if you have a big producer of bad or
 too opinionated designs nearby. A big producer can be a vendor or a team
 with authority who decided to rely on a given design a while ago.
 
@@ -432,6 +432,19 @@ See also "Hard Feature".
 
 One of the key concerns is Control: where control should or should not be,
 what should have control (be active) and what should not have (passive).
+
+#### Observable Control
+
+Software should be designed in such a way that there always should be a dedicated
+place where it is obvious how the control and work flow through the software.
+This should be effective on all levels of abstraction and for each level of
+abstraction, such dedicated software should be free of the lower-level
+implementation details that discourage easy understanding of context.
+
+If something creates a low-level implementation noise on a given level,
+it might be a good sign that one or more underlying lower layers exist where
+that lower-level implementation can be represented as a high-level workflow
+logic (sequence of steps or algorithm).
 
 #### Humans should dominate machines
 
