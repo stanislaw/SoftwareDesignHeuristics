@@ -58,6 +58,7 @@ works for you, feel free to share heuristics you might have in mind.
   - [Unnecessary Flexibility](#unnecessary-flexibility)
   - [Two Almost Identical Entities](#two-almost-identical-entities)
   - [Control](#control)
+    - [Observable Control](#observable-control)
     - [Humans should dominate machines](#humans-should-dominate-machines)
     - [Overlapping control](#overlapping-control)
     - [Broken control loops](#broken-control-loops)
