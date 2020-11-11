@@ -1,21 +1,20 @@
 # Software Design Heuristics
 
-These are the heuristics that I and some of my colleagues find useful in our
-software engineering practice. We call “heuristics” everything that helps us to
-write better code given we keep them in mind.
+These are the heuristics that I find useful in my software engineering practice.
+I call "heuristics" everything that helps me to write better code given that
+I have them in mind.
 
-Some heuristics are of our own, sometimes we also learn from good books:
-heuristics here that are cited always have reference to their source.
+Some heuristics are of my own, sometimes I also learn from good books.
+Heuristics here that are cited always have reference to their source.
 
-All of these heuristics work only if taken altogether. Taken away from the rest,
+All of these heuristics work only if taken all together. Taken away from the rest,
 some of them can even contradict each other: if you take only a few of them and
 exaggerate them, they will lose their value or even break things on your behalf.
 Some heuristics may overlap with each other. So do not be very serious about
 them.
 
 Currently this is just a draft, very far from complete, with some random notes
-arbitrarily organized, do not expect it to be solid. If this folklore genre
-works for you, feel free to share heuristics you might have in mind.
+arbitrarily organized, do not expect it to be solid.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
