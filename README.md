@@ -692,9 +692,9 @@ stabilized. The responsibilities are defined. Less or none people are busy with
 defining a product anymore but more people are busy with the optimization:
 improving product, doing sales and increasing revenues.
 
-Winter is a dangerous phase. The company has been doing its best by exhausting
-what was known to work well and making profit. At this point, the structure of the
-company is the most fixed and therefore the least resilient. The company may
+Winter is a dangerous phase. The company has been making profit and doing its
+best by exhausting what was known to work well. At this point, the structure of
+the company is the most fixed and therefore the least resilient. The company may
 cease to exist because there are younger and more adequate competitors or it can
 find a way to renew itself and make it into a new year.
 
