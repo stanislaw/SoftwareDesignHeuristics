@@ -82,6 +82,7 @@ arbitrarily organized, do not expect it to be solid.
 - [Systems](#systems)
 - [People and Organizations](#people-and-organizations)
   - [Everyone is busy](#everyone-is-busy)
+  - [Four seasons](#four-seasons)
 - [Safety](#safety)
   - [Safety does not exist without blood, loss or failure](#safety-does-not-exist-without-blood-loss-or-failure)
   - [Safety is boring](#safety-is-boring)
@@ -670,6 +671,60 @@ Or busy people themselves get tired... and create new methods and tools.
 Sometimes a new tool can eliminate a lot of effort required to achieve a given
 goal or it simply allows a busy person to focus on "what is most important"
 instead of covering everything.
+
+### Four seasons
+
+It is an amusing analogy: like a year starts with a spring and ends with a
+winter, a similar lifecycle can be observed in a growth of organizations.
+
+Spring is a young company, a handful of people. Not much structure, no strict
+policies, a startup atmosphere. Not yet a fixed income, but probably
+investments or lack of them. More full-stack people with broad expertise.
+
+A Summer is a Spring that made it, a company that is flourishing. Exponential
+growth, more people are hired, extremely steep curve of everything:
+the development of the company structure, more departments, more specialization.
+The philosophy of the company is no longer about "finding its way" but rather
+accelerating on what made a transition from Spring to Summer possible.
+
+Autumn is already a company with legacy. The source of income is known and
+stabilized. The responsibilities are defined. Less or none people are busy with
+defining a product anymore but more people are busy with the optimization:
+improving product, doing sales and increasing revenues.
+
+Winter is a dangerous phase. The company has been doing its best by exhausting
+what was known to work well and making profit. At this point, the structure of the
+company is the most fixed and therefore the least resilient. The company may
+cease to exist because there are younger and more adequate competitors or it can
+find a way to renew itself and make it into a new year.
+
+Not all of the Spring companies make it into Summer. Not all of the companies
+end up being Winter. Not all of the companies can survive their deep Winter.
+
+One particular management mistake that can be made is trying to apply the best
+practices of a season A to a season B if the season B is too early or already
+too late for such an application. Example: imposing a strict top-down style of
+management on a company of 5-10 people working in a flat hierarchy and making
+them to adhere to the reporting lines might be extremely inadequate as well as
+expecting a fully flat hierarchy to work in an Autumn-like business.
+
+Not only we can match seasons and companies, we can also match seasons and
+personalities:
+
+- Autumn is too boring for spring people who value creativity and individual
+contribution over hierarchies and defined processes.
+- For Autumn people, the Spring is too chaotic and unstructured. Working a
+Spring company is inherently unsafe: the younger the company, the less
+guarantees it can provide to its employees.
+- This may not be optimal for a company to have too many people who represent
+an incompatible season. It can be damaging for a person to get stuck working
+at a company that does not match their season type. In such cases, a person who
+found a matching season can be compared to a fish that found its water.
+
+See also Kent Beck's
+[The Product Development Triathlon](https://medium.com/@kentbeck_7670/the-product-development-triathlon-6464e2763c46). His 3 phases:
+Explore-Expand-Extract can be loosely mapped to the Spring-Summer-Autumn
+seasons.
 
 ## Safety
 
