@@ -497,6 +497,7 @@ explicit design constraint.
 - Separate stateless from stateful
 - Separate data from behavior and behavior from data unless you do have a good
 OOP class/object with good data/behavior balance.
+- Separate general-purpose from application-specific
 - Separate application-level code from system-level code
 - Separate methods that read from methods that write
 - Separate One from Many, separate Many from Many.
