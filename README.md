@@ -698,8 +698,13 @@ company is the most fixed and therefore the least resilient. The company may
 cease to exist because there are younger and more adequate competitors or it can
 find a way to renew itself and make it into a new year.
 
-Not all of the Spring companies make it into Summer. Not all of the companies
-end up being Winter. Not all of the companies can survive their deep Winter.
+Another interesting observation is that a transition from season to season
+almost never goes smoothly - in order to accomodate for change, the company
+has to adapt and this very often happens with a good deal of destruction and
+restructuring (see Prima Materia heuristic). Dropping what does not work and
+keeping or creating what does might be crucial for such a transition. Not all
+of the Spring companies make it into Summer. Not all of the companies end up
+being Winter. Not all of the companies can survive their deep Winter.
 
 One particular management mistake that can be made is trying to apply the best
 practices of a season A to a season B if the season B is too early or already
