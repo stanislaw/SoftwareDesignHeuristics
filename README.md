@@ -718,10 +718,10 @@ personalities:
 
 - Autumn is too boring for spring people who value creativity and individual
 contribution over hierarchies and defined processes.
-- For Autumn people, the Spring is too chaotic and unstructured. Working a
+- For Autumn people, the Spring is too chaotic and unstructured. Working for a
 Spring company is inherently unsafe: the younger the company, the less
 guarantees it can provide to its employees.
-- This may not be optimal for a company to have too many people who represent
+- It may not be optimal for a company to have too many people who represent
 an incompatible season. It can be damaging for a person to get stuck working
 at a company that does not match their season type. In such cases, a person who
 found a matching season can be compared to a fish that found its water.
