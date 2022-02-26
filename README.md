@@ -731,6 +731,11 @@ See also Kent Beck's
 Explore-Expand-Extract can be loosely mapped to the Spring-Summer-Autumn
 seasons.
 
+### Working with standards
+
+Implementing standards in an organization can be hard and messy but
+without any standards everything gets 10-100x harder and messier.
+
 ## Safety
 
 ### Safety does not exist without blood, loss or failure
