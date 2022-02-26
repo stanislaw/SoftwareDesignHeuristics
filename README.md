@@ -83,6 +83,7 @@ arbitrarily organized, do not expect it to be solid.
 - [People and Organizations](#people-and-organizations)
   - [Everyone is busy](#everyone-is-busy)
   - [Four seasons](#four-seasons)
+  - [Working with standards](#working-with-standards)
 - [Safety](#safety)
   - [Safety does not exist without blood, loss or failure](#safety-does-not-exist-without-blood-loss-or-failure)
   - [Safety is boring](#safety-is-boring)
