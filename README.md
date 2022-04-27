@@ -83,7 +83,8 @@ arbitrarily organized, do not expect it to be solid.
 - [People and Organizations](#people-and-organizations)
   - [Everyone is busy](#everyone-is-busy)
   - [Four seasons](#four-seasons)
-  - [Working with standards](#working-with-standards)
+- [Documentation](#documentation)
+- [Standards](#standards)
 - [Safety](#safety)
   - [Safety does not exist without blood, loss or failure](#safety-does-not-exist-without-blood-loss-or-failure)
   - [Safety is boring](#safety-is-boring)
@@ -732,10 +733,18 @@ See also Kent Beck's
 Explore-Expand-Extract can be loosely mapped to the Spring-Summer-Autumn
 seasons.
 
-### Working with standards
+## Documentation
 
-Implementing standards in an organization can be hard and messy but
+- Good documentation is dry and boring. This can create an illusion that writing
+good documentation is easy when in fact it is not.
+
+## Standards
+
+- Implementing standards in an organization can be hard and messy but
 without any standards everything gets 10-100x harder and messier.
+
+- **Standards favor good practice.** If a company has adopted a practice that makes sense and creates value, it is highly unlikely that this practice would be
+turned down or considered inappropriate by any standard.
 
 ## Safety
 
