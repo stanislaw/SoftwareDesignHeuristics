@@ -83,6 +83,7 @@ arbitrarily organized, do not expect it to be solid.
 - [People and Organizations](#people-and-organizations)
   - [Everyone is busy](#everyone-is-busy)
   - [Four seasons](#four-seasons)
+- [Meetings](#meetings)
 - [Documentation](#documentation)
 - [Standards](#standards)
 - [Safety](#safety)
@@ -732,6 +733,16 @@ See also Kent Beck's
 [The Product Development Triathlon](https://medium.com/@kentbeck_7670/the-product-development-triathlon-6464e2763c46). His 3 phases:
 Explore-Expand-Extract can be loosely mapped to the Spring-Summer-Autumn
 seasons.
+
+## Meetings
+
+- **Heating space with meetings.** Meetings shall end up with meeting notes,
+because otherwise the discussion is only heating the meeting space.
+A diagram that captures a process or an architecture is better than a single
+bullet point "process" or "architecture". A single bullet point might be better
+than nothing. Of course, even if nothing is recorded, people still leave their
+meetings with takeaways and updated mental models, but a meeting's effectiveness
+is certainly higher if its outcome is captured on a physical medium.
 
 ## Documentation
 
