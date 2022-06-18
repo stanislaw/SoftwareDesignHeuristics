@@ -288,6 +288,15 @@ this quantity to a minimum possible number of entities so that still makes sense
 for a prototype of your final work: make it work with 1 file instead of 10000 or
 with 20 bytes instead of 20 gigabytes.
 
+### Weakest link
+
+A piece of information is only as clear as its most ambiguous piece. This is a
+generalisation from the following fragment from "Patterns for Writing
+Effective Use Cases" by Steve Adolph et al., Chapter 6.6:
+
+> Like the old proverb, "A chain is only as strong as its weakest link", a use
+case is only as clear as its most ambiguous step.
+
 ### There is no such thing as Many
 
 Many does exist but it is difficult to cognize with a human mind. Many needs an
@@ -767,7 +776,7 @@ turned down or considered inappropriate by any standard.
 reading the requirements should be able to get all the information they need
 from one document or from one section of a document. They should not have
 to jump between different sections to understand the requirement.
-(Patterns for Effective Use Cases by Steve Adolph et al.)
+(Patterns for Effective Use Cases by Steve Adolph et al., Chapter 7.1)
 
 
 ## Safety
