@@ -42,6 +42,7 @@ arbitrarily organized, do not expect it to be solid.
 - [Complexity and Cognitive Load](#complexity-and-cognitive-load)
   - [Black Box with a Green Play Button](#black-box-with-a-green-play-button)
   - [Humans are not designed for Big Numbers](#humans-are-not-designed-for-big-numbers)
+  - [Weakest link](#weakest-link)
   - [There is no such thing as Many](#there-is-no-such-thing-as-many)
   - [0-1-2-Many I](#0-1-2-many-i)
   - [0-1-2-Many II](#0-1-2-many-ii)
@@ -85,6 +86,7 @@ arbitrarily organized, do not expect it to be solid.
   - [Four seasons](#four-seasons)
 - [Meetings](#meetings)
 - [Documentation](#documentation)
+  - [Less prose, more structure](#less-prose-more-structure)
 - [Standards](#standards)
 - [Requirements](#requirements)
   - [One-step shopping](#one-step-shopping)
@@ -759,6 +761,23 @@ is certainly higher if its outcome is captured on a physical medium.
 
 - Good documentation is dry and boring. This can create an illusion that writing
 good documentation is easy when in fact it is not.
+
+### Less prose, more structure
+
+Technical documentation is supposed to focus engineer's attention on achieving
+a given goal such as to build a specific system. It is easier to focus one's
+attention on things that have structure embedded in them compared to things
+that are hidden in several paragraphs of prose. Prose has no structure and
+that is why a reader has to do an extra exercise of creating an order out of
+what he is reading. If the documentation already has an order in it, the reader
+can spend less time for a mental reconstruction of the content and focus on
+the technical facts more easily.
+
+Some of the important tools that communicate order in technical documentation:
+
+- Document structure and table of contents
+- Diagrams
+- Tables.
 
 ## Standards
 
