@@ -89,7 +89,7 @@ arbitrarily organized, do not expect it to be solid.
   - [Less prose, more structure](#less-prose-more-structure)
 - [Standards](#standards)
 - [Requirements](#requirements)
-  - [One-step shopping](#one-step-shopping)
+  - [One-stop shopping](#one-step-shopping)
 - [Safety](#safety)
   - [Safety does not exist without blood, loss or failure](#safety-does-not-exist-without-blood-loss-or-failure)
   - [Safety is boring](#safety-is-boring)
@@ -787,16 +787,18 @@ without any standards everything gets 10-100x harder and messier.
 - **Standards favor good practice.** If a company has adopted a practice that makes sense and creates value, it is highly unlikely that this practice would be
 turned down or considered inappropriate by any standard.
 
+- **Wrong is worse than early or incomplete.** Sometimes it is worse to be wrong than to be early or lack information.
+The context: passing the project review milestones required by standards.
+
 ## Requirements
 
-### One-step shopping
+### One-stop shopping
 
 > "One-stop shopping" is a useful requirements writing priciple. Simply, people
 reading the requirements should be able to get all the information they need
 from one document or from one section of a document. They should not have
 to jump between different sections to understand the requirement.
 (Patterns for Effective Use Cases by Steve Adolph et al., Chapter 7.1)
-
 
 ## Safety
 
