@@ -704,6 +704,7 @@ winter, a similar lifecycle can be observed in a growth of organizations.
 Spring is a young company, a handful of people. Not much structure, no strict
 policies, a startup atmosphere. Not yet a fixed income, but probably
 investments or lack of them. More full-stack people with broad expertise.
+Spring is like a village. Colleagues are fellow villagers.
 
 A Summer is a Spring that made it, a company that is flourishing. Exponential
 growth, more people are hired, extremely steep curve of everything:
@@ -712,7 +713,7 @@ The philosophy of the company is no longer about "finding its way" but rather
 accelerating on what made a transition from Spring to Summer possible.
 
 Autumn is already a company with legacy. The source of income is known and
-stabilized. The responsibilities are defined. Less or none people are busy with
+stabilized. The responsibilities are defined. Less or no people are busy with
 defining a product anymore but more people are busy with the optimization:
 improving product, doing sales and increasing revenues.
 
@@ -723,7 +724,7 @@ cease to exist because there are younger and more adequate competitors or it can
 find a way to renew itself and make it into a new year.
 
 Another interesting observation is that a transition from season to season
-almost never goes smoothly - in order to accomodate for change, the company
+almost never goes smoothly – in order to accomodate for change, the company
 has to adapt and this very often happens with a good deal of destruction and
 restructuring (see Prima Materia heuristic). Dropping what does not work and
 keeping or creating what does might be crucial for such a transition. Not all
