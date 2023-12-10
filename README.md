@@ -173,7 +173,7 @@ with authority who decided to rely on a given design a while ago.
 
 ### Good Will vs Pain
 
-Lots of what we programmers learn with years comes from a pain not from a good will.
+Lots of what we programmers learn with years comes from pain, not from good will.
 
 ### Code Style as a Blocker
 
