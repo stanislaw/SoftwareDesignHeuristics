@@ -357,6 +357,10 @@ identifying the right problems to be solved"
 
 Every engineering problem can be solved with an infinite amount of cash.
 
+### Rational and Unconscious
+
+Engineers create rational artifacts, which may appear simple and mundane. However, the process behind their creation often involves deep reflection and can stem from the unconscious mind.
+
 ## Design
 
 ### Poor Abstraction
