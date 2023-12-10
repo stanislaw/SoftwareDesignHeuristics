@@ -353,6 +353,10 @@ also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
 identifying the right problems to be solved"
 (Dr. John Thomas, ESWC 2019).
 
+### Solving Problems with Cash
+
+Every engineering problem can be solved with an infinite amount of cash.
+
 ## Design
 
 ### Poor Abstraction
