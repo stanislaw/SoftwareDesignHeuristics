@@ -261,6 +261,10 @@ reflection and deeper analysis but is probably too slow to get the business
 going from scratch. Business starts to appreciate Slow Programming only when it
 hits the wall of complexity and therefore the need in a proper design.
 
+### Quick exploration
+
+It is not unusual that the solution you are looking for may be in two clicks and couple of Google search results away from you. When reading large documents, sometimes it is useful to "fly over" a document to find a section that is most releveant, instead of reading through the document A-to-Z.
+
 ### Other
 
 - Don't give your classes plural names. One example is a test class which is
