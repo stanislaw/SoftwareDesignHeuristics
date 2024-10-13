@@ -532,6 +532,7 @@ OOP class/object with good data/behavior balance.
 - Separate general-purpose from application-specific
 - Separate application-level code from system-level code
 - Separate methods that read from methods that write
+- Separate decision from condition
 - Separate One from Many, separate Many from Many.
 
 Example 1: "Monolithic test case files"
