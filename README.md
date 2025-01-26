@@ -397,8 +397,7 @@ and can stem from the unconscious mind.
 
 ### Point of View
 
-[How NASA Builds Teams](https://www.wiley.
-com/en-us/How+NASA+Builds+Teams%3A+Mission+Critical+Soft+Skills+for+Scientists%2C+Engineers%2C+and+Project+Teams-p-9780470456484):
+[How NASA Builds Teams](https://www.wiley.com/en-us/How+NASA+Builds+Teams%3A+Mission+Critical+Soft+Skills+for+Scientists%2C+Engineers%2C+and+Project+Teams-p-9780470456484):
 
 > The right coordinate system can turn an impossible problem into two really 
 > hard ones.
