@@ -596,9 +596,18 @@ EnumerateInstructions(*function, [&](Instruction &instr, int bbIndex, int iIndex
 
 - Group together things that change at the same time. If possible create container
 data structures so that a change involves a change of **one**. If possible,
-group all of the changes that happen at the same time together.
+group all the changes that happen at the same time together.
 
 - Group things that are used together.
+
+### Observability vs Correctness
+
+Incorrect but observable code can be more valuable long-term than correct 
+but unobservable code. Observable code is easier to inspect, test, and 
+improve, even if it contains mistakes. In contrast, correct but hidden code 
+can become difficult to maintain and debug over time, creating technical 
+debt. Visibility allows for quicker fixes and ongoing improvement, making it 
+more sustainable in the long run.
 
 ## Reliability
 
