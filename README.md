@@ -851,6 +851,15 @@ Some of the important tools that communicate order in technical documentation:
 - Diagrams
 - Tables.
 
+### Too Much Structure Overload
+
+Excessively deep nesting in documents or folder structures can hinder the 
+understanding of the overall project or system structure, especially if the 
+principles used for organizing the sections lack consistency. Ideally, a 
+good structure should be intuitive, or at the very least, the organizational 
+principle should be easy to understand and mentally map, facilitating easier 
+navigation of the content.
+
 ## Standards
 
 ### Idealized standards vs. practical implementation
