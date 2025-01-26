@@ -965,6 +965,16 @@ also matter. The implementations may depend on the prior knowledge and
 experience - not so long ago the best treatment for many of the human body
 diseases was the amputation.
 
+### User Interfaces and Critical Systems
+
+Too much simplicity can be a problem. Overly simplistic interfaces may 
+prevent operators from engaging their brains fully, which could negatively 
+impact their performance in critical situations. If an interface is too 
+simple, operators can fall into automatism, executing the wrong action due 
+to a lack of alertness. There are serious concerns that software and 
+interface designers should prioritize preventing user mistakes, rather than 
+focusing solely on aesthetics.
+
 ## Testing
 
 - If you do not write tests you will never learn how to write them, it is better to write bad tests then not to write any.
