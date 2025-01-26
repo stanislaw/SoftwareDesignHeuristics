@@ -632,21 +632,13 @@ Complex software is not to be developed and used by average programmers. This
 happens anyway because of production pressures. People say: your mileage may
 vary.
 
-### Ignorance
+### Lack of Knowledge
 
-Bad code comes from ignorance, not from evil will, inspite of the fact that both
-bad code and evil will share ignorance as their root. Sometimes it helps a lot
-to wear imaginary ignorance hat to understand an intention behind a code you're
-reading.
+Bad code stems from a lack of knowledge, not malice, even though both bad code and malice share unawareness as their root cause. Sometimes, it helps to put on a "lack-of-knowledge hat" to better understand the intentions behind the code you're reading.
 
-### Ignorance II
+### Lack of Knowledge II
 
-One interesting feature of Ignorance is that it imposes a limit on ability of a
-software to scale. Written with ignorance in mind software sooner or later
-becomes a stone and nightmare so that eventually programmers on a team start to
-avoid going to "the dark forest". Natural consequence is that such software has
-an upper bound of complexity so someone who has to re-engineer such code will
-find that that complexity is ultimately manageable.
+An interesting feature of inexperience is that it imposes limits on a software system's ability to scale. Software written with unawareness at its core will eventually become rigid and nightmarish, to the point where team members start avoiding the "dark forest" of its codebase. The natural consequence is that such software reaches an upper bound of complexity. Paradoxically, this means that someone tasked with re-engineering it will often find its complexity manageable in the end.
 
 ### Other
 
