@@ -417,6 +417,18 @@ to not quite solve the problem his way (there was a bug) made quite an
 
 > "...ill-fitting structure is worse than none..." (Eric Evans - Domain-Driven Design, p.446)
 
+A good example from https://www.sigbus.info/worse-is-better:
+
+> In lld v2, we decided not to use an intermediate representation. Instead, 
+> we directly handle platform-dependent native file formats. lld v2 consists 
+> of virtually three different linkers for Windows, macOS and Unix. They 
+> share the same design but do not share code. Naturally, we sometimes had 
+> to write very similar code for each target. This may seem like an 
+> amateur-level programming mistake, but in reality, it's much easier to 
+> write straightforward code for each target than writing unified one that 
+> covers all the details and corner cases of all supported targets 
+> simultaneously. 
+
 ### Hard Feature
 
 If a feature is hard to implement it might indicate that it is something wrong
