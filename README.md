@@ -1009,8 +1009,14 @@ focusing solely on aesthetics.
 - “Legacy code is a code without tests” (“Working effectively with Legacy Code” by Michael Feathers).
 - On top of being useful for Quality, Testing is an important prerequisite for Simulations which are essential for complexity management: if I can test, read simulate, every aspect of my program, this means that I can still manage its complexity and vice versa - if my app has blind-spots: areas that are hard or impossible to test, I don't have any control over those areas and have to resort to testing of my app in the wild, outsourcing the quality of my app to the real users.
 - “If you can’t measure it then it can’t be called engineering” (taken from “Object-Oriented Software Engineering: A Use Case Driven Approach” by Ivar Jacobson). We of course also read “measure” as “test” which is another way of measurement.
-- Ideally we should be able to test everything: if something is hard to test, then we are just not there with quality of our code or corresponding tool set and infrastructure for testing but we will manage to find or improve them and get there.
-If you don’t know or not sure how to test something properly, try the ugliest version first: stub everything in an ugly way, stub network in an ugly way, assert what you want to assert and only then iterate on refactoring of both test and SUT (system-under-test).
+- Ideally, we should be able to test everything. If something is hard to test,
+  it usually means our code quality or the corresponding toolset and testing 
+  infrastructure are not yet where they need to be. However, with effort, we 
+  can improve them and get there. If you're unsure how to test something 
+  properly, start with the simplest, "ugliest" approach: stub everything in 
+  a basic way, stub the network in a simple manner, assert what you need to 
+  assert, and only then iterate on refactoring both the test and the system 
+  under test (SUT).
 
 ## Books
 
