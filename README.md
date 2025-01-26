@@ -55,6 +55,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Archetype](#archetype)
   - [Trade-off of Encapsulation](#trade-off-of-encapsulation)
   - [Unnecessary Flexibility](#unnecessary-flexibility)
+  - [Single Source Concept and Its Exceptions](#single-source-concept-and-its-exceptions)
   - [Resilience to Change vs Fixed Perfect Solutions](#resilience-to-change-vs-fixed-perfect-solutions)
   - [Two Almost Identical Entities](#two-almost-identical-entities)
   - [Control](#control)
@@ -495,6 +496,35 @@ designs is that the more flexible they are, the harder it is to detect bugs.
 > ...When you implement features in your own projects, make them easy to use;
 don't make them unnecessary flexible. There is a difference.
 Don't allow unnecessary flexibility.
+
+### Single Source Concept and Its Exceptions
+
+The Single Source (of Truth) concept is one of the first principles beginner 
+programmers learn and often becomes a rule they follow rigorously. However, 
+like many principles in life, it has its exceptions. Blindly adhering to the 
+Single Source rule can sometimes lead to suboptimal results.
+
+A good example of when this principle might fail is the
+[Poor Abstraction](#poor-abstraction) 
+scenario. This happens when someone tries to consolidate similar elements 
+into a single source while ignoring their significant differences. In such 
+cases, forcing everything into one place can create an abstraction that is 
+brittle, confusing, or overly complex, ultimately making the system harder 
+to understand and maintain.
+
+Another example is
+[Two Almost Identical Entities](#two-almost-identical-entities).
+This occurs when someone tries to merge two seemingly identical entities 
+into one, which results in an overly complicated "Single Source of Truth" 
+codebase. This approach often leads to significant branching logic and 
+reduced readability, making the code harder to work with and more prone to 
+errors.
+
+Understanding when to apply the Single Source principle and when to allow 
+for exceptions—is crucial for achieving balance and maintaining flexibility 
+in software design. Learning where to follow and where to de-prioritize the 
+Single Source principle is a good skill that distinguishes a more 
+experienced programmer from a beginner one.
 
 ### Resilience to Change vs Fixed Perfect Solutions
 
