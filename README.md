@@ -703,31 +703,34 @@ creates the results. For better results, change the structure of the system.
 
 ### Everyone is busy
 
-Everyone is busy, including you. Development of software
-products often happens in rushed environments where everyone is busy
-achieving given goals without having time to do things properly or at least
-fully realize all options of what is being built.
+Everyone is busy, including you. The development of software products often 
+takes place in rushed environments, where everyone is focused on achieving 
+specific goals without having time to do things properly or fully explore 
+all the options for what is being built.
 
-How about QA? A company might have a QA department or even Safety & Reliability
-people in addition. They are most likely also busy: they focus on the most
-important things, so much that they probably don't have enough time to interact
-with development teams, understand what is really required or provide 100%
-coverage and complete assessment of project scope.
+How about QA? A company may have a dedicated QA department, or even Safety & 
+Reliability teams in addition. They are most likely also busy, focusing on 
+the most critical tasks to the point that they probably don’t have enough 
+time to interact with development teams, understand the real requirements, 
+or provide 100% coverage and a complete assessment of the project scope.
 
-Is this a problem that everyone is busy? Given the ubiquity, it doesn't seem so.
-Some people even seem to like being busy all the time. It looks like
-organizations don't care much about "busyness" at all, what really matters is
-how that busy person/department is able to produce on given schedules or if
-something not covered by the busy people can create serious problems
-to the business. One sad observation about this is that it usually takes
-significant time until the uncovered is revealed and fixed top-down. During this
-incubation period, enough money should be lost, number of unhappy customers
-accumulate, and all other kinds losses, depending on the type of a project.
+Is it a problem that everyone is busy? Given its ubiquity, it doesn’t seem 
+so. Some people even seem to thrive on being busy all the time. 
+Organizations appear to care little about “busyness” itself. What really 
+matters is whether the busy person or department can deliver results 
+according to the schedule or whether something left uncovered by the busy 
+teams could create serious problems for the business.
 
-Or busy people themselves get tired... and create new methods and tools.
-Sometimes a new tool can eliminate a lot of effort required to achieve a given
-goal or it simply allows a busy person to focus on "what is most important"
-instead of covering everything.
+One unfortunate observation is that it usually takes significant time before 
+the uncovered issues are revealed and addressed from the top down. During 
+this incubation period, enough money is often lost, a number of unhappy 
+customers accumulate, and other losses may occur, depending on the type of 
+project.
+
+Or, busy people themselves get tired... and create new methods and tools. 
+Sometimes, a new tool can eliminate much of the effort required to achieve a 
+goal, or it simply allows a busy person to focus on "what is most important" 
+rather than covering everything.
 
 ### Four seasons
 
