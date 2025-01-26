@@ -1,20 +1,14 @@
 # Software Design Heuristics
 
-These are the heuristics that I find useful in my software engineering practice.
-I call "heuristics" everything that helps me to write better code given that
-I have them in mind.
+These are the heuristics I find useful in my software engineering practice.
+I use the term "heuristics" to describe anything that helps me write better code, as long as I keep them in mind.
 
-Some heuristics are of my own, sometimes I also learn from good books.
-Heuristics here that are cited always have reference to their source.
+Some heuristics are my own, while others come from great books.
+Heuristics cited here always include references to their sources.
 
-All of these heuristics work only if taken all together. Taken away from the rest,
-some of them can even contradict each other: if you take only a few of them and
-exaggerate them, they will lose their value or even break things on your behalf.
-Some heuristics may overlap with each other. So do not be very serious about
-them.
+All of these heuristics are effective only when considered together. Taken in isolation, some may even contradict one another: if you focus on just a few and apply them too rigidly, they may lose their value or even lead to negative outcomes. Some heuristics may overlap with others, so don't take them too seriously.
 
-Currently this is just a draft, very far from complete, with some random notes
-arbitrarily organized, do not expect it to be solid.
+This is currently just a draft—far from complete, with random notes organized arbitrarily. Please don't expect it to be polished.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -563,9 +557,11 @@ EnumerateInstructions(*function, [&](Instruction &instr, int bbIndex, int iIndex
 
 ### Grouping
 
-Group together things that change at the same time. If possible create container
+- Group together things that change at the same time. If possible create container
 data structures so that a change involves a change of **one**. If possible,
 group all of the changes that happen at the same time together.
+
+- Group things that are used together.
 
 ## Reliability
 
