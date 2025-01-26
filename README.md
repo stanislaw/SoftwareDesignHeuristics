@@ -55,6 +55,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Archetype](#archetype)
   - [Trade-off of Encapsulation](#trade-off-of-encapsulation)
   - [Unnecessary Flexibility](#unnecessary-flexibility)
+  - [Resilience to Change vs Fixed Perfect Solutions](#resilience-to-change-vs-fixed-perfect-solutions)
   - [Two Almost Identical Entities](#two-almost-identical-entities)
   - [Control](#control)
     - [Observable Control](#observable-control)
@@ -66,6 +67,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Separation / partitioning](#separation--partitioning)
   - [Grouping](#grouping)
   - [Observability vs Correctness](#observability-vs-correctness)
+  - [Don't Use RAII on a Business Logic Level](#dont-use-raii-on-a-business-logic-level)
 - [Code reviews](#code-reviews)
   - [The Moving and Changing Anti-pattern](#the-moving-and-changing-anti-pattern)
 - [Reliability](#reliability)
@@ -93,6 +95,7 @@ This is currently just a draft—far from complete, with random notes organized 
 - [Documentation](#documentation)
   - [Less prose, more structure](#less-prose-more-structure)
   - [Too Much Structure Overload](#too-much-structure-overload)
+  - [Encyclopedic Document](#encyclopedic-document)
 - [Standards](#standards)
   - [Idealized standards vs. practical implementation](#idealized-standards-vs-practical-implementation)
   - [The challenge of standards implementation](#the-challenge-of-standards-implementation)
@@ -106,7 +109,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Safety is boring](#safety-is-boring)
   - [Safety is very hard to achieve but is very easy to lose](#safety-is-very-hard-to-achieve-but-is-very-easy-to-lose)
   - [Safety as a Defensive Discipline](#safety-as-a-defensive-discipline)
-  - [Safety for engineering is the same as medicine for people](#safety-for-engineering-is-the-same-as-medicine-for-people)
+  - [Safety for Engineering is Like Medicine for People](#safety-for-engineering-is-like-medicine-for-people)
   - [User Interfaces and Critical Systems](#user-interfaces-and-critical-systems)
 - [Testing](#testing)
 - [Books](#books)
@@ -935,6 +938,28 @@ principles used for organizing the sections lack consistency. Ideally, a
 good structure should be intuitive, or at the very least, the organizational 
 principle should be easy to understand and mentally map, facilitating easier 
 navigation of the content.
+
+### Encyclopedic Document
+
+An encyclopedic document is created over time as a collection of inputs from
+various ad hoc events, eventually becoming a generic repository of 
+everything. These documents often have complex, nested structures and lack a 
+single consistent narrative. Reading them feels more like going through a 
+dictionary from A to Z rather than following a coherent story. This can make 
+it difficult for readers to stay engaged, which might explain why many 
+people shy away from reading standards altogether.
+
+Standards or guidelines are often structured in this encyclopedic way, as they 
+aim to encompass all aspects of product development or organizational 
+processes. Similarly, requirements specifications can easily take on an 
+encyclopedic form, making them hard to navigate and comprehend.
+
+When creating such documents, it’s important to establish a guiding 
+principle that helps readers mentally map and navigate the content. Ideally, 
+the document should include a unifying narrative or story that makes it 
+easier to follow, even if the underlying information is complex or diverse. 
+A clear structure and logical flow can transform an overwhelming collection 
+of information into a useful and accessible resource.
 
 ## Standards
 
