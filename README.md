@@ -821,13 +821,39 @@ Some of the important tools that communicate order in technical documentation:
 
 ## Standards
 
-- Implementing standards in an organization can be hard and messy but
-without any standards everything gets 10-100x harder and messier.
+### Idealized standards vs. practical implementation
 
-- **Standards favor good practice.** If a company has adopted a practice that makes sense and creates value, it is highly unlikely that this practice would be
-turned down or considered inappropriate by any standard.
+Standards provide an idealized or encyclopedic view of how systems should 
+function and how products should be developed. Frequently, a standard 
+represents the combined inputs of multiple companies, making it more 
+extensive than what any single company might realistically implement. For 
+most companies, implementing a standard is a "best effort" exercise.
 
-- **Wrong is worse than early or incomplete.** Sometimes it is worse to be wrong than to be early or lack information.
+Some standards are practical only for larger companies and can be 
+counterproductive or harmful for smaller organizations attempting to 
+implement them. Recognizing this, some standards explicitly account for a 
+company’s maturity level and offer recommendations on which parts to 
+implement at different stages of development.
+
+### The challenge of standards implementation
+
+Implementing standards and managing their results within an organization can 
+be difficult and complex. However, without any standards, everything becomes 
+10 to 100 times harder and more chaotic.
+
+### Standards and best practices
+
+Standards seek out best practices, collect them, and generalize them.
+
+### Standards favor good practice
+
+Standards favor good practices. If a company has adopted a practice that is 
+not yet conventional but makes sense and adds value, it is unlikely that 
+this practice would be rejected or deemed inappropriate by any standard.
+
+### Wrong is worse than early or incomplete
+
+Sometimes it is worse to be wrong than to be early or lack information.
 The context: passing the project review milestones required by standards.
 
 ## Requirements
