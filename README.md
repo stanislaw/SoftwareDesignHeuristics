@@ -989,20 +989,22 @@ sidelined until it’s too late. In this way, safety acts like a belt that
 holds uncontrolled progress together, preventing it from falling apart when 
 the inevitable risks are not properly addressed.
 
-### Safety for engineering is the same as medicine for people
+### Safety for Engineering is Like Medicine for People
 
-Medicine is not the most important thing in this world and no one wants to
-spend all time on it. But it is also true that we humans will not
-go far away without medicine even with all other achievements of our
-civilization at hand.
+Medicine isn’t the most exciting thing, and no one wants to spend all their 
+time thinking about it. But it’s clear that humanity can’t thrive without it,
+even with all the amazing achievements of civilization.
 
-Like it is with human beings, organizations want to build things that
-work - they are less concerned with things such as Safety or Quality as long as
-everything is fine at first and the customers are satisfied. Then it might
-happen to them that the "health" of the product, team and development process
-also matter. The implementations may depend on the prior knowledge and
-experience - not so long ago the best treatment for many of the human body
-diseases was the amputation.
+In the same way, organizations focus on building things that work and often 
+don’t think much about safety or quality as long as things are fine and 
+customers are happy. But over time, they may realize that the "health" of 
+their products, teams, and development processes also matters.
+
+How safety and quality are handled depends a lot on experience and knowledge.
+Not long ago, amputation was seen as the best way to treat many illnesses. 
+This shows how much we’ve learned and how practices improve over time. 
+Engineering also needs to grow in this way, moving beyond quick fixes to 
+create stronger, longer-lasting solutions.
 
 ### User Interfaces and Critical Systems
 
