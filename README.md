@@ -609,6 +609,16 @@ can become difficult to maintain and debug over time, creating technical
 debt. Visibility allows for quicker fixes and ongoing improvement, making it 
 more sustainable in the long run.
 
+## Code reviews
+
+### The Moving and Changing Anti-pattern
+
+A great anti-pattern that complicates code reviews is creating a changeset 
+that involves both moving and changing things at the same time. This 
+obscures the diffs in the version control system, making it harder to track 
+changes. The solution: isolate moving and changing into separate commits or 
+separate PRs.
+
 ## Reliability
 
 ### Errors are not ok
