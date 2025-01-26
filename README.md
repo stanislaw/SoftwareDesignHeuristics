@@ -946,9 +946,24 @@ whole system get down. Some of the very popular reasons for the failure are:
 - degradation of existing components
 - changes to the system that do not take the current system's behavior into
 account
-- new unexpected factors coming outside of the system boundary
+- new unexpected factors coming outside the system boundary
 
 Consequence: safety requires continuous and intelligent effort.
+
+### Safety as a Defensive Discipline
+
+Safety is often seen as a defensive discipline, in contrast to fields focused on
+creation, innovation, and action, which drive progress. While these fields 
+push forward with new ideas and developments, safety functions as a 
+secondary, backing force. Its role is to prevent harm, minimize risks, and 
+ensure that these actions happen within a secure framework. Safety doesn’t 
+seek to lead the charge but to protect and enable other processes to unfold 
+without catastrophic failure.
+
+However, the drive to "lead the charge" often means safety is ignored or 
+sidelined until it’s too late. In this way, safety acts like a belt that 
+holds uncontrolled progress together, preventing it from falling apart when 
+the inevitable risks are not properly addressed.
 
 ### Safety for engineering is the same as medicine for people
 
