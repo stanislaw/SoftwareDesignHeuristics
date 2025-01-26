@@ -773,6 +773,24 @@ than nothing. Of course, even if nothing is recorded, people still leave their
 meetings with takeaways and updated mental models, but a meeting's effectiveness
 is certainly higher if its outcome is captured on a physical medium.
 
+## Biases
+
+### The Working-So-It’s-Right Bias
+
+The issue lies in assuming that a previous solution or setup is correct simply because it works. This leads to a lack of scrutiny, where the existing solution or setup is not questioned, and investigations proceed based on a flawed premise.
+
+### The Fix Bias
+
+When reviewing a pull request titled "Fixes XYZ," there is a natural tendency to trust the new change more than the existing code. This bias arises from the assumption that the previous implementation was flawed simply because it is being replaced. As a result, one might overlook the consequences of the fix or fail to rigorously verify the correctness of the new change.
+
+To mitigate this bias, it's important to evaluate both the old and new implementations with equal scrutiny. Consider questions such as:
+
+- Is the problem being solved accurately identified?
+- Does the new change address the issue without introducing new problems?
+- Are the trade-offs of this fix justified compared to the original implementation?
+
+By being aware of this bias, reviewers can ensure a more balanced and thorough review process.
+
 ## Documentation
 
 - Good documentation is dry and boring. This can create an illusion that writing
