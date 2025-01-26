@@ -88,7 +88,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Four seasons](#four-seasons)
 - [Meetings](#meetings)
 - [Biases](#biases)
-  - [The Working-So-It’s-Right Bias](#the-working-so-its-right-bias)
+  - [The Working-So-It's-Right Bias](#the-working-so-its-right-bias)
   - [The Fix Bias](#the-fix-bias)
 - [Documentation](#documentation)
   - [Less prose, more structure](#less-prose-more-structure)
@@ -151,7 +151,7 @@ there is more to habitability than clarity or the two characteristics are differ
 
 > ...Habitability makes a place livable, like home. And this is what we want in
 software — that developers feel at home, can place their hands on any item without
-having to think deeply about where it is. It’s something like clarity, but clarity is
+having to think deeply about where it is. It's something like clarity, but clarity is
 too hard to come by.
 
 ### Prima Materia
@@ -645,6 +645,36 @@ can become difficult to maintain and debug over time, creating technical
 debt. Visibility allows for quicker fixes and ongoing improvement, making it 
 more sustainable in the long run.
 
+### Don't Use RAII on a Business Logic Level
+
+RAII is good for resource management, such as handling memory, file 
+handles, or network connections, where resources need predictable 
+acquisition and release. However, applying RAII to business logic can lead 
+to significant problems:
+
+- Reduced Flexibility: RAII assumes that actions are tied directly to scope, 
+  but business workflows may need to defer, combine, or otherwise manage 
+  actions independently of object lifetimes.
+
+- Lack of Transaction Control: Business operations often involve external 
+  systems, validation, or rollback mechanisms that require precise control. 
+  RAII hides these processes behind object lifecycle management, making it 
+  harder to handle errors or maintain consistency.
+
+- Unintended Side Effects: Business logic often involves workflows with 
+  complex rules and dependencies. Tying actions like adding or removing data 
+  to the lifecycle of objects can cause unexpected behaviors if those 
+  objects are destroyed prematurely or unintentionally.
+
+- Debugging Challenges: When business actions are implicitly triggered by 
+  object lifetimes, it becomes harder to trace when and why specific 
+  operations occur. This lack of clarity can lead to subtle bugs that are 
+  difficult to identify and fix.
+
+Instead of using RAII, manage business logic explicitly through well-defined 
+methods or services. This approach keeps the logic transparent, easier to 
+understand, and more adaptable to changing requirements.
+
 ## Code reviews
 
 ### The Moving and Changing Anti-pattern
@@ -765,11 +795,11 @@ all the options for what is being built.
 
 How about QA? A company may have a dedicated QA department, or even Safety & 
 Reliability teams in addition. They are most likely also busy, focusing on 
-the most critical tasks to the point that they probably don’t have enough 
+the most critical tasks to the point that they probably don't have enough 
 time to interact with development teams, understand the real requirements, 
 or provide 100% coverage and a complete assessment of the project scope.
 
-Is it a problem that everyone is busy? Given its ubiquity, it doesn’t seem 
+Is it a problem that everyone is busy? Given its ubiquity, it doesn't seem 
 so. Some people even seem to thrive on being busy all the time. 
 Organizations appear to care little about “busyness” itself. What really 
 matters is whether the busy person or department can deliver results 
@@ -859,7 +889,7 @@ is certainly higher if its outcome is captured on a physical medium.
 
 ## Biases
 
-### The Working-So-It’s-Right Bias
+### The Working-So-It's-Right Bias
 
 The issue lies in assuming that a previous solution or setup is correct simply because it works. This leads to a lack of scrutiny, where the existing solution or setup is not questioned, and investigations proceed based on a flawed premise.
 
@@ -919,7 +949,7 @@ most companies, implementing a standard is a "best effort" exercise.
 Some standards are practical only for larger companies and can be 
 counterproductive or harmful for smaller organizations attempting to 
 implement them. Recognizing this, some standards explicitly account for a 
-company’s maturity level and offer recommendations on which parts to 
+company's maturity level and offer recommendations on which parts to 
 implement at different stages of development.
 
 ### The challenge of standards implementation
@@ -992,29 +1022,29 @@ Safety is often seen as a defensive discipline, in contrast to fields focused on
 creation, innovation, and action, which drive progress. While these fields 
 push forward with new ideas and developments, safety functions as a 
 secondary, backing force. Its role is to prevent harm, minimize risks, and 
-ensure that these actions happen within a secure framework. Safety doesn’t 
+ensure that these actions happen within a secure framework. Safety doesn't 
 seek to lead the charge but to protect and enable other processes to unfold 
 without catastrophic failure.
 
 However, the drive to "lead the charge" often means safety is ignored or 
-sidelined until it’s too late. In this way, safety acts like a belt that 
+sidelined until it's too late. In this way, safety acts like a belt that 
 holds uncontrolled progress together, preventing it from falling apart when 
 the inevitable risks are not properly addressed.
 
 ### Safety for Engineering is Like Medicine for People
 
-Medicine isn’t the most exciting thing, and no one wants to spend all their 
-time thinking about it. But it’s clear that humanity can’t thrive without it,
+Medicine isn't the most exciting thing, and no one wants to spend all their 
+time thinking about it. But it's clear that humanity can't thrive without it,
 even with all the amazing achievements of civilization.
 
 In the same way, organizations focus on building things that work and often 
-don’t think much about safety or quality as long as things are fine and 
+don't think much about safety or quality as long as things are fine and 
 customers are happy. But over time, they may realize that the "health" of 
 their products, teams, and development processes also matters.
 
 How safety and quality are handled depends a lot on experience and knowledge.
 Not long ago, amputation was seen as the best way to treat many illnesses. 
-This shows how much we’ve learned and how practices improve over time. 
+This shows how much we've learned and how practices improve over time. 
 Engineering also needs to grow in this way, moving beyond quick fixes to 
 create stronger, longer-lasting solutions.
 
@@ -1034,7 +1064,7 @@ focusing solely on aesthetics.
 - Ability to do TDD is not about black and white: “can or can not”, it is about having 1001 things in your toolbox: techniques, patterns, tricks and hacks - when you have enough of them you can test almost everything in a reasonable amount of time.
 - “Legacy code is a code without tests” (“Working effectively with Legacy Code” by Michael Feathers).
 - On top of being useful for Quality, Testing is an important prerequisite for Simulations which are essential for complexity management: if I can test, read simulate, every aspect of my program, this means that I can still manage its complexity and vice versa - if my app has blind-spots: areas that are hard or impossible to test, I don't have any control over those areas and have to resort to testing of my app in the wild, outsourcing the quality of my app to the real users.
-- “If you can’t measure it then it can’t be called engineering” (taken from “Object-Oriented Software Engineering: A Use Case Driven Approach” by Ivar Jacobson). We of course also read “measure” as “test” which is another way of measurement.
+- “If you can't measure it then it can't be called engineering” (taken from “Object-Oriented Software Engineering: A Use Case Driven Approach” by Ivar Jacobson). We of course also read “measure” as “test” which is another way of measurement.
 - Ideally, we should be able to test everything. If something is hard to test,
   it usually means our code quality or the corresponding toolset and testing 
   infrastructure are not yet where they need to be. However, with effort, we 
