@@ -354,6 +354,17 @@ also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
 identifying the right problems to be solved"
 (Dr. John Thomas, ESWC 2019).
 
+### Solutions are Context-Driven
+
+Even the best solution to a problem is valid only within a given context. A slight change in the context can invalidate the solution, requiring one to start from scratch. This understanding highlights that no solution is universally perfect. Instead, solutions address specific problems or contexts in an "optimal enough" way. It also encourages detachment from ego-driven perfection, allowing solutions to evolve as the environment changes.
+
+Examples:
+
+- A clean architecture or pattern may shift to a completely different, sometimes opposite, solution due to changing requirements or system environments.
+- A "perfect" solution might be discarded because a new team or team leader dislikes technology X and prefers technology Y, or simply because it aligns with emerging industry trends.
+- Perfectly clean code may be rewritten and become more obfuscated due to necessary performance optimizations.
+- Highly efficient code might be rewritten to sacrifice performance in favor of better maintainability and readability, especially for a larger team.
+
 ### Solving Problems with Cash
 
 Every engineering problem can be solved with an infinite amount of cash.
