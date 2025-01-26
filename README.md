@@ -375,7 +375,27 @@ Every engineering problem can be solved with an infinite amount of cash.
 
 ### Rational and Unconscious
 
-Engineers create rational artifacts, which may appear simple and mundane. However, the process behind their creation often involves deep reflection and can stem from the unconscious mind.
+Engineers create rational artifacts, which may appear simple and mundane. 
+However, the process behind their creation often involves deep reflection 
+and can stem from the unconscious mind.
+
+### Point of View
+
+[How NASA Builds Teams](https://www.wiley.
+com/en-us/How+NASA+Builds+Teams%3A+Mission+Critical+Soft+Skills+for+Scientists%2C+Engineers%2C+and+Project+Teams-p-9780470456484):
+
+> The right coordinate system can turn an impossible problem into two really 
+> hard ones.
+
+[The Early History Of Smalltalk](https://worrydream.com/EarlyHistoryOfSmalltalk/)
+
+> Watching a famous guy much smarter than I struggle for more than 30 minutes 
+to not quite solve the problem his way (there was a bug) made quite an 
+> impression. It brought home to me once again that "point of view is worth 
+> 80 IQ points." I wasn't smarter but I had a much better internal thinking 
+> tool to amplify my abilities. This incident and others like it made 
+> paramount that any tool for children should have great thinking patterns 
+> and deep beauty "built-in."
 
 ## Design
 
