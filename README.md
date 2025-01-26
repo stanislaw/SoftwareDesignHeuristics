@@ -528,6 +528,8 @@ explicit design constraint.
 - Separate synchronous from asynchronous
 - Separate similar from different
 - Separate symmetrical from asymmetrical
+- Balance and symmetry: if one partition has way more items than the other
+  ones, this may indicate that the partitioning has not been complete.
 - Separate construction from operation (one example: Factory vs Command)
 - Separate content from presentation (applies to UI-heavy code, great example: HTML/CSS)
 - Separate easy from complex: isolate easy, isolate complex, repeat many times (todo: separation vs isolation)
