@@ -443,7 +443,7 @@ of more than one design pattern. Of course there are exceptions.
 
 Archetype is an umbrella concept for other concepts like: `prototype`,
 `proof of concept`, `minimal viable product`. Archetype means something simple
-and coherent. If you know the archetype of something you understand the essense
+and coherent. If you know the archetype of something you understand the essence
 of it. A complex system can be traced back to a one or a number of underlying
 archetypes.
 
@@ -480,6 +480,18 @@ designs is that the more flexible they are, the harder it is to detect bugs.
 > ...When you implement features in your own projects, make them easy to use;
 don't make them unnecessary flexible. There is a difference.
 Don't allow unnecessary flexibility.
+
+### Resilience to Change vs Fixed Perfect Solutions
+
+When designing a system, there is a trade-off between making it easier to 
+change in the future and striving for perfection. In most cases, choosing 
+flexibility is the better option. If you anticipate changes in context or 
+additional development work that could affect the system, avoid focusing too 
+much on perfecting the existing solution, as it may not hold up under new 
+pressures. Another important consideration is the ability to undo or disable 
+a function that works perfectly now but could cause unforeseen issues in 
+operation. Often, a perfectly working solution can create obstacles for 
+other systems or people involved in operating the system.
 
 ### Two Almost Identical Entities
 
