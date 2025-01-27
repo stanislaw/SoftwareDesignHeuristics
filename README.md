@@ -1070,6 +1070,25 @@ account
 
 Consequence: safety requires continuous and intelligent effort.
 
+### Success breeds failure
+
+Handbook of Walkthroughs, Inspections, and Technical Reviews, p.412:
+
+> ... however, we have to anticipate that we will in fact succeed once in a 
+> while - and we must also anticipate what that success will bring. For 
+> instance, one error-riddled system was seldom used by its several hundred 
+> potential users, so management decided to mount an effort to have the 
+> system repaired in a systematic fashion. The resulting system was so 
+> dependable and useful that usage suddenly increased by a factor of a 
+> thousand over previous usage. This increase in transaction volume made the 
+> file design of the system completely inadequate to the daily load - which 
+> soon meant that nobody could get results fast enough to be useful. The 
+> entire problem - and so many others like it - could have been avoided if 
+> the review group had only considered that unavoidable law of nature:
+> **Success breeds failure**. So, ..., be prepared for the inevitable 
+> reaction. If you start making systems better, your users will want more of 
+> the same - the best side effect of all.
+
 ### Safety as a Defensive Discipline
 
 Safety is often seen as a defensive discipline, in contrast to fields focused on
