@@ -717,6 +717,39 @@ obscures the diffs in the version control system, making it harder to track
 changes. The solution: isolate moving and changing into separate commits or 
 separate PRs.
 
+## Distribution
+
+### Provide Basic Test Sequences with Your Product
+
+If you are a provider of software or hardware, consider going beyond the 
+standard "interface control document" (ICD) by including basic test 
+sequences – a "Hello World"-type program that allows users to quickly get 
+started with your product. Such examples help users bring the system online 
+and get up to speed without unnecessary guesswork.
+
+The lack of clear "Hello World" or how-to documentation is especially 
+prevalent in the embedded software industry, where companies often rely 
+solely on ICDs or technical reference manuals. This forces end-user software 
+engineers to engage in guesswork and reverse-engineer the documentation to 
+figure out how to bring up a device. While the industry is gradually 
+improving in this regard, there is still a long way to go. By providing a 
+clear and functional "Hello World" example with every product, you empower 
+your users and make adoption of your product much smoother.
+
+### Provide Drivers Alongside Your Hardware
+
+If you are a hardware provider, consider supplying software drivers with 
+your device rather than just a technical reference manual for end-users to 
+decipher and implement. As the developer of the device, you understand its 
+functionality better than anyone else. By providing ready-to-use drivers, 
+you save your users the time and effort of implementing the device's 
+features themselves.
+
+With some effort on your part, you can significantly improve the adoption of 
+your product by making it easier to integrate and use. A smooth setup 
+process not only enhances user satisfaction but also reduces the barriers to 
+bringing your hardware to market.
+
 ## Reliability
 
 ### Errors are not ok
