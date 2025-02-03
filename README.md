@@ -688,21 +688,21 @@ handles, or network connections, where resources need predictable
 acquisition and release. However, applying RAII to business logic can lead 
 to significant problems:
 
-- Reduced Flexibility: RAII assumes that actions are tied directly to scope, 
+- Reduced flexibility: RAII assumes that actions are tied directly to scope, 
   but business workflows may need to defer, combine, or otherwise manage 
   actions independently of object lifetimes.
 
-- Lack of Transaction Control: Business operations often involve external 
+- Lack of transaction control: Business operations often involve external 
   systems, validation, or rollback mechanisms that require precise control. 
   RAII hides these processes behind object lifecycle management, making it 
   harder to handle errors or maintain consistency.
 
-- Unintended Side Effects: Business logic often involves workflows with 
+- Unintended side effects: Business logic often involves workflows with 
   complex rules and dependencies. Tying actions like adding or removing data 
   to the lifecycle of objects can cause unexpected behaviors if those 
   objects are destroyed prematurely or unintentionally.
 
-- Debugging Challenges: When business actions are implicitly triggered by 
+- Debugging challenges: When business actions are implicitly triggered by 
   object lifetimes, it becomes harder to trace when and why specific 
   operations occur. This lack of clarity can lead to subtle bugs that are 
   difficult to identify and fix.
