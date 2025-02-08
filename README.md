@@ -13,26 +13,14 @@ This is currently just a draft—far from complete, with random notes organized 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [General](#general)
+- [Day-to-Day Work of a Software Engineer](#day-to-day-work-of-a-software-engineer)
+  - [Leave Work Better: Improving Today for a Simpler Tomorrow](#leave-work-better-improving-today-for-a-simpler-tomorrow)
   - [Fast Feedback](#fast-feedback)
   - [Start Simple](#start-simple)
   - [Habitability](#habitability)
-  - [Prima Materia](#prima-materia)
-  - [Crash Early](#crash-early)
-  - [Poisonous Systems](#poisonous-systems)
-  - [Bad Design in House](#bad-design-in-house)
-  - [Good Will vs Pain](#good-will-vs-pain)
-  - [Code Style as a Blocker](#code-style-as-a-blocker)
-  - [Masking (Shadowing)](#masking-shadowing)
-  - [Code that Works](#code-that-works)
-  - [Code is Not Your Partner](#code-is-not-your-partner)
-  - [Refactoring I](#refactoring-i)
-  - [Everything is Scope, Scope is Everything](#everything-is-scope-scope-is-everything)
-  - [Everything Explicit. No Magic.](#everything-explicit-no-magic)
-  - ["Magic" is automation that is not adequate](#magic-is-automation-that-is-not-adequate)
-  - [Fast Programming and Slow Programming](#fast-programming-and-slow-programming)
   - [Quick exploration](#quick-exploration)
-  - [Other](#other)
+  - [Task Sequencing: Group Related Activities for Efficiency](#task-sequencing-group-related-activities-for-efficiency)
+  - [Everything Explicit. No Magic.](#everything-explicit-no-magic)
 - [Complexity and Cognitive Load](#complexity-and-cognitive-load)
   - [Black Box with a Green Play Button](#black-box-with-a-green-play-button)
   - [Humans are not designed for Big Numbers](#humans-are-not-designed-for-big-numbers)
@@ -46,12 +34,17 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Solving Problems with Cash](#solving-problems-with-cash)
   - [Rational and Unconscious](#rational-and-unconscious)
   - [Point of View](#point-of-view)
+  - [Masking (Shadowing)](#masking-shadowing)
 - [Design](#design)
   - [Poor Abstraction](#poor-abstraction)
   - [Hard Feature](#hard-feature)
   - [True Name](#true-name)
   - [One Pattern per Class](#one-pattern-per-class)
   - [Archetype](#archetype)
+  - [Prima Materia](#prima-materia)
+  - ["Magic" is automation that is not adequate](#magic-is-automation-that-is-not-adequate)
+  - [Poisonous Systems](#poisonous-systems)
+  - [Bad Design in House](#bad-design-in-house)
   - [Trade-off of Encapsulation](#trade-off-of-encapsulation)
   - [Unnecessary Flexibility](#unnecessary-flexibility)
   - [Single Source Concept and Its Exceptions](#single-source-concept-and-its-exceptions)
@@ -68,17 +61,22 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Grouping](#grouping)
   - [Observability vs Correctness](#observability-vs-correctness)
   - [Don't Use RAII on a Business Logic Level](#dont-use-raii-on-a-business-logic-level)
-- [Day-to-day work](#day-to-day-work)
-  - [Leave Work Better: Improving Today for a Simpler Tomorrow](#leave-work-better-improving-today-for-a-simpler-tomorrow)
-  - [Task Sequencing: Group Related Activities for Efficiency](#task-sequencing-group-related-activities-for-efficiency)
 - [Coding and code reviews](#coding-and-code-reviews)
+  - [Code that Works](#code-that-works)
+  - [Code is Not Your Partner](#code-is-not-your-partner)
+  - [Refactoring I](#refactoring-i)
+  - [Smallest Scope](#smallest-scope)
+  - [Code Style as a Blocker](#code-style-as-a-blocker)
   - [The Moving and Changing Anti-pattern](#the-moving-and-changing-anti-pattern)
+  - [Other](#other)
 - [Maintenance Programming](#maintenance-programming)
+  - [Fast Programming and Slow Programming](#fast-programming-and-slow-programming)
   - [Stable Components](#stable-components)
   - [Boring Code](#boring-code)
   - [Boring Code 2](#boring-code-2)
   - [Lack of Knowledge](#lack-of-knowledge)
   - [Lack of Knowledge II](#lack-of-knowledge-ii)
+  - [Goodwill vs Pain](#goodwill-vs-pain)
 - [Biases](#biases)
   - [The Working-So-It's-Right Bias](#the-working-so-its-right-bias)
   - [The Fix Bias](#the-fix-bias)
@@ -90,6 +88,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Critical errors vs non-critical errors](#critical-errors-vs-non-critical-errors)
   - [Assertions are better than no error handling](#assertions-are-better-than-no-error-handling)
   - [Assertions are shortcuts for a proper error handling](#assertions-are-shortcuts-for-a-proper-error-handling)
+  - [Crash Early](#crash-early)
 - [Testing](#testing)
 - [Distribution](#distribution)
   - [Provide Basic Test Sequences with Your Product](#provide-basic-test-sequences-with-your-product)
@@ -132,7 +131,11 @@ This is currently just a draft—far from complete, with random notes organized 
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## General
+## Day-to-Day Work of a Software Engineer
+
+### Leave Work Better: Improving Today for a Simpler Tomorrow
+
+Always leave the work artifacts — whether code, documentation, diagrams, models, or others — in a better state than they were before, giving future you or someone else the opportunity to improve them even further.
 
 ### Fast Feedback
 
@@ -172,134 +175,19 @@ software — that developers feel at home, can place their hands on any item wit
 having to think deeply about where it is. It's something like clarity, but clarity is
 too hard to come by.
 
-### Prima Materia
-
-Sometimes to make further progress you need to un-implement (break!) particular
-pattern/architecture/solution and put it back into
-[Prima Materia](https://en.wikipedia.org/wiki/Prima_materia) state and only then
-thansform it into a something new. Metaphors similar to Prima Materia are
-"primordial soup" and "indifferentiated soup of ideas" (Eric Evans - DDD).
-
-### Crash Early
-
-If you know how to not program defensively in a particular situation go ahead!
-Otherwise make your code to Crash Early to catch bugs as early as possible: use
-sensible assertions and stress edge-cases with tests. See
-[Some notes C in 2016: Code offensively](http://blog.erratasec.com/2016/01/some-notes-c-in-2016.html#.VtGEKBg7T5c)
-and
-[Spotify engineering culture (part 2): "We aim to mistakes faster than anyone else"](https://labs.spotify.com/2014/09/20/spotify-engineering-culture-part-2/).
-
-### Poisonous Systems
-
-Badly designed systems tend to poison systems they interact with.
-
-### Bad Design in House
-
-Do not overdesign your own software if you have a big producer of bad or
-too opinionated designs nearby. A big producer can be a vendor or a team
-with authority who decided to rely on a given design a while ago.
-
-### Good Will vs Pain
-
-Lots of what we programmers learn with years comes from pain, not from good will.
-
-### Code Style as a Blocker
-
-Sometimes code style can be a blocker. Poorly formatted code can make
-understanding of it extremely difficult. Do everything to reduce your cognitive
-load. Real-world example:
-
-```swift
-let expectedRemainingLoops = Int(ceil( (expectedRemainingElements - Double(currentRemainingElementsForLoop)) / Double(PPENumberOfTasksInCurrentLoop) ))
-```
-
-reads much better if
-
-```swift
-let expectedRemainingLoops =
-  Int(
-    ceil(
-      (expectedRemainingElements - Double(currentRemainingElementsForLoop)) /
-      Double(PPENumberOfTasksInCurrentLoop)
-    )
-  )
-```
-
-### Masking (Shadowing)
-
-Masking/shadowing of all kinds is dangerous and should be avoided or treated
-with a great care.
-
-Examples:
-
-- errors introduced to the systems when overlapping requirements are implemented
-over time
-- masking in MC/DC
-- shadowing of variable declarations
-- typographically ambiguous symbols with overlapping visibility like `l` and
-`1`, `O` and `0` (see MISRA guidelines)
-- code reviews: real bugs can hide behind less important but more noticeable
-issues like typos or coding style details
-- bugs often hide themselves behind complexity
-
-See also Overlapping Control.
-
-### Code that Works
-
-Working code with a good enough architecture is better than buggy code with
-a perfect architecture.
-
-### Code is Not Your Partner
-
-Sometimes we don't have to be nice about other people's code:
-
-  - can be different platforms
-  - can be outdated code
-  - can be ancient build tools
-  - can be the code that has some parts you don't need
-  - can be mistakes
-
-In this case it is fine to delete or agressively modify some code to compile it, test it, learn about it.
-
-### Refactoring I
-
-Replace != "Remove + Write". Replace = "Write new + Re-route + Remove old".
-
-### Everything is Scope, Scope is Everything
-
-- Restrict the scope of data to the smallest possible. (The Power of 10: Rules
-for Developing Safety-Critical Code by NASA)
-
-### Everything Explicit. No Magic.
-
-Whenever a thought explicit vs magic comes to your mind, go for explicit.
-
-### "Magic" is automation that is not adequate
-
-In the beginning, there is no magic, but simply a desire to automate things to
-reduce repetition. Magic appears as a result of increasing complexity that makes
-current solution to be inadequate for further progress. Magic can also emerge
-rather quickly as a result of automating wrong things from the beginning.
-The holy grail is automation that is always adequate.
-
-### Fast Programming and Slow Programming
-
-This can be read as prototype vs maintenance programming. Fast Programming is
-essential for a quick progress and is very much encouraged by the business.
-However it rarely does have time to learn from mistakes due to the effect of
-the tunnel, "straight ahead", way of thinking. Slow Programming has a virtue of
-reflection and deeper analysis but is probably too slow to get the business
-going from scratch. Business starts to appreciate Slow Programming only when it
-hits the wall of complexity and therefore the need in a proper design.
-
 ### Quick exploration
 
 It is not unusual that the solution you are looking for may be in two clicks and couple of Google search results away from you. When reading large documents, sometimes it is useful to "fly over" a document to find a section that is most releveant, instead of reading through the document A-to-Z.
 
-### Other
+### Task Sequencing: Group Related Activities for Efficiency
 
-- Don't give your classes plural names. See also "There is no such thing
-as Many".
+When sequencing tasks (especially repetitive ones), group related tasks together and separate them from others.
+
+One useful pattern is the 'Inbox' approach, where input is first collected and then executed upon. For example, when writing a technical document, split the task of gathering the document content (the 'Inbox' with bullet points) from the task of formulating and spelling out each individual content item.
+
+### Everything Explicit. No Magic.
+
+Whenever a thought explicit vs magic comes to your mind, go for explicit.
 
 ## Complexity and Cognitive Load
 
@@ -423,6 +311,25 @@ to not quite solve the problem his way (there was a bug) made quite an
 > paramount that any tool for children should have great thinking patterns 
 > and deep beauty "built-in."
 
+### Masking (Shadowing)
+
+Masking/shadowing of all kinds is dangerous and should be avoided or treated
+with a great care.
+
+Examples:
+
+- errors introduced to the systems when overlapping requirements are implemented
+over time
+- masking in MC/DC
+- shadowing of variable declarations
+- typographically ambiguous symbols with overlapping visibility like `l` and
+`1`, `O` and `0` (see MISRA guidelines)
+- code reviews: real bugs can hide behind less important but more noticeable
+issues like typos or coding style details
+- bugs often hide themselves behind complexity
+
+See also Overlapping Control.
+
 ## Design
 
 ### Poor Abstraction
@@ -483,6 +390,32 @@ drafts etc). Great example: Rust programming language had to start from
 > "View the problem in its simplest forms ... An excellent method for determining
 the meaning of something is to find out how it comes to be what it is."
 (Santiago Ramón y Cajal, "Advice for a young investigator")
+
+### Prima Materia
+
+Sometimes to make further progress you need to un-implement (break!) particular
+pattern/architecture/solution and put it back into
+[Prima Materia](https://en.wikipedia.org/wiki/Prima_materia) state and only then
+thansform it into a something new. Metaphors similar to Prima Materia are
+"primordial soup" and "indifferentiated soup of ideas" (Eric Evans - DDD).
+
+### "Magic" is automation that is not adequate
+
+In the beginning, there is no magic, but simply a desire to automate things to
+reduce repetition. Magic appears as a result of increasing complexity that makes
+current solution to be inadequate for further progress. Magic can also emerge
+rather quickly as a result of automating wrong things from the beginning.
+The holy grail is automation that is always adequate.
+
+### Poisonous Systems
+
+Badly designed systems tend to poison systems they interact with.
+
+### Bad Design in House
+
+Do not overdesign your own software if you have a big producer of bad or
+too opinionated designs nearby. A big producer can be a vendor or a team
+with authority who decided to rely on a given design a while ago.
 
 ### Trade-off of Encapsulation
 
@@ -718,19 +651,55 @@ Instead of using RAII, manage business logic explicitly through well-defined
 methods or services. This approach keeps the logic transparent, easier to 
 understand, and more adaptable to changing requirements.
 
-## Day-to-day work
-
-### Leave Work Better: Improving Today for a Simpler Tomorrow
-
-Always leave the work artifacts—whether code, documentation, diagrams, models, or others—in a better state than they were before, giving future you or someone else the opportunity to improve them even further.
-
-### Task Sequencing: Group Related Activities for Efficiency
-
-When sequencing tasks (especially repetitive ones), group related tasks together and separate them from others.
-
-One useful pattern is the 'Inbox' approach, where input is first collected and then executed upon. For example, when writing a technical document, split the task of gathering the document content (the 'Inbox' with bullet points) from the task of formulating and spelling out each individual content item.
-
 ## Coding and code reviews
+
+### Code that Works
+
+Working code with a good enough architecture is better than buggy code with
+a perfect architecture.
+
+### Code is Not Your Partner
+
+Sometimes we don't have to be nice about other people's code:
+
+  - can be different platforms
+  - can be outdated code
+  - can be ancient build tools
+  - can be the code that has some parts you don't need
+  - can be mistakes
+
+In this case it is fine to delete or agressively modify some code to compile it, test it, learn about it.
+
+### Refactoring I
+
+Replace != "Remove + Write". Replace = "Write new + Re-route + Remove old".
+
+### Smallest Scope
+
+- Restrict the scope of data to the smallest possible. (The Power of 10: Rules
+for Developing Safety-Critical Code by NASA)
+
+### Code Style as a Blocker
+
+Sometimes code style can be a blocker. Poorly formatted code can make
+understanding of it extremely difficult. Do everything to reduce your cognitive
+load. Real-world example:
+
+```swift
+let expectedRemainingLoops = Int(ceil( (expectedRemainingElements - Double(currentRemainingElementsForLoop)) / Double(PPENumberOfTasksInCurrentLoop) ))
+```
+
+reads much better if
+
+```swift
+let expectedRemainingLoops =
+  Int(
+    ceil(
+      (expectedRemainingElements - Double(currentRemainingElementsForLoop)) /
+      Double(PPENumberOfTasksInCurrentLoop)
+    )
+  )
+```
 
 ### The Moving and Changing Anti-pattern
 
@@ -740,7 +709,22 @@ obscures the diffs in the version control system, making it harder to track
 changes. The solution: isolate moving and changing into separate commits or 
 separate PRs.
 
+### Other
+
+- Don't give your classes plural names. See also "There is no such thing
+as Many".
+
 ## Maintenance Programming
+
+### Fast Programming and Slow Programming
+
+This can be read as prototype vs maintenance programming. Fast Programming is
+essential for a quick progress and is very much encouraged by the business.
+However it rarely does have time to learn from mistakes due to the effect of
+the tunnel, "straight ahead", way of thinking. Slow Programming has a virtue of
+reflection and deeper analysis but is probably too slow to get the business
+going from scratch. Business starts to appreciate Slow Programming only when it
+hits the wall of complexity and therefore the need in a proper design.
 
 ### Stable Components
 
@@ -774,6 +758,10 @@ Bad code stems from a lack of knowledge, not malice, even though both bad code a
 ### Lack of Knowledge II
 
 An interesting feature of inexperience is that it imposes limits on a software system's ability to scale. Software written with unawareness at its core will eventually become rigid and nightmarish, to the point where team members start avoiding the "dark forest" of its codebase. The natural consequence is that such software reaches an upper bound of complexity. Paradoxically, this means that someone tasked with re-engineering it will often find its complexity manageable in the end.
+
+### Goodwill vs Pain
+
+Much of what we programmers learn over the years comes from pain, not from goodwill.
 
 ## Biases
 
@@ -842,6 +830,15 @@ guarantee that software does not do what it is not supposed to.
 ### Assertions are shortcuts for a proper error handling
 
 Every assert becomes a proper error handling eventually.
+
+### Crash Early
+
+If you know how to not program defensively in a particular situation go ahead!
+Otherwise make your code to Crash Early to catch bugs as early as possible: use
+sensible assertions and stress edge-cases with tests. See
+[Some notes C in 2016: Code offensively](http://blog.erratasec.com/2016/01/some-notes-c-in-2016.html#.VtGEKBg7T5c)
+and
+[Spotify engineering culture (part 2): "We aim to mistakes faster than anyone else"](https://labs.spotify.com/2014/09/20/spotify-engineering-culture-part-2/).
 
 ## Testing
 
