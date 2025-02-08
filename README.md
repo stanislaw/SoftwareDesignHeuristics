@@ -79,10 +79,10 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Boring Code 2](#boring-code-2)
   - [Lack of Knowledge](#lack-of-knowledge)
   - [Lack of Knowledge II](#lack-of-knowledge-ii)
-- [Testing](#testing)
-- [Distribution](#distribution)
-  - [Provide Basic Test Sequences with Your Product](#provide-basic-test-sequences-with-your-product)
-  - [Provide Drivers Alongside Your Hardware](#provide-drivers-alongside-your-hardware)
+- [Biases](#biases)
+  - [The Working-So-It's-Right Bias](#the-working-so-its-right-bias)
+  - [The Fix Bias](#the-fix-bias)
+  - [Resolving Merge Conflict Bias](#resolving-merge-conflict-bias)
 - [Reliability](#reliability)
   - [Errors are not ok](#errors-are-not-ok)
   - [Errors must be understood and described](#errors-must-be-understood-and-described)
@@ -90,6 +90,10 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Critical errors vs non-critical errors](#critical-errors-vs-non-critical-errors)
   - [Assertions are better than no error handling](#assertions-are-better-than-no-error-handling)
   - [Assertions are shortcuts for a proper error handling](#assertions-are-shortcuts-for-a-proper-error-handling)
+- [Testing](#testing)
+- [Distribution](#distribution)
+  - [Provide Basic Test Sequences with Your Product](#provide-basic-test-sequences-with-your-product)
+  - [Provide Drivers Alongside Your Hardware](#provide-drivers-alongside-your-hardware)
 - [Systems](#systems)
   - [Good enough is often best](#good-enough-is-often-best)
   - [Designing Systems for Effective Work](#designing-systems-for-effective-work)
@@ -103,10 +107,6 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Capturing Meeting Results](#capturing-meeting-results)
   - [Briefing In](#briefing-in)
   - [Sharing Screen & Presenting Material](#sharing-screen--presenting-material)
-- [Biases](#biases)
-  - [The Working-So-It's-Right Bias](#the-working-so-its-right-bias)
-  - [The Fix Bias](#the-fix-bias)
-  - [Resolving Merge Conflict Bias](#resolving-merge-conflict-bias)
 - [Documentation](#documentation)
   - [Less prose, more structure](#less-prose-more-structure)
   - [Too Much Structure Overload](#too-much-structure-overload)
@@ -775,6 +775,74 @@ Bad code stems from a lack of knowledge, not malice, even though both bad code a
 
 An interesting feature of inexperience is that it imposes limits on a software system's ability to scale. Software written with unawareness at its core will eventually become rigid and nightmarish, to the point where team members start avoiding the "dark forest" of its codebase. The natural consequence is that such software reaches an upper bound of complexity. Paradoxically, this means that someone tasked with re-engineering it will often find its complexity manageable in the end.
 
+## Biases
+
+### The Working-So-It's-Right Bias
+
+The issue lies in assuming that a previous solution or setup is correct simply because it works. This leads to a lack of scrutiny, where the existing solution or setup is not questioned, and investigations proceed based on a flawed premise.
+
+### The Fix Bias
+
+When reviewing a pull request titled "Fixes XYZ," there is a natural tendency to trust the new change more than the existing code. This bias arises from the assumption that the previous implementation was flawed simply because it is being replaced. As a result, one might overlook the consequences of the fix or fail to rigorously verify the correctness of the new change.
+
+To mitigate this bias, it's important to evaluate both the old and new implementations with equal scrutiny. Consider questions such as:
+
+- Is the problem being solved accurately identified?
+- Does the new change address the issue without introducing new problems?
+- Are the trade-offs of this fix justified compared to the original implementation?
+
+By being aware of this bias, reviewers can ensure a more balanced and thorough review process.
+
+### Resolving Merge Conflict Bias
+
+Software engineers frequently resolve merge conflicts, and while this task is often trivial, it presents opportunities for introducing subtle bugs. One contributing factor is the cognitive bias that favors accepting newly introduced changes over preserving existing behavior.
+
+The conflict markers (`<<< >>>`) used by Git can obscure important details of the original code, making it easy to unintentionally discard necessary logic.
+
+A practical approach to mitigating this risk is to slow down and carefully evaluate both conflicting versions. Consider not just the new change, but also what might be lost if an existing line or code chunk is removed. Reviewing the code in context and testing after resolving conflicts can help prevent unintended regressions.
+
+## Reliability
+
+### Errors are not ok
+
+Never ignore errors. Presence of errors indicates that you don't understand your
+system well enough and therefore don't have a full control over it.
+
+An error can be major or minor but it anyway contributes negatively to the
+design and operation of your system and also to your understanding of it (see
+[Periphery](#periphery)).
+
+Errors typically ignored by developers include:
+
+- Configuration errors
+- Compiler warnings
+- Build system errors
+- Errors produced by the test suites (flaky tests)
+
+### Errors must be understood and described
+
+Google for `Malfunction 54` for a good example.
+
+### Underlying errors shall not be hidden
+
+If a higher-level error wraps some other underlying error, the information
+about the underdying error shall not be lost. Instead, it should be fully available
+to the higher-level error for error handling, logging, tracing, etc.
+
+### Critical errors vs non-critical errors
+
+Make a clear distinction between critical and non-critical errors on all levels:
+source code, software design, error reporting, documentation.
+
+### Assertions are better than no error handling
+
+When there is no error handling, presence of asserts gives at least some basic
+guarantee that software does not do what it is not supposed to.
+
+### Assertions are shortcuts for a proper error handling
+
+Every assert becomes a proper error handling eventually.
+
 ## Testing
 
 - If you do not write tests you will never learn how to write them, it is better to write bad tests then not to write any.
@@ -823,48 +891,6 @@ With some effort on your part, you can significantly improve the adoption of
 your product by making it easier to integrate and use. A smooth setup 
 process not only enhances user satisfaction but also reduces the barriers to 
 bringing your hardware to market.
-
-## Reliability
-
-### Errors are not ok
-
-Never ignore errors. Presence of errors indicates that you don't understand your
-system well enough and therefore don't have a full control over it.
-
-An error can be major or minor but it anyway contributes negatively to the
-design and operation of your system and also to your understanding of it (see
-[Periphery](#periphery)).
-
-Errors typically ignored by developers include:
-
-- Configuration errors
-- Compiler warnings
-- Build system errors
-- Errors produced by the test suites (flaky tests)
-
-### Errors must be understood and described
-
-Google for `Malfunction 54` for a good example.
-
-### Underlying errors shall not be hidden
-
-If a higher-level error wraps some other underlying error, the information
-about the underdying error shall not be lost. Instead, it should be fully available
-to the higher-level error for error handling, logging, tracing, etc.
-
-### Critical errors vs non-critical errors
-
-Make a clear distinction between critical and non-critical errors on all levels:
-source code, software design, error reporting, documentation.
-
-### Assertions are better than no error handling
-
-When there is no error handling, presence of asserts gives at least some basic
-guarantee that software does not do what it is not supposed to.
-
-### Assertions are shortcuts for a proper error handling
-
-Every assert becomes a proper error handling eventually.
 
 ## Systems
 
@@ -1037,32 +1063,6 @@ Common pitfalls:
 - Share only the relevant content—close unrelated applications, especially internal company chats, before presenting to an external audience.
 - If you need to access other files or perform actions outside the presentation, unshare your screen first, complete the task, then reshare only the necessary content.
 - If your team is presenting to an external party, align on the materials beforehand to ensure consistency in messaging.
-
-## Biases
-
-### The Working-So-It's-Right Bias
-
-The issue lies in assuming that a previous solution or setup is correct simply because it works. This leads to a lack of scrutiny, where the existing solution or setup is not questioned, and investigations proceed based on a flawed premise.
-
-### The Fix Bias
-
-When reviewing a pull request titled "Fixes XYZ," there is a natural tendency to trust the new change more than the existing code. This bias arises from the assumption that the previous implementation was flawed simply because it is being replaced. As a result, one might overlook the consequences of the fix or fail to rigorously verify the correctness of the new change.
-
-To mitigate this bias, it's important to evaluate both the old and new implementations with equal scrutiny. Consider questions such as:
-
-- Is the problem being solved accurately identified?
-- Does the new change address the issue without introducing new problems?
-- Are the trade-offs of this fix justified compared to the original implementation?
-
-By being aware of this bias, reviewers can ensure a more balanced and thorough review process.
-
-### Resolving Merge Conflict Bias
-
-Software engineers frequently resolve merge conflicts, and while this task is often trivial, it presents opportunities for introducing subtle bugs. One contributing factor is the cognitive bias that favors accepting newly introduced changes over preserving existing behavior.
-
-The conflict markers (`<<< >>>`) used by Git can obscure important details of the original code, making it easy to unintentionally discard necessary logic.
-
-A practical approach to mitigating this risk is to slow down and carefully evaluate both conflicting versions. Consider not just the new change, but also what might be lost if an existing line or code chunk is removed. Reviewing the code in context and testing after resolving conflicts can help prevent unintended regressions.
 
 ## Documentation
 
