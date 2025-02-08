@@ -24,12 +24,11 @@ This is currently just a draft—far from complete, with random notes organized 
 - [Complexity and Cognitive Load](#complexity-and-cognitive-load)
   - [Solving Right Problems](#solving-right-problems)
   - [Solutions are Context-Driven](#solutions-are-context-driven)
-  - [Solving Problems with Cash](#solving-problems-with-cash)
   - [Weakest link](#weakest-link)
-  - [Humans are not designed for Big Numbers](#humans-are-not-designed-for-big-numbers)
   - [Point of View](#point-of-view)
   - [Periphery](#periphery)
   - [Rational and Unconscious](#rational-and-unconscious)
+  - [Humans are not designed for Big Numbers](#humans-are-not-designed-for-big-numbers)
   - [There is no such thing as Many](#there-is-no-such-thing-as-many)
   - [0-1-2-Many I](#0-1-2-many-i)
   - [0-1-2-Many II](#0-1-2-many-ii)
@@ -109,6 +108,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Designing Systems for Effective Work](#designing-systems-for-effective-work)
 - [People and Organizations](#people-and-organizations)
   - [Everyone is busy](#everyone-is-busy)
+  - [Solving Problems with Cash](#solving-problems-with-cash)
   - [Four seasons](#four-seasons)
 - [Standards](#standards)
   - [Idealized standards vs. practical implementation](#idealized-standards-vs-practical-implementation)
@@ -213,10 +213,6 @@ Examples:
 - Perfectly clean code may be rewritten and become more obfuscated due to necessary performance optimizations.
 - Highly efficient code might be rewritten to sacrifice performance in favor of better maintainability and readability, especially for a larger team.
 
-### Solving Problems with Cash
-
-Every engineering problem can be solved with an infinite amount of cash.
-
 ### Weakest link
 
 A piece of information is only as clear as its most ambiguous piece. This is a
@@ -225,14 +221,6 @@ Effective Use Cases" by Steve Adolph et al., Chapter 6.6:
 
 > Like the old proverb, "A chain is only as strong as its weakest link", a use
 case is only as clear as its most ambiguous step.
-
-### Humans are not designed for Big Numbers
-
-If you have to work with something that involves a big number of entities, like
-do something on 10000 files or work with megabytes of data, start with reducing
-this quantity to a minimum possible number of entities so that still makes sense
-for a prototype of your final work: make it work with 1 file instead of 10000 or
-with 20 bytes instead of 20 gigabytes.
 
 ### Point of View
 
@@ -269,6 +257,14 @@ also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
 Engineers create rational artifacts that may appear simple and mundane. However,
 the process behind their creation often involves deep reflection and can stem from
 the unconscious mind.
+
+### Humans are not designed for Big Numbers
+
+If you have to work with something that involves a big number of entities, like
+do something on 10000 files or work with megabytes of data, start with reducing
+this quantity to a minimum possible number of entities so that still makes sense
+for a prototype of your final work: make it work with 1 file instead of 10000 or
+with 20 bytes instead of 20 gigabytes.
 
 ### There is no such thing as Many
 
@@ -1053,6 +1049,10 @@ Or, busy people themselves get tired... and create new methods and tools.
 Sometimes, a new tool can eliminate much of the effort required to achieve a 
 goal, or it simply allows a busy person to focus on "what is most important" 
 rather than covering everything.
+
+### Solving Problems with Cash
+
+Every engineering problem can be solved with an infinite amount of cash.
 
 ### Four seasons
 
