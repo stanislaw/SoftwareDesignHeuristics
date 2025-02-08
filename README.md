@@ -94,12 +94,10 @@ This is currently just a draft—far from complete, with random notes organized 
 - [Distribution](#distribution)
   - [Provide Basic Test Sequences with Your Product](#provide-basic-test-sequences-with-your-product)
   - [Provide Drivers Alongside Your Hardware](#provide-drivers-alongside-your-hardware)
-- [Systems](#systems)
-  - [Good enough is often best](#good-enough-is-often-best)
-  - [Designing Systems for Effective Work](#designing-systems-for-effective-work)
-- [People and Organizations](#people-and-organizations)
-  - [Everyone is busy](#everyone-is-busy)
-  - [Four seasons](#four-seasons)
+- [Documentation](#documentation)
+  - [Less prose, more structure](#less-prose-more-structure)
+  - [Too Much Structure Overload](#too-much-structure-overload)
+  - [Encyclopedic Document](#encyclopedic-document)
 - [Meetings](#meetings)
   - [Sound Check](#sound-check)
   - [Meeting Agenda](#meeting-agenda)
@@ -107,10 +105,12 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Capturing Meeting Results](#capturing-meeting-results)
   - [Briefing In](#briefing-in)
   - [Sharing Screen & Presenting Material](#sharing-screen--presenting-material)
-- [Documentation](#documentation)
-  - [Less prose, more structure](#less-prose-more-structure)
-  - [Too Much Structure Overload](#too-much-structure-overload)
-  - [Encyclopedic Document](#encyclopedic-document)
+- [Systems](#systems)
+  - [Good enough is often best](#good-enough-is-often-best)
+  - [Designing Systems for Effective Work](#designing-systems-for-effective-work)
+- [People and Organizations](#people-and-organizations)
+  - [Everyone is busy](#everyone-is-busy)
+  - [Four seasons](#four-seasons)
 - [Standards](#standards)
   - [Idealized standards vs. practical implementation](#idealized-standards-vs-practical-implementation)
   - [The challenge of standards implementation](#the-challenge-of-standards-implementation)
@@ -892,6 +892,116 @@ your product by making it easier to integrate and use. A smooth setup
 process not only enhances user satisfaction but also reduces the barriers to 
 bringing your hardware to market.
 
+## Documentation
+
+- Good documentation is dry and boring. This can create an illusion that writing
+good documentation is easy when in fact it is not.
+
+### Less prose, more structure
+
+Technical documentation is supposed to focus engineer's attention on achieving
+a given goal such as to build a specific system. It is easier to focus one's
+attention on things that have structure embedded in them compared to things
+that are hidden in several paragraphs of prose. Prose has no structure and
+that is why a reader has to do an extra exercise of creating an order out of
+what he is reading. If the documentation already has an order in it, the reader
+can spend less time for a mental reconstruction of the content and focus on
+the technical facts more easily.
+
+Some of the important tools that communicate order in technical documentation:
+
+- Document structure and table of contents
+- Diagrams
+- Tables.
+
+### Too Much Structure Overload
+
+Excessively deep nesting in documents or folder structures can hinder the 
+understanding of the overall project or system structure, especially if the 
+principles used for organizing the sections lack consistency. Ideally, a 
+good structure should be intuitive, or at the very least, the organizational 
+principle should be easy to understand and mentally map, facilitating easier 
+navigation of the content.
+
+### Encyclopedic Document
+
+An encyclopedic document is created over time as a collection of inputs from
+various ad hoc events, eventually becoming a generic repository of 
+everything. These documents often have complex, nested structures and lack a 
+single consistent narrative. Reading them feels more like going through a 
+dictionary from A to Z rather than following a coherent story. This can make 
+it difficult for readers to stay engaged, which might explain why many 
+people shy away from reading standards altogether.
+
+Standards or guidelines are often structured in this encyclopedic way, as they 
+aim to encompass all aspects of product development or organizational 
+processes. Similarly, requirements specifications can easily take on an 
+encyclopedic form, making them hard to navigate and comprehend.
+
+When creating such documents, it’s important to establish a guiding 
+principle that helps readers mentally map and navigate the content. Ideally, 
+the document should include a unifying narrative or story that makes it 
+easier to follow, even if the underlying information is complex or diverse. 
+A clear structure and logical flow can transform an overwhelming collection 
+of information into a useful and accessible resource.
+
+## Meetings
+
+### Sound Check
+
+It's great when everyone joins a meeting on time, but an often-overlooked practice is doing a quick sound and video check to ensure everything is working smoothly. A good rule of thumb is to join:
+
+- 5 minutes early for routine meetings.
+- 15–30+ minutes early for important meetings, to handle any technical issues in advance.
+
+### Meeting Agenda
+
+A well-prepared meeting runs smoothly when attendees know what to expect.
+
+- A strong meeting has a predefined agenda that allows participants to follow a clear execution plan.
+- Is the agenda known in advance?
+- Can you or your team define it?
+- Are there questions or answers that can be prepared beforehand?
+
+### Meeting Notes
+
+Meetings often lack structure, and when no notes are taken, valuable discussions can be lost. A better approach is for someone to take ownership of note-taking in real-time, ideally on a shared screen so everyone can see what is being recorded.
+
+- If your team owns the agenda, align meeting notes with the planned topics.
+- Structure notes so key points and next steps are clear.
+
+### Capturing Meeting Results
+
+A meeting without tangible outcomes is just an expensive conversation. At a minimum, meetings should result in:
+
+- Action points: tasks, follow-ups, next meetings.
+- Decisions made.
+- Recognized trade-offs.
+
+Whenever possible, capturing processes or architectures in a diagram is better than a simple bullet point. Even if no formal notes are recorded, every participant leaves with takeaways and mental models — but written records significantly increase the meeting’s effectiveness.
+
+Anti-pattern: Running meetings without documenting useful outcomes, leading to wasted time and repeated discussions.
+
+### Briefing In
+
+Before the actual meeting, getting alignment among participants is key, whether for internal team discussions or external events like conferences and large review meetings. When a team participates in an external meeting, it is crucial that everyone is on the same page and presents a unified front, avoiding any visible disagreement or misalignment.
+
+Good questions to determine if a pre-meeting briefing is needed:
+
+- How many attendees already know what will be presented?
+- Does the content introduce significant innovation that requires prior context? Could too much new information create confusion within the presenting team?
+
+Common pitfalls:
+
+- Discussing internal team matters in the presence of external participants.
+- Asking too many unrelated questions that derail the focus of the meeting, particularly when it disrupts team cohesion and diverts attention from the main agenda. This is especially problematic when an individual undermines the shared position of the team by introducing misalignment.
+
+### Sharing Screen & Presenting Material
+
+- Share only the relevant content—close unrelated applications, especially internal company chats, before presenting to an external audience.
+- If you need to access other files or perform actions outside the presentation, unshare your screen first, complete the task, then reshare only the necessary content.
+- If your team is presenting to an external party, align on the materials beforehand to ensure consistency in messaging.
+
 ## Systems
 
 ### Good enough is often best
@@ -1006,116 +1116,6 @@ See also Kent Beck's
 [The Product Development Triathlon](https://medium.com/@kentbeck_7670/the-product-development-triathlon-6464e2763c46). His 3 phases:
 Explore-Expand-Extract can be loosely mapped to the Spring-Summer-Autumn
 seasons.
-
-## Meetings
-
-### Sound Check
-
-It's great when everyone joins a meeting on time, but an often-overlooked practice is doing a quick sound and video check to ensure everything is working smoothly. A good rule of thumb is to join:
-
-- 5 minutes early for routine meetings.
-- 15–30+ minutes early for important meetings, to handle any technical issues in advance.
-
-### Meeting Agenda
-
-A well-prepared meeting runs smoothly when attendees know what to expect.
-
-- A strong meeting has a predefined agenda that allows participants to follow a clear execution plan.
-- Is the agenda known in advance?
-- Can you or your team define it?
-- Are there questions or answers that can be prepared beforehand?
-
-### Meeting Notes
-
-Meetings often lack structure, and when no notes are taken, valuable discussions can be lost. A better approach is for someone to take ownership of note-taking in real-time, ideally on a shared screen so everyone can see what is being recorded.
-
-- If your team owns the agenda, align meeting notes with the planned topics.
-- Structure notes so key points and next steps are clear.
-
-### Capturing Meeting Results
-
-A meeting without tangible outcomes is just an expensive conversation. At a minimum, meetings should result in:
-
-- Action points: tasks, follow-ups, next meetings.
-- Decisions made.
-- Recognized trade-offs.
-
-Whenever possible, capturing processes or architectures in a diagram is better than a simple bullet point. Even if no formal notes are recorded, every participant leaves with takeaways and mental models — but written records significantly increase the meeting’s effectiveness.
-
-Anti-pattern: Running meetings without documenting useful outcomes, leading to wasted time and repeated discussions.
-
-### Briefing In
-
-Before the actual meeting, getting alignment among participants is key, whether for internal team discussions or external events like conferences and large review meetings. When a team participates in an external meeting, it is crucial that everyone is on the same page and presents a unified front, avoiding any visible disagreement or misalignment.
-
-Good questions to determine if a pre-meeting briefing is needed:
-
-- How many attendees already know what will be presented?
-- Does the content introduce significant innovation that requires prior context? Could too much new information create confusion within the presenting team?
-
-Common pitfalls:
-
-- Discussing internal team matters in the presence of external participants.
-- Asking too many unrelated questions that derail the focus of the meeting, particularly when it disrupts team cohesion and diverts attention from the main agenda. This is especially problematic when an individual undermines the shared position of the team by introducing misalignment.
-
-### Sharing Screen & Presenting Material
-
-- Share only the relevant content—close unrelated applications, especially internal company chats, before presenting to an external audience.
-- If you need to access other files or perform actions outside the presentation, unshare your screen first, complete the task, then reshare only the necessary content.
-- If your team is presenting to an external party, align on the materials beforehand to ensure consistency in messaging.
-
-## Documentation
-
-- Good documentation is dry and boring. This can create an illusion that writing
-good documentation is easy when in fact it is not.
-
-### Less prose, more structure
-
-Technical documentation is supposed to focus engineer's attention on achieving
-a given goal such as to build a specific system. It is easier to focus one's
-attention on things that have structure embedded in them compared to things
-that are hidden in several paragraphs of prose. Prose has no structure and
-that is why a reader has to do an extra exercise of creating an order out of
-what he is reading. If the documentation already has an order in it, the reader
-can spend less time for a mental reconstruction of the content and focus on
-the technical facts more easily.
-
-Some of the important tools that communicate order in technical documentation:
-
-- Document structure and table of contents
-- Diagrams
-- Tables.
-
-### Too Much Structure Overload
-
-Excessively deep nesting in documents or folder structures can hinder the 
-understanding of the overall project or system structure, especially if the 
-principles used for organizing the sections lack consistency. Ideally, a 
-good structure should be intuitive, or at the very least, the organizational 
-principle should be easy to understand and mentally map, facilitating easier 
-navigation of the content.
-
-### Encyclopedic Document
-
-An encyclopedic document is created over time as a collection of inputs from
-various ad hoc events, eventually becoming a generic repository of 
-everything. These documents often have complex, nested structures and lack a 
-single consistent narrative. Reading them feels more like going through a 
-dictionary from A to Z rather than following a coherent story. This can make 
-it difficult for readers to stay engaged, which might explain why many 
-people shy away from reading standards altogether.
-
-Standards or guidelines are often structured in this encyclopedic way, as they 
-aim to encompass all aspects of product development or organizational 
-processes. Similarly, requirements specifications can easily take on an 
-encyclopedic form, making them hard to navigate and comprehend.
-
-When creating such documents, it’s important to establish a guiding 
-principle that helps readers mentally map and navigate the content. Ideally, 
-the document should include a unifying narrative or story that makes it 
-easier to follow, even if the underlying information is complex or diverse. 
-A clear structure and logical flow can transform an overwhelming collection 
-of information into a useful and accessible resource.
 
 ## Standards
 
