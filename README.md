@@ -948,13 +948,60 @@ seasons.
 
 ## Meetings
 
-- **Heating space with meetings.** Meetings shall end up with meeting notes,
-because otherwise the discussion is only heating the meeting space.
-A diagram that captures a process or an architecture is better than a single
-bullet point "process" or "architecture". A single bullet point might be better
-than nothing. Of course, even if nothing is recorded, people still leave their
-meetings with takeaways and updated mental models, but a meeting's effectiveness
-is certainly higher if its outcome is captured on a physical medium.
+### Sound Check
+
+It's great when everyone joins a meeting on time, but an often-overlooked practice is doing a quick sound and video check to ensure everything is working smoothly. A good rule of thumb is to join:
+
+- 5 minutes early for routine meetings.
+- 15–30+ minutes early for important meetings, to handle any technical issues in advance.
+
+### Meeting Agenda
+
+A well-prepared meeting runs smoothly when attendees know what to expect.
+
+- A strong meeting has a predefined agenda that allows participants to follow a clear execution plan.
+- Is the agenda known in advance?
+- Can you or your team define it?
+- Are there questions or answers that can be prepared beforehand?
+
+### Meeting Notes
+
+Meetings often lack structure, and when no notes are taken, valuable discussions can be lost. A better approach is for someone to take ownership of note-taking in real-time, ideally on a shared screen so everyone can see what is being recorded.
+
+- If your team owns the agenda, align meeting notes with the planned topics.
+- Structure notes so key points and next steps are clear.
+
+### Capturing Meeting Results
+
+A meeting without tangible outcomes is just an expensive conversation. At a minimum, meetings should result in:
+
+- Action points: tasks, follow-ups, next meetings.
+- Decisions made.
+- Recognized trade-offs.
+
+Whenever possible, capturing processes or architectures in a diagram is better than a simple bullet point. Even if no formal notes are recorded, every participant leaves with takeaways and mental models—but written records significantly increase the meeting’s effectiveness.
+
+Anti-pattern: Running meetings without documenting useful outcomes, leading to wasted time and repeated discussions.
+
+### Briefing In
+
+Before the actual meeting, getting alignment among participants is key, whether for internal team discussions or external events like conferences and large review meetings. When a team participates in an external meeting, it is crucial that everyone is on the same page and presents a unified front, avoiding any visible disagreement or misalignment.
+
+Good questions to determine if a pre-meeting briefing is needed:
+
+- How many attendees already know what will be presented?
+- Does the content introduce significant innovation that requires prior context? Could too much new information create confusion within the presenting team?
+
+Common pitfalls:
+
+- Discussing internal team matters in the presence of external participants.
+- Asking too many unrelated questions that derail the focus of the meeting, particularly when it disrupts team cohesion and diverts attention from the main agenda. This is especially problematic when an individual undermines the shared position of the team by introducing misalignment.
+
+### Sharing Screen & Presenting Material
+
+- Share only the relevant content—close unrelated applications, especially internal company chats, before presenting to an external audience.
+- If you need to access other files or perform actions outside the presentation, unshare your screen first, complete the task, then reshare only the necessary content.
+- If your team is presenting to an external party, align on the materials beforehand to ensure consistency in messaging.
 
 ## Biases
 
