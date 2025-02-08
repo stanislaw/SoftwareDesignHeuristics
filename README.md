@@ -839,8 +839,14 @@ who enjoy fixing things "in just a few minutes").
 
 ## Systems
 
-- "Good enough for each part is often best for the whole system." ("The Art of
+### Good enough is often best
+
+"Good enough for each part is often best for the whole system." ("The Art of
 Systems Thinking")
+
+In "Engineering a Safer World", Nancy Leveson discusses how, in air traffic control, individual flight paths may not be optimized for each aircraft to ensure overall traffic harmony. This approach is necessary because optimizing each flight path individually could lead to conflicts and inefficiencies. Instead, air traffic control systems manage traffic by coordinating flight paths to maintain safe separation between aircraft, ensuring the overall safety and efficiency of the airspace.
+
+### Designing Systems for Effective Work
 
 - "Rather than trying to find extraordinary people to do a job, design the job so
 that ordinary people can do it well." ("The
