@@ -71,8 +71,15 @@ This is currently just a draft—far from complete, with random notes organized 
 - [Day-to-day work](#day-to-day-work)
   - [Leave Work Better: Improving Today for a Simpler Tomorrow](#leave-work-better-improving-today-for-a-simpler-tomorrow)
   - [Task Sequencing: Group Related Activities for Efficiency](#task-sequencing-group-related-activities-for-efficiency)
-- [Code reviews](#code-reviews)
+- [Coding and code reviews](#coding-and-code-reviews)
   - [The Moving and Changing Anti-pattern](#the-moving-and-changing-anti-pattern)
+- [Maintenance Programming](#maintenance-programming)
+  - [Stable Components](#stable-components)
+  - [Boring Code](#boring-code)
+  - [Boring Code 2](#boring-code-2)
+  - [Lack of Knowledge](#lack-of-knowledge)
+  - [Lack of Knowledge II](#lack-of-knowledge-ii)
+- [Testing](#testing)
 - [Distribution](#distribution)
   - [Provide Basic Test Sequences with Your Product](#provide-basic-test-sequences-with-your-product)
   - [Provide Drivers Alongside Your Hardware](#provide-drivers-alongside-your-hardware)
@@ -83,12 +90,6 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Critical errors vs non-critical errors](#critical-errors-vs-non-critical-errors)
   - [Assertions are better than no error handling](#assertions-are-better-than-no-error-handling)
   - [Assertions are shortcuts for a proper error handling](#assertions-are-shortcuts-for-a-proper-error-handling)
-- [Maintenance Programming](#maintenance-programming)
-  - [Stable Components](#stable-components)
-  - [Boring Code](#boring-code)
-  - [Boring Code 2](#boring-code-2)
-  - [Lack of Knowledge](#lack-of-knowledge)
-  - [Lack of Knowledge II](#lack-of-knowledge-ii)
 - [Systems](#systems)
   - [Good enough is often best](#good-enough-is-often-best)
   - [Designing Systems for Effective Work](#designing-systems-for-effective-work)
@@ -126,7 +127,6 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Safety as a Defensive Discipline](#safety-as-a-defensive-discipline)
   - [Safety for Engineering is Like Medicine for People](#safety-for-engineering-is-like-medicine-for-people)
   - [User Interfaces and Critical Systems](#user-interfaces-and-critical-systems)
-- [Testing](#testing)
 - [Books](#books)
 - [Similar resources](#similar-resources)
 
@@ -730,7 +730,7 @@ When sequencing tasks (especially repetitive ones), group related tasks together
 
 One useful pattern is the 'Inbox' approach, where input is first collected and then executed upon. For example, when writing a technical document, split the task of gathering the document content (the 'Inbox' with bullet points) from the task of formulating and spelling out each individual content item.
 
-## Code reviews
+## Coding and code reviews
 
 ### The Moving and Changing Anti-pattern
 
@@ -739,6 +739,57 @@ that involves both moving and changing things at the same time. This
 obscures the diffs in the version control system, making it harder to track 
 changes. The solution: isolate moving and changing into separate commits or 
 separate PRs.
+
+## Maintenance Programming
+
+### Stable Components
+
+Stable Components is a resort of a Maintenance Programmer. One way for a
+developer to survive in a large legacy project is to create stable components or
+extract them out of existing mess of code. Stable component most likely means a
+testable component: it can be a parsing module or API layer or string
+manipulation helpers. Having such islands of stability helps a lot to overcome
+the difficulties of a maintenance programming. See also Periphery and Prima
+Materia Heuristics.
+
+### Boring Code
+
+(from [Writing Solid Code](http://writingsolidcode.com/))
+
+> If your code feels tricky, that's your gut telling you that something isn't right. Listen to your gut. If you find yourself
+thinking of a piece of code as a near trick, you're really saying to yourself that an algorithm produces correct results even though it is not apparent that it should. The bugs won't be apparent to you either.
+
+> Be truly clever; write boring code. You'll have fewer bugs, and the maintenance programmers will love you for it.
+
+### Boring Code 2
+
+Complex software is not to be developed and used by average programmers. This
+happens anyway because of production pressures. People say: your mileage may
+vary.
+
+### Lack of Knowledge
+
+Bad code stems from a lack of knowledge, not malice, even though both bad code and malice share unawareness as their root cause. Sometimes, it helps to put on a "lack-of-knowledge hat" to better understand the intentions behind the code you're reading.
+
+### Lack of Knowledge II
+
+An interesting feature of inexperience is that it imposes limits on a software system's ability to scale. Software written with unawareness at its core will eventually become rigid and nightmarish, to the point where team members start avoiding the "dark forest" of its codebase. The natural consequence is that such software reaches an upper bound of complexity. Paradoxically, this means that someone tasked with re-engineering it will often find its complexity manageable in the end.
+
+## Testing
+
+- If you do not write tests you will never learn how to write them, it is better to write bad tests then not to write any.
+- Ability to do TDD is not about black and white: “can or can not”, it is about having 1001 things in your toolbox: techniques, patterns, tricks and hacks - when you have enough of them you can test almost everything in a reasonable amount of time.
+- “Legacy code is a code without tests” (“Working effectively with Legacy Code” by Michael Feathers).
+- On top of being useful for Quality, Testing is an important prerequisite for Simulations which are essential for complexity management: if I can test, read simulate, every aspect of my program, this means that I can still manage its complexity and vice versa - if my app has blind-spots: areas that are hard or impossible to test, I don't have any control over those areas and have to resort to testing of my app in the wild, outsourcing the quality of my app to the real users.
+- “If you can't measure it then it can't be called engineering” (taken from “Object-Oriented Software Engineering: A Use Case Driven Approach” by Ivar Jacobson). We of course also read “measure” as “test” which is another way of measurement.
+- Ideally, we should be able to test everything. If something is hard to test,
+  it usually means our code quality or the corresponding toolset and testing 
+  infrastructure are not yet where they need to be. However, with effort, we 
+  can improve them and get there. If you're unsure how to test something 
+  properly, start with the simplest, "ugliest" approach: stub everything in 
+  a basic way, stub the network in a simple manner, assert what you need to 
+  assert, and only then iterate on refactoring both the test and the system 
+  under test (SUT).
 
 ## Distribution
 
@@ -814,41 +865,6 @@ guarantee that software does not do what it is not supposed to.
 ### Assertions are shortcuts for a proper error handling
 
 Every assert becomes a proper error handling eventually.
-
-## Maintenance Programming
-
-### Stable Components
-
-Stable Components is a resort of a Maintenance Programmer. One way for a
-developer to survive in a large legacy project is to create stable components or
-extract them out of existing mess of code. Stable component most likely means a
-testable component: it can be a parsing module or API layer or string
-manipulation helpers. Having such islands of stability helps a lot to overcome
-the difficulties of a maintenance programming. See also Periphery and Prima
-Materia Heuristics.
-
-### Boring Code
-
-(from [Writing Solid Code](http://writingsolidcode.com/))
-
-> If your code feels tricky, that's your gut telling you that something isn't right. Listen to your gut. If you find yourself
-thinking of a piece of code as a near trick, you're really saying to yourself that an algorithm produces correct results even though it is not apparent that it should. The bugs won't be apparent to you either.
-
-> Be truly clever; write boring code. You'll have fewer bugs, and the maintenance programmers will love you for it.
-
-### Boring Code 2
-
-Complex software is not to be developed and used by average programmers. This
-happens anyway because of production pressures. People say: your mileage may
-vary.
-
-### Lack of Knowledge
-
-Bad code stems from a lack of knowledge, not malice, even though both bad code and malice share unawareness as their root cause. Sometimes, it helps to put on a "lack-of-knowledge hat" to better understand the intentions behind the code you're reading.
-
-### Lack of Knowledge II
-
-An interesting feature of inexperience is that it imposes limits on a software system's ability to scale. Software written with unawareness at its core will eventually become rigid and nightmarish, to the point where team members start avoiding the "dark forest" of its codebase. The natural consequence is that such software reaches an upper bound of complexity. Paradoxically, this means that someone tasked with re-engineering it will often find its complexity manageable in the end.
 
 ## Systems
 
@@ -1241,22 +1257,6 @@ simple, operators can fall into automatism, executing the wrong action due
 to a lack of alertness. There are serious concerns that software and 
 interface designers should prioritize preventing user mistakes, rather than 
 focusing solely on aesthetics.
-
-## Testing
-
-- If you do not write tests you will never learn how to write them, it is better to write bad tests then not to write any.
-- Ability to do TDD is not about black and white: “can or can not”, it is about having 1001 things in your toolbox: techniques, patterns, tricks and hacks - when you have enough of them you can test almost everything in a reasonable amount of time.
-- “Legacy code is a code without tests” (“Working effectively with Legacy Code” by Michael Feathers).
-- On top of being useful for Quality, Testing is an important prerequisite for Simulations which are essential for complexity management: if I can test, read simulate, every aspect of my program, this means that I can still manage its complexity and vice versa - if my app has blind-spots: areas that are hard or impossible to test, I don't have any control over those areas and have to resort to testing of my app in the wild, outsourcing the quality of my app to the real users.
-- “If you can't measure it then it can't be called engineering” (taken from “Object-Oriented Software Engineering: A Use Case Driven Approach” by Ivar Jacobson). We of course also read “measure” as “test” which is another way of measurement.
-- Ideally, we should be able to test everything. If something is hard to test,
-  it usually means our code quality or the corresponding toolset and testing 
-  infrastructure are not yet where they need to be. However, with effort, we 
-  can improve them and get there. If you're unsure how to test something 
-  properly, start with the simplest, "ugliest" approach: stub everything in 
-  a basic way, stub the network in a simple manner, assert what you need to 
-  assert, and only then iterate on refactoring both the test and the system 
-  under test (SUT).
 
 ## Books
 
