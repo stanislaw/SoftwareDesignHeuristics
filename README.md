@@ -979,7 +979,7 @@ A meeting without tangible outcomes is just an expensive conversation. At a mini
 - Decisions made.
 - Recognized trade-offs.
 
-Whenever possible, capturing processes or architectures in a diagram is better than a simple bullet point. Even if no formal notes are recorded, every participant leaves with takeaways and mental models—but written records significantly increase the meeting’s effectiveness.
+Whenever possible, capturing processes or architectures in a diagram is better than a simple bullet point. Even if no formal notes are recorded, every participant leaves with takeaways and mental models — but written records significantly increase the meeting’s effectiveness.
 
 Anti-pattern: Running meetings without documenting useful outcomes, leading to wasted time and repeated discussions.
 
@@ -1020,6 +1020,14 @@ To mitigate this bias, it's important to evaluate both the old and new implement
 - Are the trade-offs of this fix justified compared to the original implementation?
 
 By being aware of this bias, reviewers can ensure a more balanced and thorough review process.
+
+### Resolving Merge Conflict Bias
+
+Software engineers frequently resolve merge conflicts, and while this task is often trivial, it presents opportunities for introducing subtle bugs. One contributing factor is the cognitive bias that favors accepting newly introduced changes over preserving existing behavior.
+
+The conflict markers (`<<< >>>`) used by Git can obscure important details of the original code, making it easy to unintentionally discard necessary logic.
+
+A practical approach to mitigating this risk is to slow down and carefully evaluate both conflicting versions. Consider not just the new change, but also what might be lost if an existing line or code chunk is removed. Reviewing the code in context and testing after resolving conflicts can help prevent unintended regressions.
 
 ## Documentation
 
