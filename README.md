@@ -288,10 +288,7 @@ It is not unusual that the solution you are looking for may be in two clicks and
 
 ### Other
 
-- Don't give your classes plural names. One example is a test class which is
-based on a xUnit framework. Don't call it plural, call it singular:
-your class gives you an instance that exercises **many** tests but the class and
-instance is one. `UserTest`, not `UserTests`! See also "There is no such thing
+- Don't give your classes plural names. See also "There is no such thing
 as Many".
 
 ## Complexity and Cognitive Load
@@ -628,7 +625,7 @@ explicit design constraint.
   ones, this may indicate that the partitioning has not been complete.
 - Separate construction from operation (one example: Factory vs Command)
 - Separate content from presentation (applies to UI-heavy code, great example: HTML/CSS)
-- Separate easy from complex: isolate easy, isolate complex, repeat many times (todo: separation vs isolation)
+- Separate easy from complex: isolate easy, isolate complex, repeat many times
 - Separate stateless from stateful
 - Separate data from behavior and behavior from data unless you do have a good
 OOP class/object with good data/behavior balance.
@@ -710,6 +707,18 @@ to significant problems:
 Instead of using RAII, manage business logic explicitly through well-defined 
 methods or services. This approach keeps the logic transparent, easier to 
 understand, and more adaptable to changing requirements.
+
+## Day-to-day work
+
+### Leave Work Better: Improving Today for a Simpler Tomorrow
+
+Always leave the work artifacts—whether code, documentation, diagrams, models, or others—in a better state than they were before, giving future you or someone else the opportunity to improve them even further.
+
+### Task Sequencing: Group Related Activities for Efficiency
+
+When sequencing tasks (especially repetitive ones), group related tasks together and separate them from others.
+
+One useful pattern is the 'Inbox' approach, where input is first collected and then executed upon. For example, when writing a technical document, split the task of gathering the document content (the 'Inbox' with bullet points) from the task of formulating and spelling out each individual content item.
 
 ## Code reviews
 
@@ -830,12 +839,6 @@ Bad code stems from a lack of knowledge, not malice, even though both bad code a
 ### Lack of Knowledge II
 
 An interesting feature of inexperience is that it imposes limits on a software system's ability to scale. Software written with unawareness at its core will eventually become rigid and nightmarish, to the point where team members start avoiding the "dark forest" of its codebase. The natural consequence is that such software reaches an upper bound of complexity. Paradoxically, this means that someone tasked with re-engineering it will often find its complexity manageable in the end.
-
-### Other
-
-- Always leave code in a better state than it had been before you got it, save a
-time for future you or someone else to make it even better (dedicated to folks
-who enjoy fixing things "in just a few minutes").
 
 ## Systems
 
