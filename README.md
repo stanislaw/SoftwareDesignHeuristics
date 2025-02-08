@@ -22,18 +22,17 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Task Sequencing: Group Related Activities for Efficiency](#task-sequencing-group-related-activities-for-efficiency)
   - [Everything Explicit. No Magic.](#everything-explicit-no-magic)
 - [Complexity and Cognitive Load](#complexity-and-cognitive-load)
-  - [Black Box with a Green Play Button](#black-box-with-a-green-play-button)
-  - [Humans are not designed for Big Numbers](#humans-are-not-designed-for-big-numbers)
-  - [Weakest link](#weakest-link)
-  - [There is no such thing as Many](#there-is-no-such-thing-as-many)
-  - [0-1-2-Many I](#0-1-2-many-i)
-  - [0-1-2-Many II](#0-1-2-many-ii)
-  - [Periphery](#periphery)
   - [Solving Right Problems](#solving-right-problems)
   - [Solutions are Context-Driven](#solutions-are-context-driven)
   - [Solving Problems with Cash](#solving-problems-with-cash)
-  - [Rational and Unconscious](#rational-and-unconscious)
+  - [Weakest link](#weakest-link)
+  - [Humans are not designed for Big Numbers](#humans-are-not-designed-for-big-numbers)
   - [Point of View](#point-of-view)
+  - [Periphery](#periphery)
+  - [Rational and Unconscious](#rational-and-unconscious)
+  - [There is no such thing as Many](#there-is-no-such-thing-as-many)
+  - [0-1-2-Many I](#0-1-2-many-i)
+  - [0-1-2-Many II](#0-1-2-many-ii)
   - [Masking (Shadowing)](#masking-shadowing)
 - [Design](#design)
   - [Poor Abstraction](#poor-abstraction)
@@ -47,6 +46,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Bad Design in House](#bad-design-in-house)
   - [Trade-off of Encapsulation](#trade-off-of-encapsulation)
   - [Unnecessary Flexibility](#unnecessary-flexibility)
+  - [Black Box with a Green Play Button](#black-box-with-a-green-play-button)
   - [Single Source Concept and Its Exceptions](#single-source-concept-and-its-exceptions)
   - [Resilience to Change vs Fixed Perfect Solutions](#resilience-to-change-vs-fixed-perfect-solutions)
   - [Two Almost Identical Entities](#two-almost-identical-entities)
@@ -196,19 +196,26 @@ Whenever a thought explicit vs magic comes to your mind, go for explicit.
 
 https://en.wikipedia.org/wiki/Cognitive_load (and Cognitive Overload)
 
-### Black Box with a Green Play Button
+### Solving Right Problems
 
-Ideal interface for a system of arbitrary complexity is a black box with a green
-play button on it - you take the box, press green button and it just works. The
-second ideal interface is when you also have a red button to stop the system.
+"Engineers are great at solving problems but they are not always great at
+identifying the right problems to be solved"
+(Dr. John Thomas, ESWC 2019).
 
-### Humans are not designed for Big Numbers
+### Solutions are Context-Driven
 
-If you have to work with something that involves a big number of entities, like
-do something on 10000 files or work with megabytes of data, start with reducing
-this quantity to a minimum possible number of entities so that still makes sense
-for a prototype of your final work: make it work with 1 file instead of 10000 or
-with 20 bytes instead of 20 gigabytes.
+Even the best solution to a problem is valid only within a given context. A slight change in the context can invalidate the solution, requiring one to start from scratch. This understanding highlights that no solution is universally perfect. Instead, solutions address specific problems or contexts in an "optimal enough" way. It also encourages detachment from ego-driven perfection, allowing solutions to evolve as the environment changes.
+
+Examples:
+
+- A clean architecture or pattern may shift to a completely different, sometimes opposite, solution due to changing requirements or system environments.
+- A "perfect" solution might be discarded because a new team or team leader dislikes technology X and prefers technology Y, or simply because it aligns with emerging industry trends.
+- Perfectly clean code may be rewritten and become more obfuscated due to necessary performance optimizations.
+- Highly efficient code might be rewritten to sacrifice performance in favor of better maintainability and readability, especially for a larger team.
+
+### Solving Problems with Cash
+
+Every engineering problem can be solved with an infinite amount of cash.
 
 ### Weakest link
 
@@ -218,6 +225,50 @@ Effective Use Cases" by Steve Adolph et al., Chapter 6.6:
 
 > Like the old proverb, "A chain is only as strong as its weakest link", a use
 case is only as clear as its most ambiguous step.
+
+### Humans are not designed for Big Numbers
+
+If you have to work with something that involves a big number of entities, like
+do something on 10000 files or work with megabytes of data, start with reducing
+this quantity to a minimum possible number of entities so that still makes sense
+for a prototype of your final work: make it work with 1 file instead of 10000 or
+with 20 bytes instead of 20 gigabytes.
+
+### Point of View
+
+[How NASA Builds Teams](https://www.wiley.com/en-us/How+NASA+Builds+Teams%3A+Mission+Critical+Soft+Skills+for+Scientists%2C+Engineers%2C+and+Project+Teams-p-9780470456484):
+
+> The right coordinate system can turn an impossible problem into two really 
+> hard ones.
+
+[The Early History Of Smalltalk](https://worrydream.com/EarlyHistoryOfSmalltalk/)
+
+> Watching a famous guy much smarter than I struggle for more than 30 minutes 
+to not quite solve the problem his way (there was a bug) made quite an 
+> impression. It brought home to me once again that "point of view is worth 
+> 80 IQ points." I wasn't smarter but I had a much better internal thinking 
+> tool to amplify my abilities. This incident and others like it made 
+> paramount that any tool for children should have great thinking patterns 
+> and deep beauty "built-in."
+
+### Periphery
+
+If your reasoning is complicated by cognitive overload that you have after a
+problem you are trying to solve and there is no obvious way to make a first step
+towards solution, take a step back and start working with Periphery. Good
+example is legacy code: poor periphery like bad variable names, wrong
+responsibilities in classes, even those who are distant to your problem, bad
+folder structure, etc might look completely irrelevant to the core of your
+problem but still it contributes to the cognitive overload - try to clean up
+periphery and you will see that the core of your problem is now more clear and
+approachable than it was before. Another word for Periphery is Background, see
+also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
+
+### Rational and Unconscious
+
+Engineers create rational artifacts that may appear simple and mundane. However,
+the process behind their creation often involves deep reflection and can stem from
+the unconscious mind.
 
 ### There is no such thing as Many
 
@@ -253,63 +304,6 @@ it. Don't say "seven". See also **Humans are not designed for Big Numbers**.
 
 Don't start to abstract or DRY from just two things. Wait until you have at
 least 3 of them. See also **Duplication is better than poor abstraction**.
-
-### Periphery
-
-If your reasoning is complicated by cognitive overload that you have after a
-problem you are trying to solve and there is no obvious way to make a first step
-towards solution, take a step back and start working with Periphery. Good
-example is legacy code: poor periphery like bad variable names, wrong
-responsibilities in classes, even those who are distant to your problem, bad
-folder structure, etc might look completely irrelevant to the core of your
-problem but still it contributes to the cognitive overload - try to clean up
-periphery and you will see that the core of your problem is now more clear and
-approachable than it was before. Another word for Periphery is Background, see
-also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
-
-### Solving Right Problems
-
-"Engineers are great at solving problems but they are not always great at
-identifying the right problems to be solved"
-(Dr. John Thomas, ESWC 2019).
-
-### Solutions are Context-Driven
-
-Even the best solution to a problem is valid only within a given context. A slight change in the context can invalidate the solution, requiring one to start from scratch. This understanding highlights that no solution is universally perfect. Instead, solutions address specific problems or contexts in an "optimal enough" way. It also encourages detachment from ego-driven perfection, allowing solutions to evolve as the environment changes.
-
-Examples:
-
-- A clean architecture or pattern may shift to a completely different, sometimes opposite, solution due to changing requirements or system environments.
-- A "perfect" solution might be discarded because a new team or team leader dislikes technology X and prefers technology Y, or simply because it aligns with emerging industry trends.
-- Perfectly clean code may be rewritten and become more obfuscated due to necessary performance optimizations.
-- Highly efficient code might be rewritten to sacrifice performance in favor of better maintainability and readability, especially for a larger team.
-
-### Solving Problems with Cash
-
-Every engineering problem can be solved with an infinite amount of cash.
-
-### Rational and Unconscious
-
-Engineers create rational artifacts, which may appear simple and mundane. 
-However, the process behind their creation often involves deep reflection 
-and can stem from the unconscious mind.
-
-### Point of View
-
-[How NASA Builds Teams](https://www.wiley.com/en-us/How+NASA+Builds+Teams%3A+Mission+Critical+Soft+Skills+for+Scientists%2C+Engineers%2C+and+Project+Teams-p-9780470456484):
-
-> The right coordinate system can turn an impossible problem into two really 
-> hard ones.
-
-[The Early History Of Smalltalk](https://worrydream.com/EarlyHistoryOfSmalltalk/)
-
-> Watching a famous guy much smarter than I struggle for more than 30 minutes 
-to not quite solve the problem his way (there was a bug) made quite an 
-> impression. It brought home to me once again that "point of view is worth 
-> 80 IQ points." I wasn't smarter but I had a much better internal thinking 
-> tool to amplify my abilities. This incident and others like it made 
-> paramount that any tool for children should have great thinking patterns 
-> and deep beauty "built-in."
 
 ### Masking (Shadowing)
 
@@ -439,6 +433,12 @@ designs is that the more flexible they are, the harder it is to detect bugs.
 > ...When you implement features in your own projects, make them easy to use;
 don't make them unnecessary flexible. There is a difference.
 Don't allow unnecessary flexibility.
+
+### Black Box with a Green Play Button
+
+Ideal interface for a system of arbitrary complexity is a black box with a green
+play button on it - you take the box, press green button and it just works. The
+second ideal interface is when you also have a red button to stop the system.
 
 ### Single Source Concept and Its Exceptions
 
