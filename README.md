@@ -23,6 +23,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Automate everything](#automate-everything)
   - [Quick exploration](#quick-exploration)
   - [Task Sequencing: Group Related Activities for Efficiency](#task-sequencing-group-related-activities-for-efficiency)
+  - [Strive for Clarity](#strive-for-clarity)
   - [Everything Explicit. No Magic.](#everything-explicit-no-magic)
   - [Use Diagrams](#use-diagrams)
 - [Complexity and Cognitive Load](#complexity-and-cognitive-load)
@@ -219,6 +220,26 @@ documents, sometimes it is useful to "fly over" a document to find a section tha
 When sequencing tasks (especially repetitive ones), group related tasks together and separate them from others.
 
 One useful pattern is the 'Inbox' approach, where input is first collected and then executed upon. For example, when writing a technical document, split the task of gathering the document content (the 'Inbox' with bullet points) from the task of formulating and spelling out each individual content item.
+
+### Strive for Clarity
+
+Strive for clarity in everything you do. Put in the effort to make the products
+of your work, or the aspects of the system you're working on, as clear as
+possible. Simplify complexity—either by reducing the complexity itself through
+development or, if that's not feasible, by explaining the details as clearly as
+possible.
+
+Avoid owning too many non-obvious details about your work that only you
+understand. Do not hold onto esoteric knowledge – de-esoterize it. Document it
+for everyone to access.
+
+Encyclopedism or esotericism is an anti-pattern because it obscures common
+knowledge about the system for others.
+
+- Document everything, especially the most complex topics.
+- Use plain English and diagrams to explain complex topics to your colleagues.
+  Test your content with them to ensure it’s accessible. If it's still unclear,
+  ask for their feedback to improve it.
 
 ### Everything Explicit. No Magic.
 
