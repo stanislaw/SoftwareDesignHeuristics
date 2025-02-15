@@ -111,6 +111,7 @@ arbitrarily. Please don't expect it to be polished.
 - [Distribution](#distribution)
   - [Provide Basic Test Sequences with Your Product](#provide-basic-test-sequences-with-your-product)
   - [Provide Drivers Alongside Your Hardware](#provide-drivers-alongside-your-hardware)
+  - [Provide Simulators Alongside Your Hardware](#provide-simulators-alongside-your-hardware)
 - [Documentation](#documentation)
   - [Less prose, more structure](#less-prose-more-structure)
   - [Too Much Structure Overload](#too-much-structure-overload)
@@ -1159,6 +1160,17 @@ With some effort on your part, you can significantly improve the adoption of
 your product by making it easier to integrate and use. A smooth setup process
 not only enhances user satisfaction but also reduces the barriers to bringing
 your hardware to market.
+
+### Provide Simulators Alongside Your Hardware
+
+If you supply hardware, consider providing a software simulator that mimics your
+device. This greatly simplifies integration into users' SIL/PIL/HIL setups,
+especially if the target users have access to only a limited number of your
+devices (such as when the device is very expensive).
+
+For language choice, default to Python, as it is widely used for embedded
+development tools. If performance is critical, a C/C++/Rust simulator is also a
+great option, as these languages integrate well with embedded environments.
 
 ## Documentation
 
