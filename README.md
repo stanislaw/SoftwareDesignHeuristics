@@ -1,19 +1,19 @@
-# Software Design Heuristics
+# Notes on Soft Skills Behind Software
 
-These are the heuristics I find useful in my software engineering practice. I
-use the term "heuristics" to describe anything that helps me write better code,
-as long as I keep them in mind.
+These notes have been collected over time during my work as a software engineer.
 
-Some heuristics are my own, while others come from great books. Heuristics cited
-here always include references to their sources.
+Most of these notes are my own, though occasionally I quote from great books and
+other resources. Notes with quotations always include references to their
+sources.
 
-All of these heuristics are effective only when considered together. Taken in
-isolation, some may even contradict one another: if you focus on just a few and
-apply them too rigidly, they may lose their value or even lead to negative
-outcomes. Some heuristics may overlap with others, so don't take them too
-seriously.
+These notes should not be seen as strict instructions that must be followed, but
+rather as soft guidelines or recommendations. They are most effective when
+considered altogether. Taken in isolation, some may even contradict one another.
+Trying to follow these notes too rigidly can diminish their value or even lead
+to negative outcomes. There may also be some overlap between the notes, so it's
+important not to take them too literally.
 
-This is currently just a draft—far from complete, with random notes organized
+This is currently just a draft which is far from complete and organized
 arbitrarily. Please don't expect it to be polished.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
