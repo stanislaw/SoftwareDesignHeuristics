@@ -395,16 +395,19 @@ Use Cases" by Steve Adolph et al., Chapter 6.6:
 
 ### Periphery
 
-If your reasoning is complicated by cognitive overload that you have after a
-problem you are trying to solve and there is no obvious way to make a first step
-towards solution, take a step back and start working with Periphery. Good
-example is legacy code: poor periphery like bad variable names, wrong
-responsibilities in classes, even those who are distant to your problem, bad
-folder structure, etc might look completely irrelevant to the core of your
-problem but still it contributes to the cognitive overload - try to clean up
-periphery and you will see that the core of your problem is now more clear and
-approachable than it was before. Another word for Periphery is Background, see
-also [Deconcentation of Attention](http://deconcentration-of-attention.com/).
+If your reasoning is hindered by cognitive overload while trying to solve a
+problem, and there’s no clear first step toward a solution, take a step back and
+start working with the Periphery. By cleaning up the periphery, you'll often
+find that the core problem becomes clearer and more approachable.
+
+A good example is legacy code: issues in the periphery, such as poor variable
+names, incorrect class responsibilities (even those distant from your immediate
+problem), or a disorganized folder structure, may seem irrelevant to the core
+issue. However, they still contribute to the cognitive overload. Fixing them
+will help clear the path for your actual work.
+
+Another word for Periphery is Background, see also
+[Deconcentation of Attention](http://deconcentration-of-attention.com/).
 
 ### Rational and Unconscious
 
