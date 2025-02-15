@@ -231,6 +231,38 @@ others can understand your work without extra effort. A good test for
 explicitness is whether understanding is immediate, with no mental effort or 
 blockers when going through the material.
 
+### Close the loops
+
+A "loop" refers to any situation where one action is followed by another that resolves the first action in some way. Often, these loops are explicitly called "feedback loops" because they are closed with feedback that resolves an outstanding action or state, such as marking it Done, OK, ACK, or something similar.
+
+Loops can exist in both developed systems and producing organizations.
+
+Examples of loops:
+
+- Answering an email from an existing email thread closes the loop created by 
+that thread.
+- Closing a Pull Request finalizes its status, either as Done or Won't do.
+- Closing a work item ticket to Done.
+
+A task manager is an excellent tool for tracking work items that need to be 
+completed and closed. For tracking non-trivial project development topics and 
+trade-offs,
+a useful practice is to maintain an "Open Questions Log" – a table where 
+each unresolved or unclosed item is tracked by its current status until it is resolved.
+
+Sometimes a loop may never be closed, or it may be closed with a significant delay. Both scenarios can lead to potential problems or even hazards, depending on the type of system being developed.
+
+Note that 'Won't-do' is also a valid way to close the loop. For example, closing a Jira ticket with "Won't do" or "Won't fix" positively acknowledges that this work will no longer linger in someone's backlog.
+
+Not closing loops is often bad practice. Some examples include:
+
+- Not answering an email can cause project delays or result in the 
+implementation of a broken or inconsistent system, leading to incidents or accidents in the future.
+- A missed or forgotten chat message may mean important information is never 
+  delivered to a critical person.
+- A manager neglecting to follow up on an important topic raised by employees,
+  leaving it unresolved in an inbox without due attention.
+
 ### Use Diagrams
 
 Use diagrams as part of your daily work. A diagram can often explain far more
