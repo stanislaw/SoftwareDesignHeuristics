@@ -32,6 +32,7 @@ arbitrarily. Please don't expect it to be polished.
   - [Strive for Clarity](#strive-for-clarity)
   - [Everything Explicit. No Magic.](#everything-explicit-no-magic)
   - [Close the loops](#close-the-loops)
+  - [Learn from Lessons](#learn-from-lessons)
   - [Use Diagrams](#use-diagrams)
 - [Complexity and Cognitive Load](#complexity-and-cognitive-load)
   - [Solving Right Problems](#solving-right-problems)
@@ -257,7 +258,7 @@ knowledge about the system for others.
 
 - Document everything, especially the most complex topics.
 - Use plain English and diagrams to explain complex topics to your colleagues.
-  Test your content with them to ensure it’s accessible. If it's still unclear,
+  Test your content with them to ensure it is accessible. If it's still unclear,
   ask for their feedback to improve it.
 
 ### Everything Explicit. No Magic.
@@ -312,6 +313,38 @@ Not closing loops is often bad practice. Some examples include:
   delivered to a critical person.
 - A manager neglecting to follow up on an important topic raised by employees,
   leaving it unresolved in an inbox without due attention.
+
+### Learn from Lessons
+
+Do something, then learn from experience. Don't forget – take deliberate time to
+reflect. The industry has developed several best practices for capturing lessons
+learned:
+
+- Standards: Organizational and industry knowledge is captured in standards,
+  handbooks, guidelines, and best practices.
+- Post-mortems: When something goes wrong, those involved produce a structured
+  report about the event. Larger companies maintain databases of critical
+  incidents that employees can study to educate themselves.
+- Debriefs: After a meeting, the group discusses what went well or wrong.
+- Lessons learned documentation and meetings: After completing an important
+  activity, such as a project or milestone, the team takes time to reflect on
+  what went well or wrong, learn from it, and document the findings.
+
+Learning doesn't have to be only organizational – it can also be personal.
+
+Examples:
+
+- If a project was successful, what made it so? If a project failed, what were
+  the key contributing factors? How can it be improved next time?
+- Learning how to estimate software work better – what if a task was estimated
+  to take X weeks but actually took 3X? Wouldn't it be valuable to improve
+  estimation skills?
+- If one colleague is significantly more effective than another, what makes them
+  so? What tools, techniques, or habits contribute to their efficiency? Can
+  something be learned from them?
+- Observing bugs missed during code reviews – what types of bugs tend to escape
+  static analysis or peer review? What patterns can be identified to prevent
+  them in the future?
 
 ### Use Diagrams
 
@@ -396,7 +429,7 @@ Use Cases" by Steve Adolph et al., Chapter 6.6:
 ### Periphery
 
 If your reasoning is hindered by cognitive overload while trying to solve a
-problem, and there’s no clear first step toward a solution, take a step back and
+problem, and there's no clear first step toward a solution, take a step back and
 start working with the Periphery. By cleaning up the periphery, you'll often
 find that the core problem becomes clearer and more approachable.
 
@@ -1135,7 +1168,7 @@ aim to encompass all aspects of product development or organizational processes.
 Similarly, requirements specifications can easily take on an encyclopedic form,
 making them hard to navigate and comprehend.
 
-When creating such documents, it’s important to establish a guiding principle
+When creating such documents, it's important to establish a guiding principle
 that helps readers mentally map and navigate the content. Ideally, the document
 should include a unifying narrative or story that makes it easier to follow,
 even if the underlying information is complex or diverse. A clear structure and
@@ -1186,7 +1219,7 @@ minimum, meetings should result in:
 Whenever possible, capturing processes or architectures in a diagram is better
 than a simple bullet point. Even if no formal notes are recorded, every
 participant leaves with takeaways and mental models — but written records
-significantly increase the meeting’s effectiveness.
+significantly increase the meeting's effectiveness.
 
 Anti-pattern: Running meetings without documenting useful outcomes, leading to
 wasted time and repeated discussions.
