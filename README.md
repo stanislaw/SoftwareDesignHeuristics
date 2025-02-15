@@ -73,15 +73,14 @@ arbitrarily. Please don't expect it to be polished.
   - [Grouping](#grouping)
   - [Observability vs Correctness](#observability-vs-correctness)
   - [Don't Use RAII on a Business Logic Level](#dont-use-raii-on-a-business-logic-level)
-- [Coding and code reviews](#coding-and-code-reviews)
+- [Coding, code reviews, and maintenance programming](#coding-code-reviews-and-maintenance-programming)
   - [Code that Works](#code-that-works)
   - [Code is Not Your Partner](#code-is-not-your-partner)
   - [Refactoring I](#refactoring-i)
   - [Smallest Scope](#smallest-scope)
   - [Code Style as a Blocker](#code-style-as-a-blocker)
   - [The Moving and Changing Anti-pattern](#the-moving-and-changing-anti-pattern)
-  - [Other](#other)
-- [Maintenance Programming](#maintenance-programming)
+  - [Avoid Plural Names For Classes](#avoid-plural-names-for-classes)
   - [Fast Programming and Slow Programming](#fast-programming-and-slow-programming)
   - [Stable Components](#stable-components)
   - [Boring Code](#boring-code)
@@ -145,6 +144,7 @@ arbitrarily. Please don't expect it to be polished.
   - [User Interfaces and Critical Systems](#user-interfaces-and-critical-systems)
 - [Books](#books)
 - [Similar resources](#similar-resources)
+- [Copyright](#copyright)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -840,7 +840,7 @@ Instead of using RAII, manage business logic explicitly through well-defined
 methods or services. This approach keeps the logic transparent, easier to
 understand, and more adaptable to changing requirements.
 
-## Coding and code reviews
+## Coding, code reviews, and maintenance programming
 
 ### Code that Works
 
@@ -898,22 +898,24 @@ involves both moving and changing things at the same time. This obscures the
 diffs in the version control system, making it harder to track changes. The
 solution: isolate moving and changing into separate commits or separate PRs.
 
-### Other
+### Avoid Plural Names For Classes
 
-- Don't give your classes plural names. See also "There is no such thing as
-  Many".
-
-## Maintenance Programming
+Classes should represent a single entity or concept. Naming a class in the
+plural form (e.g., `Users`) can confuse its responsibility, making it seem like
+it manages multiple instances. Instead, use singular names (e.g., `User`) and
+handle collections separately, such as in a `UserList` or `UserRepository`. This
+ensures clear, focused class responsibilities.
 
 ### Fast Programming and Slow Programming
 
-This can be read as prototype vs maintenance programming. Fast Programming is
-essential for a quick progress and is very much encouraged by the business.
-However it rarely does have time to learn from mistakes due to the effect of the
-tunnel, "straight ahead", way of thinking. Slow Programming has a virtue of
-reflection and deeper analysis but is probably too slow to get the business
-going from scratch. Business starts to appreciate Slow Programming only when it
-hits the wall of complexity and therefore the need in a proper design.
+This can be viewed as prototype vs. maintenance programming. Fast Programming is
+crucial for rapid progress and is often encouraged by the business. However, it
+rarely allows time to learn from mistakes due to the tunnel vision and "straight
+ahead" thinking that often accompany it. Slow Programming, on the other hand,
+has the virtue of reflection and deeper analysis, but it tends to be too slow to
+launch a business from scratch. Business leaders typically start to appreciate
+Slow Programming only when they hit the wall of complexity, realizing the need
+for proper design.
 
 ### Stable Components
 
