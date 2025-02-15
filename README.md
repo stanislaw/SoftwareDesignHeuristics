@@ -24,6 +24,7 @@ This is currently just a draft—far from complete, with random notes organized 
   - [Quick exploration](#quick-exploration)
   - [Task Sequencing: Group Related Activities for Efficiency](#task-sequencing-group-related-activities-for-efficiency)
   - [Everything Explicit. No Magic.](#everything-explicit-no-magic)
+  - [Use Diagrams](#use-diagrams)
 - [Complexity and Cognitive Load](#complexity-and-cognitive-load)
   - [Solving Right Problems](#solving-right-problems)
   - [Solutions are Context-Driven](#solutions-are-context-driven)
@@ -229,6 +230,26 @@ Making things explicit requires a constant effort to ensure clarity, so that
 others can understand your work without extra effort. A good test for 
 explicitness is whether understanding is immediate, with no mental effort or 
 blockers when going through the material.
+
+### Use Diagrams
+
+Use diagrams as part of your daily work. A diagram can often explain far more
+than several paragraphs of text.
+
+Use diagrams for:
+
+- Prototyping and documenting software
+- Pair programming
+- Hardware-software integration testing
+- Meetings (including external meetings)
+- Everything else where a good visualization helps
+
+There are standards and conventions for creating diagrams, such as UML, but in 
+practice, even very basic diagrams can be incredibly useful. Use simple 
+shapes like rectangles and arrows, avoid excessive colors or different shapes,
+and express your concepts with the fewest visual elements possible. Creating 
+diagrams that are too visually complex hinders understanding and reduces their
+effectiveness.
 
 ## Complexity and Cognitive Load
 
