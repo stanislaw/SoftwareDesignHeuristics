@@ -1,4 +1,4 @@
-# Notes on Soft Skills Behind Software
+# Notes on Software Systems Engineering
 
 These notes have been collected over time during my work as a software engineer.
 
