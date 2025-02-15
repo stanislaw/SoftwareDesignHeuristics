@@ -26,6 +26,7 @@ arbitrarily. Please don't expect it to be polished.
   - [Start Simple](#start-simple)
   - [Habitability](#habitability)
   - [Avoid Work That Can Be Avoided](#avoid-work-that-can-be-avoided)
+  - [Choose Where to Innovate (Carefully)](#choose-where-to-innovate-carefully)
   - [Automate everything](#automate-everything)
   - [Quick exploration](#quick-exploration)
   - [Task Sequencing: Group Related Activities for Efficiency](#task-sequencing-group-related-activities-for-efficiency)
@@ -216,6 +217,20 @@ off-the-shelf system.
 
 In software development, there's a well-known saying: "The best code is the code
 that is never written".
+
+### Choose Where to Innovate (Carefully)
+
+Innovate where your business's focus lies and stay conservative with other areas
+by using established technologies.
+
+For example, a company focused on rocket software should likely avoid building
+its own web framework or NoSQL database. Exceptions exist, but they are rare,
+especially when a company diversifies into a highly successful product unrelated
+to its core business. Innovating in too many areas can compromise the core
+product and cause missed deadlines.
+
+For a great explanation, refer to this [Boring Technology presentation]
+(https://boringtechnology.club/).
 
 ### Automate everything
 
