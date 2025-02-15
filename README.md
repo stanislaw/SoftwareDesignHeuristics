@@ -274,6 +274,7 @@ Use diagrams for:
 - Pair programming
 - Hardware-software integration testing
 - Meetings (including external meetings)
+- Onboarding colleagues
 - Everything else where a good visualization helps
 
 There are standards and conventions for creating diagrams, such as UML, but in 
@@ -1088,6 +1089,41 @@ Common pitfalls:
 - Share only the relevant content—close unrelated applications, especially internal company chats, before presenting to an external audience.
 - If you need to access other files or perform actions outside the presentation, unshare your screen first, complete the task, then reshare only the necessary content.
 - If your team is presenting to an external party, align on the materials beforehand to ensure consistency in messaging.
+
+## Communication and Teamwork
+
+### Sending Status Updates to the Team
+
+Software engineering teams often communicate daily via chat. A proven 
+pattern is for each team member to send updates about their work, allowing the entire team to see these messages.
+
+Examples of such messages include:
+
+- "Task X is done, here's the PR link. @A and @B, could you take a look?"
+- "This week my focus is... Next, I am going to work on..."
+- "I see your PR, but I'm working on something else."
+- "What does the team think about introducing the coding convention ABC?"
+
+While this may seem obvious for some teams, there are others where daily chats are completely silent, reflecting a lack of communication between peers throughout the day. When messages are exchanged, it creates a certain "pulse" within the team, signaling that the group is actively working on meaningful tasks and is open to discussion, iteration, and improvement.
+
+This activity not only serves an informational purpose (increasing awareness) but also has learning, motivational, and even entertaining aspects.
+
+### Recognize the ideas and achievements of your colleagues
+
+Teamwork involves contributions from all team members. Whether you are a leader
+or an individual contributor, it is essential to give credit where it's due when
+expressing an idea that you know was authored by someone else.
+
+This is a good practice because it fosters trust and respect within the team,
+encouraging open collaboration and the free exchange of ideas. Recognizing others'
+contributions also boosts morale, motivates continued input, and strengthens the
+overall effectiveness of the team.
+
+An anti-pattern is when the names of the original authors are omitted, and the work is presented in the first person, either intentionally or unintentionally, as if the content were one's own.
+
+### Professional content
+
+When writing an email or chat message, even if addressed to a select group, consider composing it in a way that it would remain professional and consistent if shared with a larger or unintended audience. Avoid using vague references like "we" and "they," especially when referring to internal teams or external parties such as customers. Refrain from using negative sentences or excessive emotion. Your content should be polished and ready to be forwarded by anyone, at any time, whether intentionally or unintentionally.
 
 ## Systems
 
