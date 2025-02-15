@@ -49,6 +49,7 @@ arbitrarily. Please don't expect it to be polished.
   - [Masking (Shadowing)](#masking-shadowing)
 - [Design](#design)
   - [Poor Abstraction](#poor-abstraction)
+  - [Cost of Abstraction](#cost-of-abstraction)
   - [Hard Feature](#hard-feature)
   - [True Name](#true-name)
   - [One Pattern per Class](#one-pattern-per-class)
@@ -161,8 +162,8 @@ arbitrarily. Please don't expect it to be polished.
 
 ### Leave Work Better: Improving Today for a Simpler Tomorrow
 
-Always leave the work artifacts — whether code, documentation, diagrams, models,
-or others — in a better state than they were before, giving future you or
+Always leave the work artifacts – whether code, documentation, diagrams, models,
+or others – in a better state than they were before, giving future you or
 someone else the opportunity to improve them even further.
 
 ### Fast Feedback
@@ -200,7 +201,7 @@ Habitable software is better than perfect software.
 > characteristics are different...
 
 > ...Habitability makes a place livable, like home. And this is what we want in
-> software — that developers feel at home, can place their hands on any item
+> software – that developers feel at home, can place their hands on any item
 > without having to think deeply about where it is. It's something like clarity,
 > but clarity is too hard to come by.
 
@@ -268,7 +269,7 @@ task of formulating and spelling out each individual content item.
 
 Strive for clarity in everything you do. Put in the effort to make the products
 of your work, or the aspects of the system you're working on, as clear as
-possible. Simplify complexity—either by reducing the complexity itself through
+possible. Simplify complexity – either by reducing the complexity itself through
 development or, if that's not feasible, by explaining the details as clearly as
 possible.
 
@@ -554,6 +555,40 @@ A good example from https://www.sigbus.info/worse-is-better:
 > each target than writing unified one that covers all the details and corner
 > cases of all supported targets simultaneously.
 
+### Cost of Abstraction
+
+Software engineering often involves creating abstractions. A solution to a
+problem can include more or fewer abstractions, but each introduced abstraction
+comes with a cost. This cost manifests as the cognitive burden placed on those
+who need to understand, maintain, and document it – not just in code, but also
+in models, documentation, and even organizational structures.
+
+Cognitively, an abstraction can be thought of as a mental gadget that one must
+"install" in order to work with it. Imagine an empty room that needs to be
+furnished according to a specific use case. If the chosen abstractions fit well
+within the team's mental model, the space remains functional – like a
+well-furnished room where people can move freely and use it as intended.
+However, if abstractions are difficult to grasp or combine in contradictory
+ways, the mental space becomes cluttered, leaving little room to maneuver. This
+is similar to a room overloaded with furniture, making it difficult to navigate
+or even understand its intended purpose.
+
+For example, if a team introduces a new abstraction X, it incurs the following
+costs:
+
+- Every developer must understand and adopt X to work effectively within the
+  system.
+- The system must be structured around X in a way that ensures maintainability
+  over time.
+- Long-term maintenance will require keeping the code, file structure, and
+  models aligned with X, often introducing additional overhead.
+
+Introducing too many incompatible abstractions – or a few abstractions that
+consume too much of the decision space – can quickly lead to over-engineering.
+Those responsible for maintaining such systems often find themselves
+disentangling unnecessary complexity, seeking a new balance that restores
+manageability by replacing or introducing more adequate abstractions.
+
 ### Hard Feature
 
 If a feature is hard to implement it might indicate that it is something wrong
@@ -673,7 +708,7 @@ approach often leads to significant branching logic and reduced readability,
 making the code harder to work with and more prone to errors.
 
 Understanding when to apply the Single Source principle and when to allow for
-exceptions—is crucial for achieving balance and maintaining flexibility in
+exceptions is crucial for achieving balance and maintaining flexibility in
 software design. Learning where to follow and where to de-prioritize the Single
 Source principle is a good skill that distinguishes a more experienced
 programmer from a beginner one.
@@ -1096,7 +1131,7 @@ to write bad tests than to write none at all.
 ### TDD as a Toolbox
 
 The ability to do Test-Driven Development (TDD) is not a binary "can or cannot"
-skill. It’s about having a wide range of techniques, patterns, tricks, and hacks
+skill. It's about having a wide range of techniques, patterns, tricks, and hacks
 in your toolbox. When you have enough of them, you can test almost anything in a
 reasonable amount of time.
 
@@ -1109,9 +1144,9 @@ code is code without tests."
 
 In addition to ensuring quality, testing is essential for simulations that help
 manage complexity. If I can test and simulate every aspect of my program, I can
-effectively manage its complexity. However, if there are blind spots—areas that
-are difficult or impossible to test – I lose control over those areas and must
-rely on real users to test in the wild.
+effectively manage its complexity. However, if there are blind spots – areas
+that are difficult or impossible to test – I lose control over those areas and
+must rely on real users to test in the wild.
 
 ### Test It to Engineer It
 
@@ -1126,7 +1161,7 @@ Ideally, everything should be testable. If something is difficult to test, it
 often signals a need to improve code quality, toolset, or testing
 infrastructure. With effort, these can be enhanced. If unsure how to test
 something, start with a simple approach: stub everything, simplify the network,
-assert what’s necessary, then iterate on refining both the test and the system
+assert what's necessary, then iterate on refining both the test and the system
 under test (SUT).
 
 ## Distribution
@@ -1268,7 +1303,7 @@ minimum, meetings should result in:
 
 Whenever possible, capturing processes or architectures in a diagram is better
 than a simple bullet point. Even if no formal notes are recorded, every
-participant leaves with takeaways and mental models — but written records
+participant leaves with takeaways and mental models – but written records
 significantly increase the meeting's effectiveness.
 
 Anti-pattern: Running meetings without documenting useful outcomes, leading to
@@ -1298,7 +1333,7 @@ Common pitfalls:
 
 ### Sharing Screen & Presenting Material
 
-- Share only the relevant content—close unrelated applications, especially
+- Share only the relevant content – close unrelated applications, especially
   internal company chats, before presenting to an external audience.
 - If you need to access other files or perform actions outside the presentation,
   unshare your screen first, complete the task, then reshare only the necessary
@@ -1322,7 +1357,7 @@ following quote from Kent Beck helps to pinpoint it very clearly:
 > - Readable & predictive tests.
 > - A strong social network.
 >
-> It’s only when there is a large audience for stable information (such as the
+> It's only when there is a large audience for stable information (such as the
 > JUnit API) that we resort to separate documentation.
 
 See
