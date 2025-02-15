@@ -102,6 +102,12 @@ arbitrarily. Please don't expect it to be polished.
   - [Assertions are shortcuts for a proper error handling](#assertions-are-shortcuts-for-a-proper-error-handling)
   - [Crash Early](#crash-early)
 - [Testing](#testing)
+  - [Write Tests, Even Bad Ones](#write-tests-even-bad-ones)
+  - [TDD as a Toolbox](#tdd-as-a-toolbox)
+  - [Legacy Code is Code Without Tests](#legacy-code-is-code-without-tests)
+  - [Testing as a Way to Manage Complexity](#testing-as-a-way-to-manage-complexity)
+  - [Test It to Engineer It](#test-it-to-engineer-it)
+  - [Improve Testability](#improve-testability)
 - [Distribution](#distribution)
   - [Provide Basic Test Sequences with Your Product](#provide-basic-test-sequences-with-your-product)
   - [Provide Drivers Alongside Your Hardware](#provide-drivers-alongside-your-hardware)
@@ -1081,32 +1087,46 @@ and
 
 ## Testing
 
-- If you do not write tests you will never learn how to write them, it is better
-  to write bad tests then not to write any.
-- Ability to do TDD is not about black and white: “can or can not”, it is about
-  having 1001 things in your toolbox: techniques, patterns, tricks and hacks -
-  when you have enough of them you can test almost everything in a reasonable
-  amount of time.
-- “Legacy code is a code without tests” (“Working effectively with Legacy Code”
-  by Michael Feathers).
-- On top of being useful for Quality, Testing is an important prerequisite for
-  Simulations which are essential for complexity management: if I can test, read
-  simulate, every aspect of my program, this means that I can still manage its
-  complexity and vice versa - if my app has blind-spots: areas that are hard or
-  impossible to test, I don't have any control over those areas and have to
-  resort to testing of my app in the wild, outsourcing the quality of my app to
-  the real users.
-- “If you can't measure it then it can't be called engineering” (taken from
-  “Object-Oriented Software Engineering: A Use Case Driven Approach” by Ivar
-  Jacobson). We of course also read “measure” as “test” which is another way of
-  measurement.
-- Ideally, we should be able to test everything. If something is hard to test,
-  it usually means our code quality or the corresponding toolset and testing
-  infrastructure are not yet where they need to be. However, with effort, we can
-  improve them and get there. If you're unsure how to test something properly,
-  start with the simplest, "ugliest" approach: stub everything in a basic way,
-  stub the network in a simple manner, assert what you need to assert, and only
-  then iterate on refactoring both the test and the system under test (SUT).
+### Write Tests, Even Bad Ones
+
+If you do not write tests, you will never learn how to write them. It's better
+to write bad tests than to write none at all.
+
+### TDD as a Toolbox
+
+The ability to do Test-Driven Development (TDD) is not a binary "can or cannot"
+skill. It’s about having a wide range of techniques, patterns, tricks, and hacks
+in your toolbox. When you have enough of them, you can test almost anything in a
+reasonable amount of time.
+
+### Legacy Code is Code Without Tests
+
+As Michael Feathers puts it in Working Effectively with Legacy Code, "Legacy
+code is code without tests."
+
+### Testing as a Way to Manage Complexity
+
+In addition to ensuring quality, testing is essential for simulations that help
+manage complexity. If I can test and simulate every aspect of my program, I can
+effectively manage its complexity. However, if there are blind spots—areas that
+are difficult or impossible to test – I lose control over those areas and must
+rely on real users to test in the wild.
+
+### Test It to Engineer It
+
+"If you can't measure it, then it can't be called engineering" (Ivar Jacobson,
+Object-Oriented Software Engineering: A Use Case Driven Approach). We can
+interpret "measure" as "test," with testing serving as both a form of
+measurement and a core part of engineering.
+
+### Improve Testability
+
+Ideally, everything should be testable. If something is difficult to test, it
+often signals a need to improve code quality, toolset, or testing
+infrastructure. With effort, these can be enhanced. If unsure how to test
+something, start with a simple approach: stub everything, simplify the network,
+assert what’s necessary, then iterate on refining both the test and the system
+under test (SUT).
 
 ## Distribution
 
@@ -1387,7 +1407,7 @@ interact with development teams, understand the real requirements, or provide
 
 Is it a problem that everyone is busy? Given its ubiquity, it doesn't seem so.
 Some people even seem to thrive on being busy all the time. Organizations appear
-to care little about “busyness” itself. What really matters is whether the busy
+to care little about "busyness" itself. What really matters is whether the busy
 person or department can deliver results according to the schedule or whether
 something left uncovered by the busy teams could create serious problems for the
 business.
