@@ -175,6 +175,28 @@ software — that developers feel at home, can place their hands on any item wit
 having to think deeply about where it is. It's something like clarity, but clarity is
 too hard to come by.
 
+### Avoid Work That Can Be Avoided
+
+Before starting or planning any work, always ask: Is this work truly necessary?
+
+Sometimes, tasks are initiated based on uninformed decisions, leading to work
+that ultimately provides little value or fails to achieve the desired outcomes.
+
+"Busy work" refers to inefficient tasks that consume time and resources while
+contributing little to the project's success. It can compromise schedules,
+reduce technical consistency, lower team morale, and create the illusion of
+progress. The ability to recognize and eliminate busy work is one of the skills
+that distinguishes a senior engineer from a junior one.
+
+Engineering is sometimes cheating. Instead of implementing something 
+sophisticated, a smarter workaround can achieve the same result with far 
+less effort. For example, rather than building a solution from scratch, 
+reuse existing work – whether by leveraging open-source software or 
+buying an off-the-shelf system.
+
+In software development, there's a well-known saying:
+"The best code is the code that is never written".
+
 ### Quick exploration
 
 It is not unusual that the solution you are looking for may be in two clicks and couple of Google search results away from you. When reading large documents, sometimes it is useful to "fly over" a document to find a section that is most releveant, instead of reading through the document A-to-Z.
