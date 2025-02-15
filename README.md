@@ -117,6 +117,7 @@ arbitrarily. Please don't expect it to be polished.
   - [Briefing In](#briefing-in)
   - [Sharing Screen & Presenting Material](#sharing-screen--presenting-material)
 - [Communication and Teamwork](#communication-and-teamwork)
+  - [Agile Software Development Requires Strong Social Network](#agile-software-development-requires-strong-social-network)
   - [Sending Status Updates to the Team](#sending-status-updates-to-the-team)
   - [Recognize the ideas and achievements of your colleagues](#recognize-the-ideas-and-achievements-of-your-colleagues)
   - [Professional content](#professional-content)
@@ -1274,6 +1275,26 @@ Common pitfalls:
   beforehand to ensure consistency in messaging.
 
 ## Communication and Teamwork
+
+### Agile Software Development Requires Strong Social Network
+
+**Agile Software Development Requires Strong Social Network**. This statement is
+a generalization: This idea has been there from the beginning and since the
+inception of the [Agile Manifesto](https://agilemanifesto.org/), but the
+following quote from Kent Beck helps to pinpoint it very clearly:
+
+> In The Forest (more specifically on an XP-style team), we handle communication
+> of design & implementation multiple ways:
+>
+> - Communicative code.
+> - Readable & predictive tests.
+> - A strong social network.
+>
+> It’s only when there is a large audience for stable information (such as the
+> JUnit API) that we resort to separate documentation.
+
+See
+[Kent Beck - Anatomy of Oscillation](https://tidyfirst.substack.com/p/anatomy-of-oscillation).
 
 ### Sending Status Updates to the Team
 
