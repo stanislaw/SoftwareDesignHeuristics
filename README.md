@@ -221,7 +221,14 @@ One useful pattern is the 'Inbox' approach, where input is first collected and t
 
 ### Everything Explicit. No Magic.
 
-Whenever a thought explicit vs magic comes to your mind, go for explicit.
+Whenever you face a choice between explicit and magic, always choose explicit.
+
+"Magic" is a term software engineers use for anything that is non-obvious, hidden, overly complex, or no longer suited to the system's current state.
+
+Making things explicit requires a constant effort to ensure clarity, so that 
+others can understand your work without extra effort. A good test for 
+explicitness is whether understanding is immediate, with no mental effort or 
+blockers when going through the material.
 
 ## Complexity and Cognitive Load
 
@@ -685,8 +692,8 @@ understand, and more adaptable to changing requirements.
 
 ### Code that Works
 
-Working code with a good enough architecture is better than buggy code with
-a perfect architecture.
+Working code with a good-enough architecture is better than buggy code with a
+perfect but overly complex architecture.
 
 ### Code is Not Your Partner
 
