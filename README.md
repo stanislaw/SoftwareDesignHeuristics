@@ -13,11 +13,14 @@ This is currently just a draft—far from complete, with random notes organized 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [Day-to-Day Work of a Software Engineer](#day-to-day-work-of-a-software-engineer)
   - [Leave Work Better: Improving Today for a Simpler Tomorrow](#leave-work-better-improving-today-for-a-simpler-tomorrow)
   - [Fast Feedback](#fast-feedback)
   - [Start Simple](#start-simple)
   - [Habitability](#habitability)
+  - [Avoid Work That Can Be Avoided](#avoid-work-that-can-be-avoided)
+  - [Automate everything](#automate-everything)
   - [Quick exploration](#quick-exploration)
   - [Task Sequencing: Group Related Activities for Efficiency](#task-sequencing-group-related-activities-for-efficiency)
   - [Everything Explicit. No Magic.](#everything-explicit-no-magic)
@@ -197,9 +200,18 @@ buying an off-the-shelf system.
 In software development, there's a well-known saying:
 "The best code is the code that is never written".
 
+### Automate everything
+
+Seek opportunities to automate processes or tasks. Automation eliminates busy
+work, freeing time for more valuable activities. It reduces human error,
+increases efficiency, and helps to maintain consistency. The best workflows are 
+automated ones.
+
 ### Quick exploration
 
-It is not unusual that the solution you are looking for may be in two clicks and couple of Google search results away from you. When reading large documents, sometimes it is useful to "fly over" a document to find a section that is most releveant, instead of reading through the document A-to-Z.
+It is not unusual that the solution you are looking for may be in two clicks 
+and a couple of Google search results away from you. When reading large 
+documents, sometimes it is useful to "fly over" a document to find a section that is most releveant, instead of reading through the document A-to-Z.
 
 ### Task Sequencing: Group Related Activities for Efficiency
 
