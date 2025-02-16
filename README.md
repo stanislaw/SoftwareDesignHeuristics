@@ -127,6 +127,7 @@ arbitrarily. Please don't expect it to be polished.
 - [Communication and Teamwork](#communication-and-teamwork)
   - [Agile Software Development Requires Strong Social Network](#agile-software-development-requires-strong-social-network)
   - [Sending Status Updates to the Team](#sending-status-updates-to-the-team)
+  - [Keep Everyone in the Loop](#keep-everyone-in-the-loop)
   - [Recognize the ideas and achievements of your colleagues](#recognize-the-ideas-and-achievements-of-your-colleagues)
   - [Professional content](#professional-content)
 - [Systems](#systems)
@@ -1385,6 +1386,26 @@ tasks and is open to discussion, iteration, and improvement.
 This activity not only serves an informational purpose (increasing awareness)
 but also has learning, motivational, and even entertaining aspects.
 
+### Keep Everyone in the Loop
+
+Provide frequent updates to those who rely on your work – your manager,
+teammates, or anyone following your technical progress. In fast-paced
+development, keeping others informed helps maintain alignment and prevent
+surprises.
+
+In an office setting, updates often happen naturally. If the team is
+well-connected, they can happen during casual conversations or even small talk
+over lunch. This kind of informal communication spreads information quickly
+without the need for formal status meetings.
+
+A key benefit of this approach is that by the time your work reaches a review
+stage – whether a code review, documentation review, or project
+milestone—everyone will already be familiar with it and may have contributed
+their input. This reduces friction, speeds up approvals, and makes collaboration
+smoother.
+
+Stay aligned with your team.
+
 ### Recognize the ideas and achievements of your colleagues
 
 Teamwork involves contributions from all team members. Whether you are a leader
@@ -1405,7 +1426,7 @@ as if the content were one's own.
 When writing an email or chat message, even if addressed to a select group,
 consider composing it in a way that it would remain professional and consistent
 if shared with a larger or unintended audience. Avoid using vague references
-like "we" and "they," especially when referring to internal teams or external
+like "we" and "they", especially when referring to internal teams or external
 parties such as customers. Refrain from using negative sentences or excessive
 emotion. Your content should be polished and ready to be forwarded by anyone, at
 any time, whether intentionally or unintentionally.
