@@ -81,6 +81,7 @@ arbitrarily. Please don't expect it to be polished.
   - [Two Strategies for Replacing a Feature](#two-strategies-for-replacing-a-feature)
   - [Smallest Scope](#smallest-scope)
   - [Code Style as a Blocker](#code-style-as-a-blocker)
+  - [Simplifying Complex Feature Branches](#simplifying-complex-feature-branches)
   - [The Moving and Changing Anti-pattern](#the-moving-and-changing-anti-pattern)
   - [Avoid Plural Names For Classes](#avoid-plural-names-for-classes)
   - [Fast Programming and Slow Programming](#fast-programming-and-slow-programming)
@@ -976,6 +977,17 @@ let expectedRemainingLoops =
     )
   )
 ```
+
+### Simplifying Complex Feature Branches
+
+When working on a non-trivial feature branch, consider breaking it down into its
+core functionality while separating any trivial or unrelated changes that can be
+integrated independently.
+
+A complex branch can often become more manageable, or even medium in scope, when
+distilled into its essential parts and split into smaller, separate changes. In
+some cases, breaking it down properly can eliminate the complexity entirely,
+leaving only straightforward, incremental updates.
 
 ### The Moving and Changing Anti-pattern
 
