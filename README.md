@@ -77,8 +77,8 @@ arbitrarily. Please don't expect it to be polished.
   - [Don't Use RAII on a Business Logic Level](#dont-use-raii-on-a-business-logic-level)
 - [Coding, code reviews, and maintenance programming](#coding-code-reviews-and-maintenance-programming)
   - [Code that Works](#code-that-works)
-  - [Code is Not Your Partner](#code-is-not-your-partner)
-  - [Refactoring I](#refactoring-i)
+  - [Code Is Not Your Partner](#code-is-not-your-partner)
+  - [Two Strategies for Replacing a Feature](#two-strategies-for-replacing-a-feature)
   - [Smallest Scope](#smallest-scope)
   - [Code Style as a Blocker](#code-style-as-a-blocker)
   - [The Moving and Changing Anti-pattern](#the-moving-and-changing-anti-pattern)
@@ -906,22 +906,49 @@ understand, and more adaptable to changing requirements.
 Working code with a good-enough architecture is better than buggy code with a
 perfect but overly complex architecture.
 
-### Code is Not Your Partner
+### Code Is Not Your Partner
 
-Sometimes we don't have to be nice about other people's code:
+Sometimes, you don't have to be nice to code.
 
-- can be different platforms
-- can be outdated code
-- can be ancient build tools
-- can be the code that has some parts you don't need
-- can be mistakes
+- It might be written for a different platform.
+- It could be outdated or rely on ancient build tools.
+- Some parts may be unnecessary for your needs.
+- It may contain mistakes.
 
-In this case it is fine to delete or agressively modify some code to compile it,
-test it, learn about it.
+In such cases, it is perfectly fine to delete, modify, or hack the code – to
+make it compile, test it, or simply understand how it works.
 
-### Refactoring I
+### Two Strategies for Replacing a Feature
 
-Replace != "Remove + Write". Replace = "Write new + Re-route + Remove old".
+When replacing Feature A with Feature B, there are two broad approaches.
+
+1\. Remove A, Then Implement B
+
+This strategy is best when:
+
+- Feature A is simple.
+- Feature B can be developed quickly.
+- Switching to B is straightforward.
+
+In such cases, removing A first and then building B works well, as the
+transition is fast and manageable.
+
+2\. Develop B in Parallel, Switch from A to B, Remove A
+
+This approach is necessary when the transition is complex or time-consuming.
+Instead of removing A immediately, B is developed alongside it while the
+existing system remains operational. The switch to B happens only when it is
+fully developed and tested. A remains available as a fallback until B is proven
+reliable, after which A can be removed.
+
+This method is particularly useful when:
+
+- Feature B requires significant development time.
+- Switching from A to B is complex and requires a dedicated transition
+  mechanism.
+
+For already deployed systems where downtime is unacceptable, the second approach
+is often the only viable way to ensure a smooth migration.
 
 ### Smallest Scope
 
