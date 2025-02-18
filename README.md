@@ -252,10 +252,17 @@ automated ones.
 
 ### Quick exploration
 
-It is not unusual that the solution you are looking for may be in two clicks and
-a couple of Google search results away from you. When reading large documents,
-sometimes it is useful to "fly over" a document to find a section that is most
-releveant, instead of reading through the document A-to-Z.
+The solution you're looking for might be just two clicks and a couple of Google
+searches away.
+
+When reading large documents, it can be helpful to "fly over" them to quickly
+locate the most relevant section rather than reading from A to Z.
+
+When exploring with code, a combination of quick-and-dirty scripts can sometimes
+create miracles, giving immediate and valuable insights. Instead of discarding
+an idea because it's complex and time-consuming, try implementing a very basic
+version first—it might provide useful insights or even a functional solution
+right away.
 
 ### Task Sequencing: Group Related Activities for Efficiency
 
